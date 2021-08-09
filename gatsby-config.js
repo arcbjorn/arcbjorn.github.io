@@ -9,6 +9,7 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",
     "gatsby-plugin-dts-css-modules",
+    "gatsby-plugin-dark-mode",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
