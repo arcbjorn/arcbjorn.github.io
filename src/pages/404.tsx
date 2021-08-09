@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-export const NotFoundPage: React.FunctionComponent = () => {
+const NotFoundPage: React.FunctionComponent = () => {
   return (
     <main>
       <title>Not found</title>
@@ -26,3 +26,5 @@ export const NotFoundPage: React.FunctionComponent = () => {
     </main>
   );
 };
+
+export default NotFoundPage;

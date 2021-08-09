@@ -15,3 +15,5 @@ export const Header: React.FunctionComponent = () => (
     </Link>
   </div>
 );
+
+export default Header;

@@ -1,9 +1,9 @@
 import * as React from "react";
 import "../styles/tailwind.css";
 
-import { Header } from "../components/header/Header";
+import Header from "../components/header/Header";
 
-export const IndexPage: React.FunctionComponent = () => {
+const IndexPage: React.FunctionComponent = () => {
   return (
     <main>
       <title>Home Page</title>
@@ -15,3 +15,5 @@ export const IndexPage: React.FunctionComponent = () => {
     </main>
   );
 };
+
+export default IndexPage;
