@@ -6,9 +6,9 @@ import ThemeToggle from "components/theme_toggle/ThemeToggle";
 import * as css from "./header.module.css";
 
 export const Header: React.FunctionComponent = () => (
-  <div>
+  <div className={css.header}>
     <Link className={css.link} to="/">
-      home
+      arcbjorn
     </Link>
     <Link className={css.link} to="#contact">
       contact

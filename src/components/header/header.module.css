@@ -23,3 +23,7 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.header {
+    @apply flex items-center justify-between flex-wrap p-6;
+}
