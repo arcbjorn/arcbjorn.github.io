@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
 
-import ThemeToggle from "../theme_toggle/ThemeToggle";
+import ThemeToggle from "components/theme_toggle/ThemeToggle";
 import * as css from "./header.module.css";
 
 export const Header: React.FunctionComponent = () => (

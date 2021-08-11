@@ -1,7 +1,7 @@
 import * as React from "react";
 import "../styles/tailwind.css";
 
-import Header from "../components/header/Header";
+import Header from "components/header/Header";
 
 const IndexPage: React.FunctionComponent = () => {
   return (

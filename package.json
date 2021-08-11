@@ -38,11 +38,14 @@
     "@typescript-eslint/parser": "^4.29.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "gatsby-plugin-dts-css-modules": "^2.1.0",
     "gatsby-plugin-eslint": "^3.0.0",
+    "gatsby-plugin-root-import": "^2.0.6",
     "prettier": "^2.3.2"
   }
 }
