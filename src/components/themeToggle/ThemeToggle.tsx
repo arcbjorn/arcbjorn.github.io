@@ -1,11 +1,16 @@
-import React from "react";
+import React, { ReactNode } from "react";
+import * as css from "./themeToggle.module.css";
 
-// interface ThemeToggleTypes {
-//   toggleTheme: any;
-//   theme: string;
-// }
+type ThemeToggleProps = {
+  toggleTheme: (theme: string) => undefined;
+  theme: string;
+  children?: ReactNode;
+};
 
-const ThemeToggle: React.FunctionComponent = ({ toggleTheme, theme }) => {
+const ThemeToggle: React.FunctionComponent<ThemeToggleProps> = ({
+  theme,
+  toggleTheme,
+}: ThemeToggleProps) => {
   const isDarkMode = theme === "dark";
   if (theme == null) {
     return null;
@@ -14,7 +19,7 @@ const ThemeToggle: React.FunctionComponent = ({ toggleTheme, theme }) => {
   return (
     <button
       aria-label="theme-switch"
-      className="leading-none p-1"
+      className={css.toggle}
       onClick={() => toggleTheme(isDarkMode ? "light" : "dark")}
     >
       {isDarkMode ? (
