@@ -12,7 +12,8 @@
     "baseUrl": "./src",
     "paths": {
       "pages": ["/pages"],
-      "components": ["/components"]
+      "components": ["/components"],
+      "layouts": ["/layouts"]
     },
   },
   "exclude": ["node_modules", "public", ".cache"]
