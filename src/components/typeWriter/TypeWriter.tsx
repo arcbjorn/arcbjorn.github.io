@@ -1,30 +1,36 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Typewriter from "typewriter-effect";
 // import * as css from "./typeWriter.module.css";
 
-export const Header: React.FunctionComponent = () => {
-  let start = true;
+type TypeWriterProps = {
+  toggleTypeWriter: () => undefined;
+  startTypeWriter: boolean;
+  children?: ReactNode;
+};
 
+export const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
+  startTypeWriter,
+  toggleTypeWriter,
+}: TypeWriterProps) => {
   return (
     <Typewriter
       onInit={(typewriter) => {
-        typewriter
-          .typeString("Hello World!")
-          .callFunction(() => {
-            console.log("String typed out!");
-          })
-          .pauseFor(2500)
-          .deleteAll()
-          .callFunction(() => {
-            start = false;
-          })
-          .start();
+        if (startTypeWriter) {
+          typewriter
+            .typeString("Hello World!")
+            .callFunction(() => {
+              toggleTypeWriter();
+            })
+            .start();
+        } else {
+          typewriter.pasteString("Hello World!", null).start();
+        }
       }}
       options={{
-        autoStart: start,
+        delay: startTypeWriter ? "natural" : 0,
       }}
     />
   );
 };
 
-export default Header;
+export default TypeWriter;
