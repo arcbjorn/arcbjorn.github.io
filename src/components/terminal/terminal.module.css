@@ -1,0 +1,7 @@
+.terminal {
+    @apply flex flex-col-reverse h-full items-center;
+}
+
+.window {
+    @apply h-9/10;
+}
