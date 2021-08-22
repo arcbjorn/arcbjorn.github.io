@@ -11,6 +11,7 @@ body {
     --hr: hsla(0, 20%, 1%, 0.2);
   
     background-color: var(--bg);
+    color: var(--textTitle);
 }
   
 body.dark {
