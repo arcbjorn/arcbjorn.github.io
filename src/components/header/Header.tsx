@@ -13,24 +13,26 @@ enum Route {
 export const Header: React.FunctionComponent = () => {
   return (
     <div className={css.header}>
-      <Link className="cursor-pointer" to={Route.about}>
+      <Link className={css.logo} to={Route.about}>
         arcbjorn
       </Link>
-      <Link
-        className={css.customLink}
-        activeClassName={css.activeRoute}
-        to={Route.about}
-      >
-        about
-      </Link>
-      <Link
-        className={css.link}
-        to={Route.library}
-        activeClassName={css.activeRoute}
-      >
-        library
-      </Link>
-      <ThemeToggler>{ThemeToggle}</ThemeToggler>
+      <div className={css.nav}>
+        <Link
+          className={css.link}
+          activeClassName={css.activeRoute}
+          to={Route.about}
+        >
+          about
+        </Link>
+        <Link
+          className={css.link}
+          to={Route.library}
+          activeClassName={css.activeRoute}
+        >
+          library
+        </Link>
+        <ThemeToggler>{ThemeToggle}</ThemeToggler>
+      </div>
     </div>
   );
 };

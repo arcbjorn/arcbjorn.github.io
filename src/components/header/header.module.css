@@ -1,13 +1,13 @@
 .header {
-    @apply flex items-center justify-between flex-wrap p-6;
+    @apply flex items-center justify-between flex-wrap px-7 py-7 sm:px-28;
 }
 
 .link {
     color: var(--textTitle);
-    margin-left: 15px;
     text-decoration: none;
     display: inline-block;
     position: relative;
+    @apply mx-4;
 }
 
 .link::after {
@@ -28,10 +28,6 @@
     transform-origin: bottom left;
 }
 
-.customLink {
-    @apply link cursor-pointer;
-}
-
 .activeRoute::after {
     content: "";
     position: absolute;
@@ -42,4 +38,12 @@
     background-color: var(--textTitle);
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.logo {
+    @apply cursor-pointer font-bold text-xl;
+}
+
+.nav {
+    @apply flex items-center justify-around flex-wrap font-bold text-lg;
 }
