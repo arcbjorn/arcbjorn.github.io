@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
 body {
     --bg: #fff;
     --lightBg: #f5f5f5;
@@ -14,6 +21,7 @@ body {
   
     background-color: var(--bg);
     color: var(--textTitle);
+    @apply font-ibm;
 }
   
 body.dark {

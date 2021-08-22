@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         ibm: ["IBM Plex Mono", "font-mono"],
       },
+      height: {
+        "9/10": "90%",
+      },
     },
   },
   variants: {
