@@ -2,3 +2,4 @@
 export const header: string;
 export const link: string;
 export const customLink: string;
+export const activeRoute: string;
