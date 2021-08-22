@@ -1,5 +1,5 @@
 .header {
-    @apply flex items-center justify-between flex-wrap px-7 py-7 sm:px-28;
+    @apply flex items-center justify-between flex-wrap py-7;
 }
 
 .link {
