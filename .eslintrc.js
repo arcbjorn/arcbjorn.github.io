@@ -15,7 +15,12 @@ module.exports = {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
         paths: ["./src"],
       },
-      alias: [["components", "./src/components"]],
+      alias: [
+        ["pages", "./src/pages"],
+        ["components", "./src/components"],
+        ["layouts", "./src/layouts"],
+        ["state", "./src/state"],
+      ],
     },
   },
   env: {

@@ -38,6 +38,7 @@ module.exports = {
         pages: path.join(__dirname, "src/pages"),
         components: path.join(__dirname, "src/components"),
         layouts: path.join(__dirname, "src/layouts"),
+        state: path.join(__dirname, "src/state"),
       },
     },
   ],
