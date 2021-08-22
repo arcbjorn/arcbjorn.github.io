@@ -1,5 +1,9 @@
+.header {
+    @apply flex items-center justify-between flex-wrap p-6;
+}
+
 .link {
-    color: black;
+    color: var(--textTitle);
     margin-left: 15px;
     text-decoration: none;
     display: inline-block;
@@ -14,7 +18,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--textTitle);
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -24,6 +28,6 @@
     transform-origin: bottom left;
 }
 
-.header {
-    @apply flex items-center justify-between flex-wrap p-6;
+.customLink {
+    @apply link cursor-pointer;
 }
