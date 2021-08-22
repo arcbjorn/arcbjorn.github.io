@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { navigate } from "@reach/router";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
 
-import ThemeToggle from "components/theme_toggle/ThemeToggle";
+import ThemeToggle from "components/themeToggle/ThemeToggle";
 import * as css from "./header.module.css";
 
 export const Header: React.FunctionComponent = () => {
