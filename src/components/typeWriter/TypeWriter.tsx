@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Typewriter from "typewriter-effect";
-// import * as css from "./typeWriter.module.css";
+
+import IntroText from "./introText";
 
 type TypeWriterProps = {
   toggleTypeWriter: () => undefined;
@@ -17,13 +18,13 @@ export const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
       onInit={(typewriter) => {
         if (startTypeWriter) {
           typewriter
-            .typeString("Hello World!")
+            .typeString(IntroText)
             .callFunction(() => {
               toggleTypeWriter();
             })
             .start();
         } else {
-          typewriter.pasteString("Hello World!", null).start();
+          typewriter.pasteString(IntroText, null).start();
         }
       }}
       options={{

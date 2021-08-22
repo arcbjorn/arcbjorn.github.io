@@ -3,5 +3,5 @@
 }
 
 .window {
-    @apply h-9/10;
+    @apply flex flex-wrap h-9/10 px-3 text-lg md:text-2xl;
 }

@@ -1,3 +1,9 @@
-.machine {
-    font-size: 24px;
+.typeWriter {
+    @apply text-lg md:text-2xl;
+}
+
+/* TODO: Other colours for divs in IntroText */
+
+userandhost {
+    color: var(--userandhostColor);
 }
