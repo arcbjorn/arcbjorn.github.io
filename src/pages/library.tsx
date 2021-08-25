@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 
 import Layout from "layouts/Layout";
 import Books from "components/books/Books";
@@ -6,7 +7,9 @@ import Books from "components/books/Books";
 const Library: React.FunctionComponent = () => {
   return (
     <Layout>
-      <title>Library</title>
+      <Helmet>
+        <title>Oleg Luganskiy - Library</title>
+      </Helmet>
       <Books />
     </Layout>
   );
