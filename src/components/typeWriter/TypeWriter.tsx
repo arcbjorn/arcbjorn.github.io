@@ -28,7 +28,7 @@ export const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
         }
       }}
       options={{
-        delay: startTypeWriter ? "natural" : 0,
+        delay: startTypeWriter ? 60 : 0,
       }}
     />
   );
