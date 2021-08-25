@@ -1,0 +1,7 @@
+.info {
+    @apply flex flex-col-reverse h-full items-center;
+}
+
+.message {
+    @apply flex flex-col flex-wrap h-9/10 px-6 text-base sm:text-2xl text-center;
+}
