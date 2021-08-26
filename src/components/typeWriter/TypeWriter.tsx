@@ -1,6 +1,8 @@
 import React, { ReactNode } from "react";
 import Typewriter from "typewriter-effect";
+import { connect } from "react-redux";
 
+import { Action } from "state/types";
 import IntroText from "./introText";
 
 type TypeWriterProps = {
@@ -9,7 +11,7 @@ type TypeWriterProps = {
   children?: ReactNode;
 };
 
-export const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
+const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
   startTypeWriter,
   toggleTypeWriter,
 }: TypeWriterProps) => {
@@ -34,4 +36,24 @@ export const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
   );
 };
 
-export default TypeWriter;
+const mapStateToProps = ({ startTypeWriter }: any) => {
+  return { startTypeWriter };
+};
+
+const mapDispatchToProps = (dispatch: any) => {
+  return {
+    toggleTypeWriter: () => dispatch({ type: Action.ToggleTypeWriter }),
+  };
+};
+
+// To prevent typewriter animation on redux props change
+const NonReactiveTypeWriter = React.memo(TypeWriter, (props, nextProps) => {
+  return !nextProps.startTypeWriter;
+});
+
+const ConnectedTypeWriter = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(NonReactiveTypeWriter);
+
+export default ConnectedTypeWriter;
