@@ -1,5 +1,5 @@
 .typeWriter {
-    @apply text-lg md:text-2xl;
+    @apply text-lg sm:text-3xl;
 }
 
 /* TODO: Other colours for divs in IntroText */

@@ -1,5 +1,5 @@
 .quickLink {
-    @apply py-2 px-4 my-2 mr-8 text-2xl border rounded;
+    @apply py-2 px-4 my-2 mr-4 text-base sm:text-lg border rounded;
 
     color: var(--quickLinkButtonColor);
     border-color: var(--quickLinkButtonBorderColor);

@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 import { Action } from "state/types";
 import IntroText from "./introText";
 
+import * as css from "./typeWriter.module.css";
+
 type TypeWriterProps = {
   toggleQuickLinksVisibility: () => void;
   toggleTypeWriter: () => void;
@@ -18,29 +20,31 @@ const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
   toggleQuickLinksVisibility,
 }: TypeWriterProps) => {
   return (
-    <Typewriter
-      onInit={(typewriter) => {
-        if (startTypeWriter) {
-          typewriter
-            .typeString(IntroText)
-            .callFunction(() => {
-              toggleTypeWriter();
-              toggleQuickLinksVisibility();
-            })
-            .start();
-        } else {
-          typewriter
-            .pasteString(IntroText, null)
-            .callFunction(() => {
-              toggleQuickLinksVisibility();
-            })
-            .start();
-        }
-      }}
-      options={{
-        delay: startTypeWriter ? 60 : 0,
-      }}
-    />
+    <div className={css.typeWriter}>
+      <Typewriter
+        onInit={(typewriter) => {
+          if (startTypeWriter) {
+            typewriter
+              .typeString(IntroText)
+              .callFunction(() => {
+                toggleTypeWriter();
+                toggleQuickLinksVisibility();
+              })
+              .start();
+          } else {
+            typewriter
+              .pasteString(IntroText, null)
+              .callFunction(() => {
+                toggleQuickLinksVisibility();
+              })
+              .start();
+          }
+        }}
+        options={{
+          delay: startTypeWriter ? 60 : 0,
+        }}
+      />
+    </div>
   );
 };
 

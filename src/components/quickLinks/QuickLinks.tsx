@@ -9,11 +9,19 @@ const links = [
     href: "https://www.linkedin.com",
   },
   {
-    title: "Google",
-    href: "https://www.google.com",
+    title: "Github",
+    href: "https://www.github.com/arcbjorn",
   },
   {
-    title: "Facebook",
+    title: "Mail",
+    href: "https://www.facebook.com",
+  },
+  {
+    title: "Telegram",
+    href: "https://www.facebook.com",
+  },
+  {
+    title: "Resume",
     href: "https://www.facebook.com",
   },
 ];

@@ -45,5 +45,5 @@
 }
 
 .nav {
-    @apply flex items-center justify-around flex-wrap text-lg;
+    @apply flex items-center justify-around flex-wrap text-base sm:text-lg;
 }
