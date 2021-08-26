@@ -6,7 +6,8 @@ import { Action } from "state/types";
 import IntroText from "./introText";
 
 type TypeWriterProps = {
-  toggleTypeWriter: () => undefined;
+  toggleQuickLinksVisibility: () => void;
+  toggleTypeWriter: () => void;
   startTypeWriter: boolean;
   children?: ReactNode;
 };
@@ -14,6 +15,7 @@ type TypeWriterProps = {
 const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
   startTypeWriter,
   toggleTypeWriter,
+  toggleQuickLinksVisibility,
 }: TypeWriterProps) => {
   return (
     <Typewriter
@@ -23,10 +25,16 @@ const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
             .typeString(IntroText)
             .callFunction(() => {
               toggleTypeWriter();
+              toggleQuickLinksVisibility();
             })
             .start();
         } else {
-          typewriter.pasteString(IntroText, null).start();
+          typewriter
+            .pasteString(IntroText, null)
+            .callFunction(() => {
+              toggleQuickLinksVisibility();
+            })
+            .start();
         }
       }}
       options={{

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import TypeWriter from "components/typeWriter/TypeWriter";
 import QuickLinks from "components/quickLinks/QuickLinks";
@@ -6,11 +6,17 @@ import QuickLinks from "components/quickLinks/QuickLinks";
 import * as css from "./terminal.module.css";
 
 export const Terminal: React.FunctionComponent = () => {
+  const [quickLinksVisibility, setQuickLinksVisibility] = useState(false);
+
+  const toggleQuickLinksVisibility = () => {
+    setQuickLinksVisibility(!quickLinksVisibility);
+  };
+
   return (
     <div className={css.terminal}>
       <div className={css.window}>
-        <TypeWriter />
-        <QuickLinks />
+        <TypeWriter toggleQuickLinksVisibility={toggleQuickLinksVisibility} />
+        {quickLinksVisibility ? <QuickLinks /> : ""}
       </div>
     </div>
   );
