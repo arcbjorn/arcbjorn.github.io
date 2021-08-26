@@ -7,8 +7,8 @@ const companyName = "FundraiseUp";
 const company = `<a href=${companyLink} target="_blank" class="link">${companyName}</a>`;
 
 const introtext = `<span>Hi, I'm Oleg Luganskiy<br /><br />
-    Full Stack Engineer at <b>${company}</b><br />
-    previously at <b>${previousCompany}</b><br /><br />
+    Full Stack Engineer @<b>${company}</b><br />
+    previously @<b>${previousCompany}</b><br /><br />
     fascinated by Web & AI development</span>`;
 
 const info = {
