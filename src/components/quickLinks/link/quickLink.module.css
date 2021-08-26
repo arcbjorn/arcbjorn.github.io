@@ -1,3 +1,13 @@
 .quickLink {
-    @apply py-2 px-4 my-2 mx-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white border border-blue-500 hover:border-transparent rounded;
+    @apply py-2 px-4 my-2 mr-8 text-2xl border rounded;
+
+    color: var(--quickLinkButtonColor);
+    border-color: var(--quickLinkButtonBorderColor);
+    background-color: var(--quickLinkButtonBackgroundColor);
+}
+
+.quickLink:hover {
+    color: var(--quickLinkButtonHoverColor);
+    border-color: var(--quickLinkButtonBorderHoverColor);
+    background-color: var(--quickLinkButtonBackgroundHoverColor);
 }

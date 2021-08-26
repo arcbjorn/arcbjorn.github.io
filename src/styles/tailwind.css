@@ -22,9 +22,21 @@ body {
     
     /* Terminal */
     --userandhostColor: #709772;
-  
+    
+    /* Quick Links */
+    --quickLinkButtonColor: #000000;
+    --quickLinkButtonHoverColor: #ffffff;
+
+    --quickLinkButtonBackgroundColor: transparent;
+    --quickLinkButtonBackgroundHoverColor: #000000;
+
+    --quickLinkButtonBorderColor: #000000;
+    --quickLinkButtonBorderHoverColor: transparent;
+
+
     background-color: var(--bg);
     color: var(--textTitle);
+    
     @apply font-ibm;
 }
   
@@ -40,4 +52,14 @@ body.dark {
 
     /* Terminal */
     --userandhostColor: #ffffff;
+
+    /* Quick Links */
+    --quickLinkButtonColor: #ffffff;
+    --quickLinkButtonHoverColor: #000000;
+
+    --quickLinkButtonBackgroundColor: transparent;
+    --quickLinkButtonBackgroundHoverColor: #ffffff;
+
+    --quickLinkButtonBorderColor: #ffffff;
+    --quickLinkButtonBorderHoverColor: transparent;
 }
