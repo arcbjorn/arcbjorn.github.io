@@ -16,6 +16,10 @@
     "type-check": "./node_modules/typescript/bin/tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
     "autoprefixer": "^10.3.1",
     "gatsby": "^3.11.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
