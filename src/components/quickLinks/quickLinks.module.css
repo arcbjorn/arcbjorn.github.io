@@ -28,7 +28,7 @@
 }
 
 .quickLinks {
-    @apply flex items-center justify-start flex-wrap py-7;
+    @apply flex items-center justify-start flex-wrap py-14;
     
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
