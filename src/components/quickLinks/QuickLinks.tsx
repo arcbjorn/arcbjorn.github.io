@@ -3,6 +3,9 @@ import React from "react";
 import * as css from "./quickLinks.module.css";
 import QuickLink from "./link/QuickLink";
 
+const mailTo =
+  "mailto:oleg.luganskiy@gmail.com?subject=Employment%20Offer&body=Hi%20Oleg";
+
 const links = [
   {
     title: "LinkedIn",
@@ -20,7 +23,7 @@ const links = [
   },
   {
     title: "Mail",
-    href: "https://www.facebook.com",
+    href: mailTo,
     iconPrefix: "far",
     icon: "envelope",
     iconTitle: "Email address of Arcbjorn",
@@ -34,7 +37,7 @@ const links = [
   // },
   {
     title: "Resume",
-    href: "https://www.facebook.com",
+    href: "OL.CV.pdf",
     iconPrefix: "far",
     icon: "file-alt",
     iconTitle: "Resume of Arcbjorn",
