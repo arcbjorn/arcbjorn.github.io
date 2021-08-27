@@ -32,8 +32,8 @@ export const Header: React.FunctionComponent = () => {
         >
           <Trans>library</Trans>
         </Link>
-        <ThemeToggler>{ThemeToggle}</ThemeToggler>
         <LanguageSwitch />
+        <ThemeToggler>{ThemeToggle}</ThemeToggler>
       </div>
     </div>
   );
