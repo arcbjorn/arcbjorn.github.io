@@ -3,5 +3,5 @@
 }
 
 .window {
-    @apply flex flex-col flex-wrap h-9/10 px-6;
+    @apply flex flex-col h-9/10 px-6;
 }
