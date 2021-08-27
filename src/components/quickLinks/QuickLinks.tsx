@@ -12,21 +12,21 @@ const links = [
     href: "https://www.linkedin.com",
     iconPrefix: "fab",
     icon: "linkedin",
-    iconTitle: "LinkedIn account of Oleg Luganskiy",
+    iconTitle: "LinkedIn account",
   },
   {
     title: "Github",
     href: "https://www.github.com/arcbjorn",
     iconPrefix: "fab",
     icon: "github",
-    iconTitle: "Github account of Arcbjorn",
+    iconTitle: "Github account",
   },
   {
     title: "Mail",
     href: mailTo,
     iconPrefix: "far",
     icon: "envelope",
-    iconTitle: "Email address of Arcbjorn",
+    iconTitle: "Email address",
   },
   // {
   //   title: "Telegram",
@@ -40,7 +40,7 @@ const links = [
     href: "OL.CV.pdf",
     iconPrefix: "far",
     icon: "file-alt",
-    iconTitle: "Resume of Arcbjorn",
+    iconTitle: "Resume",
   },
 ];
 
