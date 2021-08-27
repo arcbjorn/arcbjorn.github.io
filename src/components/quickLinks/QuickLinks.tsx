@@ -9,7 +9,7 @@ const mailTo =
 const links = [
   {
     title: "LinkedIn",
-    href: "https://www.linkedin.com",
+    href: "https://www.linkedin.com/in/oleg-luganskiy/",
     iconPrefix: "fab",
     icon: "linkedin",
     iconTitle: "LinkedIn account",
