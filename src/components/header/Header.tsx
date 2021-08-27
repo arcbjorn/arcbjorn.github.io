@@ -15,7 +15,7 @@ export const Header: React.FunctionComponent = () => {
   return (
     <div className={css.header}>
       <Link className={css.logo} to={Route.about}>
-        arc
+        arcbjorn
       </Link>
       <div className={css.nav}>
         <Link
