@@ -1,3 +1,6 @@
 {
-    "introduction": "Hi, I'm Oleg Luganskiy"
+    "greeting": "Hi, I'm Oleg Luganskiy",
+    "position": "Full Stack engineer",
+    "previously": "previously",
+    "extra": "fascinated by Web & AI development"
 }
