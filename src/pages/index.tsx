@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import { graphql } from "gatsby";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faLinkedin,
@@ -26,3 +28,17 @@ const IndexPage: React.FunctionComponent = () => {
 };
 
 export default IndexPage;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
