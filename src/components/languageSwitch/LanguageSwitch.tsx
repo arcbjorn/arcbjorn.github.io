@@ -1,20 +1,22 @@
 import React from "react";
-import { Link, useI18next } from "gatsby-plugin-react-i18next";
+import { useI18next } from "gatsby-plugin-react-i18next";
+import * as css from "./languageSwitch.module.css";
 
-const LanguageSwitch = () => {
-  const { languages, originalPath } = useI18next();
+const LanguageSwitch: React.FunctionComponent = () => {
+  const { languages, language, changeLanguage } = useI18next();
+
   return (
-    <main>
-      <ul className="languages">
-        {languages.map((lng) => (
-          <li key={lng}>
-            <Link to={originalPath} language={lng}>
-              {lng}
-            </Link>
-          </li>
+    <div>
+      <select
+        value={language}
+        className={css.languageSwitchSelect}
+        onChange={($event) => changeLanguage($event.target.value)}
+      >
+        {languages.map((lang) => (
+          <option key={lang}>{lang}</option>
         ))}
-      </ul>
-    </main>
+      </select>
+    </div>
   );
 };
 
