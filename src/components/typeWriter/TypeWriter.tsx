@@ -1,9 +1,10 @@
 import React, { ReactNode } from "react";
 import Typewriter from "typewriter-effect";
 import { connect } from "react-redux";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import { Action } from "state/types";
-import IntroText from "./introText";
+import getTerminalText from "./introText";
 
 import * as css from "./typeWriter.module.css";
 
@@ -19,13 +20,21 @@ const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
   toggleTypeWriter,
   toggleQuickLinksVisibility,
 }: TypeWriterProps) => {
+  const { t } = useTranslation();
+  const introText = getTerminalText({
+    greeting: t("greeting"),
+    position: t("position"),
+    previously: t("previously"),
+    extra: t("extra"),
+  });
+
   return (
     <div className={css.typeWriter}>
       <Typewriter
         onInit={(typewriter) => {
           if (startTypeWriter) {
             typewriter
-              .typeString(IntroText)
+              .typeString(introText)
               .callFunction(() => {
                 toggleTypeWriter();
                 toggleQuickLinksVisibility();
@@ -33,7 +42,7 @@ const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
               .start();
           } else {
             typewriter
-              .pasteString(IntroText, null)
+              .pasteString(introText, null)
               .callFunction(() => {
                 toggleQuickLinksVisibility();
               })

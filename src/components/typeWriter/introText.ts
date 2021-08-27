@@ -1,26 +1,46 @@
-const previousCompanyLink = "https://muffins.io/";
-const previousCompanyName = "Muffins";
-const previousCompany = `<a href=${previousCompanyLink} target="_blank" class="link">${previousCompanyName}</a>`;
-
-const companyLink = "https://www.fundraiseup.com/";
-const companyName = "FundraiseUp";
-const company = `<a href=${companyLink} target="_blank" class="link">${companyName}</a>`;
-
-const introtext = `<span>Hi, I'm Oleg Luganskiy<br /><br />
-    Full Stack Engineer @<b>${company}</b><br />
-    previously @<b>${previousCompany}</b><br /><br />
-    fascinated by Web & AI development</span>`;
-
-const info = {
-  userandhost: "<userandhost>arc@archlinux: </userandhost>",
-  infolocation: "<infolocation>~/</infolocation>",
-  profilecommand:
-    "<profilecommand>$ cat about_me.txt</profilecommand><br /><br />",
-  introtext: `<introtext>${introtext}</introtext>`,
+type translationForTerminalText = {
+  greeting: string;
+  position: string;
+  previously: string;
+  extra: string;
 };
 
-const completeInfo = Object.values(info).reduce((preVal, currVal) => {
-  return preVal + currVal;
-}, "");
+const defaultTranslation = {
+  greeting: "Hi, I'm Oleg Luganskiy",
+  position: "Full Stack engineer",
+  previously: "previously",
+  extra: "fascinated by Web & AI development",
+};
 
-export default completeInfo;
+const getTerminalText = (
+  t: translationForTerminalText = defaultTranslation
+): string => {
+  const previousCompanyLink = "https://muffins.io/";
+  const previousCompanyName = "Muffins";
+  const previousCompany = `<a href=${previousCompanyLink} target="_blank" class="link">${previousCompanyName}</a>`;
+
+  const companyLink = "https://www.fundraiseup.com/";
+  const companyName = "FundraiseUp";
+  const company = `<a href=${companyLink} target="_blank" class="link">${companyName}</a>`;
+
+  const introtext = `<span>${t.greeting}<br /><br />
+    ${t.position} @<b>${company}</b><br />
+    ${t.previously} @<b>${previousCompany}</b><br /><br />
+    ${t.extra}</span>`;
+
+  const info = {
+    userandhost: "<userandhost>arcbjorn@archlinux: </userandhost>",
+    infolocation: "<infolocation>~/</infolocation>",
+    profilecommand:
+      "<profilecommand>$ cat about_me.txt</profilecommand><br /><br />",
+    introtext: `<introtext>${introtext}</introtext>`,
+  };
+
+  const completeInfo = Object.values(info).reduce((preVal, currVal) => {
+    return preVal + currVal;
+  }, "");
+
+  return completeInfo;
+};
+
+export default getTerminalText;
