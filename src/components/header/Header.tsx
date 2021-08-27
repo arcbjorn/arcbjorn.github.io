@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, Trans } from "gatsby-plugin-react-i18next";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
 
 import ThemeToggle from "components/themeToggle/ThemeToggle";
 import * as css from "./header.module.css";
+import LanguageSwitch from "components/languageSwitch/LanguageSwitch";
 
 enum Route {
   about = "/",
@@ -22,16 +23,17 @@ export const Header: React.FunctionComponent = () => {
           activeClassName={css.activeRoute}
           to={Route.about}
         >
-          about
+          <Trans>about</Trans>
         </Link>
         <Link
           className={css.link}
           to={Route.library}
           activeClassName={css.activeRoute}
         >
-          library
+          <Trans>library</Trans>
         </Link>
         <ThemeToggler>{ThemeToggle}</ThemeToggler>
+        <LanguageSwitch />
       </div>
     </div>
   );
