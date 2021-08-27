@@ -1,7 +1,5 @@
-.languageSwitchSelect {
+.select {
     background-color: transparent;
+    @apply mx-4 cursor-pointer;
 
-    @apply border rounded p-1 mx-4;
-
-    border-color: var(--quickLinkButtonBorderColor);
 }
