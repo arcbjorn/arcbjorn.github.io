@@ -18,20 +18,22 @@ export const Header: React.FunctionComponent = () => {
         arcbjorn
       </Link>
       <div className={css.nav}>
-        <Link
-          className={css.link}
-          activeClassName={css.activeRoute}
-          to={Route.about}
-        >
-          <Trans>about</Trans>
-        </Link>
-        <Link
-          className={css.link}
-          to={Route.library}
-          activeClassName={css.activeRoute}
-        >
-          <Trans>library</Trans>
-        </Link>
+        <div className={css.links}>
+          <Link
+            className={css.link}
+            activeClassName={css.activeRoute}
+            to={Route.about}
+          >
+            <Trans>about</Trans>
+          </Link>
+          <Link
+            className={css.link}
+            to={Route.library}
+            activeClassName={css.activeRoute}
+          >
+            <Trans>library</Trans>
+          </Link>
+        </div>
         <LanguageSwitch />
         <ThemeToggler>{ThemeToggle}</ThemeToggler>
       </div>

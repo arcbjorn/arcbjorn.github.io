@@ -41,9 +41,13 @@
 }
 
 .logo {
-    @apply cursor-pointer font-bold text-xl px-7 pb-7;
+    @apply cursor-pointer font-bold text-xl px-7;
 }
 
 .nav {
     @apply flex items-center justify-around flex-wrap text-base sm:text-lg pl-2;
+}
+
+.links {
+    @apply hidden sm:flex;
 }

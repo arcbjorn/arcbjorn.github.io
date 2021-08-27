@@ -4,3 +4,4 @@ export const link: string;
 export const activeRoute: string;
 export const logo: string;
 export const nav: string;
+export const links: string;
