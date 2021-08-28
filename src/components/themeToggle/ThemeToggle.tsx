@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import * as css from "./themeToggle.module.css";
 
 type ThemeToggleProps = {
-  toggleTheme: (theme: string) => undefined;
+  toggleTheme: (theme: string) => void;
   theme: string;
   children?: ReactNode;
 };
