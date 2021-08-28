@@ -4,12 +4,13 @@ import { Helmet } from "react-helmet";
 
 import Layout from "layouts/Layout";
 import Books from "components/books/Books";
+import { EDocumentTitle } from "./types";
 
 const Library: React.FunctionComponent = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Oleg Luganskiy - Library</title>
+        <title>{EDocumentTitle.LIBRARY}</title>
       </Helmet>
       <Books />
     </Layout>

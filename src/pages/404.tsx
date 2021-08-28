@@ -4,12 +4,13 @@ import { Helmet } from "react-helmet";
 
 import Layout from "layouts/Layout";
 import NotFoundInfo from "components/notFoundInfo/NotFoundInfo";
+import { EDocumentTitle } from "./types";
 
 const NotFoundPage: React.FunctionComponent = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Oleg Luganskiy - Not found</title>
+        <title>{EDocumentTitle.NOT_FOUND_PAGE}</title>
       </Helmet>
       <NotFoundInfo />
     </Layout>

@@ -13,6 +13,7 @@ import { faEnvelope, faFileAlt } from "@fortawesome/free-regular-svg-icons";
 import "../styles/tailwind.css";
 import Layout from "layouts/Layout";
 import Terminal from "components/terminal/Terminal";
+import { EDocumentTitle } from "./types";
 
 library.add(faLinkedin, faGithub, faTelegramPlane, faEnvelope, faFileAlt);
 
@@ -20,7 +21,7 @@ const IndexPage: React.FunctionComponent = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Oleg Luganskiy</title>
+        <title>{EDocumentTitle.INDEX_PAGE}</title>
       </Helmet>
       <Terminal />
     </Layout>
