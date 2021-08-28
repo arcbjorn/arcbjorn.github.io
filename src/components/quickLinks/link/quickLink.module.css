@@ -15,3 +15,10 @@
     border-color: var(--quickLinkButtonBorderHoverColor);
     background-color: var(--quickLinkButtonBackgroundHoverColor);
 }
+
+.resumeLink {
+    color: var(--quickLinkButtonHoverColor);
+
+    background-color: #CA8010;
+    border-color: transparent;
+}

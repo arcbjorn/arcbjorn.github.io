@@ -2,9 +2,10 @@ import React, { ReactNode } from "react";
 import { withPrefix } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import * as css from "./quickLink.module.css";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 import { TQuickLink, EQuickLinkTitle } from "components/quickLinks/types";
+
+import * as css from "./quickLink.module.css";
 
 type QuickLinkProps = TQuickLink & {
   children?: ReactNode;
@@ -20,9 +21,11 @@ export const QuickLink: React.FunctionComponent<QuickLinkProps> = ({
   const processedHref =
     title === EQuickLinkTitle.RESUME ? withPrefix(href) : href;
 
+  const resumeLinkCss = title === EQuickLinkTitle.RESUME ? css.resumeLink : "";
+
   return (
     <a
-      className={css.quickLink}
+      className={`${css.quickLink} ${resumeLinkCss}`}
       href={processedHref}
       target="_blank"
       rel="noopener noreferrer"
