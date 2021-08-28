@@ -22,6 +22,7 @@ const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
 }: TypeWriterProps) => {
   const { t } = useTranslation();
   const introText = getTerminalText({
+    file: t(ETranslationKey.FILE),
     greeting: t(ETranslationKey.GREETING),
     position: t(ETranslationKey.POSITION),
     previously: t(ETranslationKey.PREVIOUSLY),

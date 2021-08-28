@@ -1,4 +1,5 @@
 type translationForTerminalText = {
+  file: string;
   greeting: string;
   position: string;
   previously: string;
@@ -6,6 +7,7 @@ type translationForTerminalText = {
 };
 
 const defaultTranslation = {
+  file: "about_me",
   greeting: "Hi, I'm Oleg Luganskiy",
   position: "Full Stack engineer",
   previously: "previously",
@@ -31,8 +33,7 @@ const getTerminalText = (
   const info = {
     userandhost: "<userandhost>arcbjorn@archlinux: </userandhost>",
     infolocation: "<infolocation>~/</infolocation>",
-    profilecommand:
-      "<profilecommand>$ cat about_me.txt</profilecommand><br /><br />",
+    profilecommand: `<profilecommand>$ cat ${t.file}.txt</profilecommand><br /><br />`,
     introtext: `<introtext>${introtext}</introtext>`,
   };
 

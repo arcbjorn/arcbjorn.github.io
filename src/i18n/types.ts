@@ -2,6 +2,7 @@ export enum ETranslationKey {
   ABOUT = "about",
   LIBRARY = "library",
 
+  FILE = "file",
   GREETING = "greeting",
   POSITION = "position",
   PREVIOUSLY = "previously",
