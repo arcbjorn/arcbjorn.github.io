@@ -6,7 +6,7 @@ const LanguageSwitch: React.FunctionComponent = () => {
   const { languages, language, changeLanguage } = useI18next();
 
   return (
-    <div className={css.languageSwitchSelect}>
+    <div>
       <select
         value={language}
         className={css.select}
