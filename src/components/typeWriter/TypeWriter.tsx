@@ -3,9 +3,9 @@ import Typewriter from "typewriter-effect";
 import { connect } from "react-redux";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
+import { ETranslationKey } from "i18n/types";
 import { Action } from "state/types";
 import getTerminalText from "./introText";
-
 import * as css from "./typeWriter.module.css";
 
 type TypeWriterProps = {
@@ -22,10 +22,10 @@ const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
 }: TypeWriterProps) => {
   const { t } = useTranslation();
   const introText = getTerminalText({
-    greeting: t("greeting"),
-    position: t("position"),
-    previously: t("previously"),
-    extra: t("extra"),
+    greeting: t(ETranslationKey.GREETING),
+    position: t(ETranslationKey.POSITION),
+    previously: t(ETranslationKey.PREVIOUSLY),
+    extra: t(ETranslationKey.EXTRA),
   });
 
   return (
