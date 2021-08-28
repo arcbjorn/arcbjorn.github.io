@@ -1,9 +1,13 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 
+const currentSiteUrl = process.env.DEVELOPMENT
+  ? "http://localhost:8000/"
+  : "https://arcbjorn.github.io";
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: currentSiteUrl,
     title: "Arcbjorn personal website",
   },
   plugins: [
@@ -56,7 +60,7 @@ module.exports = {
         languages: [`en`, `ru`, `de`, `se`],
         defaultLanguage: `en`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `http://localhost:8000/`,
+        siteUrl: currentSiteUrl,
         // you can pass any i18next options
         // pass following options to allow message content as a key
         i18nextOptions: {
