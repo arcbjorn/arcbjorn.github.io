@@ -39,12 +39,13 @@ module.exports = {
         components: path.join(__dirname, "src/components"),
         layouts: path.join(__dirname, "src/layouts"),
         state: path.join(__dirname, "src/state"),
+        i18n: path.join(__dirname, "src/i18n"),
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/locales`,
+        path: `${__dirname}/src/i18n/locales`,
         name: `locale`,
       },
     },
