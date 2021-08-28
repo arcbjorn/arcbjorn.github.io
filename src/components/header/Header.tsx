@@ -8,6 +8,8 @@ import LanguageSwitch from "components/languageSwitch/LanguageSwitch";
 
 import * as css from "./header.module.css";
 
+const logoText = "arcbjorn";
+
 enum Route {
   about = "/",
   library = "/library",
@@ -17,7 +19,7 @@ export const Header: React.FunctionComponent = () => {
   return (
     <div className={css.header}>
       <Link className={css.logo} to={Route.about}>
-        arcbjorn
+        {logoText}
       </Link>
       <div className={css.nav}>
         <div className={css.links}>
