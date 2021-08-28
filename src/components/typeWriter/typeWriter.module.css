@@ -7,3 +7,7 @@
 userandhost {
     color: var(--userandhostColor);
 }
+
+infolocation {
+    color: var(--infolocationColor);
+}

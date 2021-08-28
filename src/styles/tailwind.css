@@ -21,7 +21,8 @@ body {
     --hr: hsla(0, 20%, 1%, 0.2);
     
     /* Terminal */
-    --userandhostColor: #709772;
+    --userandhostColor: #000000;
+    --infolocationColor: #000000;
     
     /* Quick Links */
     --quickLinkButtonColor: #000000;
@@ -51,7 +52,8 @@ body.dark {
     --hr: hsla(0, 0%, 100%, 0.2);
 
     /* Terminal */
-    --userandhostColor: #ffffff;
+    --userandhostColor: #20DF98;
+    --infolocationColor: #CA8010;
 
     /* Quick Links */
     --quickLinkButtonColor: #ffffff;
