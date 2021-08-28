@@ -1,17 +1,15 @@
-import React, { ReactNode } from "react";
-import * as css from "./themeToggle.module.css";
+import React from "react";
 
-type ThemeToggleProps = {
-  toggleTheme: (theme: string) => void;
-  theme: string;
-  children?: ReactNode;
-};
+import { ThemeToggleProps, EColourMode } from "./types";
+
+import * as css from "./themeToggle.module.css";
 
 const ThemeToggle: React.FunctionComponent<ThemeToggleProps> = ({
   theme,
   toggleTheme,
 }: ThemeToggleProps) => {
-  const isDarkMode = theme === "dark";
+  const isDarkMode = theme === EColourMode.DARK;
+
   if (theme == null) {
     return null;
   }
@@ -20,7 +18,9 @@ const ThemeToggle: React.FunctionComponent<ThemeToggleProps> = ({
     <button
       aria-label="theme-switch"
       className={css.toggle}
-      onClick={() => toggleTheme(isDarkMode ? "light" : "dark")}
+      onClick={() =>
+        toggleTheme(isDarkMode ? EColourMode.LIGHT : EColourMode.DARK)
+      }
     >
       {isDarkMode ? (
         <svg
