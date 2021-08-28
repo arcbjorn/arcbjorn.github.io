@@ -1,16 +1,13 @@
 import React, { ReactNode } from "react";
+import { withPrefix } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import * as css from "./quickLink.module.css";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
+import { TQuickLink, EQuickLinkTitle } from "components/quickLinks/types";
 
-type QuickLinkProps = {
+type QuickLinkProps = TQuickLink & {
   children?: ReactNode;
-  title: string;
-  href: string;
-  icon: string;
-  iconPrefix: string;
-  iconTitle: string;
 };
 
 export const QuickLink: React.FunctionComponent<QuickLinkProps> = ({
@@ -20,10 +17,13 @@ export const QuickLink: React.FunctionComponent<QuickLinkProps> = ({
   iconPrefix,
   iconTitle,
 }) => {
+  const processedHref =
+    title === EQuickLinkTitle.RESUME ? withPrefix(href) : href;
+
   return (
     <a
       className={css.quickLink}
-      href={href}
+      href={processedHref}
       target="_blank"
       rel="noopener noreferrer"
     >
