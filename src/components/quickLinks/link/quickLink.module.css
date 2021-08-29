@@ -17,8 +17,9 @@
 }
 
 .cvLink {
-    color: var(--quickLinkButtonHoverColor);
+    @apply pr-5;
 
+    color: var(--quickLinkButtonHoverColor);
     background-color: #CA8010;
     border-color: transparent;
 }
