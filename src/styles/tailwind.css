@@ -32,6 +32,8 @@ body {
     --quickLinkButtonBorderColor: #000000;
     --quickLinkButtonBorderHoverColor: transparent;
 
+    /* Extra Page */
+    --extraPageBorderColor: #000000;
 
     background-color: var(--bg);
     color: var(--textTitle);
@@ -63,4 +65,7 @@ body.dark {
 
     --quickLinkButtonBorderColor: #ffffff;
     --quickLinkButtonBorderHoverColor: transparent;
+
+    /* Extra Page */
+    --extraPageBorderColor: #ffffff;
 }
