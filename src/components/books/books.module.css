@@ -1,5 +1,5 @@
 .books {
-    @apply flex flex-col h-5/6 border ml-7;
+    @apply flex flex-col h-full border ml-7;
 
     border-color: var(--extraPageBorderColor);
 }

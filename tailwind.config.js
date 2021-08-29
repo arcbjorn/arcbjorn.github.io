@@ -25,6 +25,7 @@ module.exports = {
         ibm: ["IBM Plex Mono", "font-mono"],
       },
       height: {
+        "1/10": "10%",
         "9/10": "90%",
       },
       // ...fadeInAnimation,
