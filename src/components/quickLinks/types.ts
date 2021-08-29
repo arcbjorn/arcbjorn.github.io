@@ -2,13 +2,18 @@ export enum EQuickLinkTitle {
   LINKEDIN = "LinkedIn",
   GITHUB = "Github",
   MAIL = "Mail",
-  RESUME = "Resume",
+  CV = "cv",
+}
+
+export enum EIconLibrary {
+  BRANDS = "fab",
+  MATERIAL = "material",
 }
 
 export type TQuickLink = {
   title: EQuickLinkTitle;
   href: string;
   icon: string;
-  iconPrefix: string;
+  iconPrefix: EIconLibrary;
   iconTitle: string;
 };

@@ -72,5 +72,11 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: ["material icons", "IBM+Plex+Mono:400,500,600,700"],
+      },
+    },
   ],
 };
