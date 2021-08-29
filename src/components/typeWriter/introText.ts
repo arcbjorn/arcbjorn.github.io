@@ -3,7 +3,7 @@ type translationForTerminalText = {
   greeting: string;
   position: string;
   previously: string;
-  extra: string;
+  interests: string;
 };
 
 const defaultTranslation = {
@@ -11,7 +11,7 @@ const defaultTranslation = {
   greeting: "Hi, I'm Oleg Luganskiy",
   position: "Full Stack engineer",
   previously: "previously",
-  extra: "fascinated by Web & AI development",
+  interests: "fascinated by Web & AI development",
 };
 
 const getTerminalText = (
@@ -28,7 +28,7 @@ const getTerminalText = (
   const introtext = `<span>${t.greeting}<br /><br />
     ${t.position} @<b>${company}</b><br />
     ${t.previously} @<b>${previousCompany}</b><br /><br />
-    ${t.extra}</span>`;
+    ${t.interests}</span>`;
 
   const info = {
     userandhost: "<userandhost>arcbjorn@archlinux: </userandhost>",
