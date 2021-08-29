@@ -26,8 +26,8 @@ const getTerminalText = (
   const company = `<a href=${companyLink} target="_blank" class="link">${companyName}</a>`;
 
   const introtext = `<span>${t.greeting}<br /><br />
-    ${t.position} @<b>${company}</b><br />
-    ${t.previously} @<b>${previousCompany}</b><br /><br />
+    ${t.position} @<company>${company}</company><br />
+    ${t.previously} @<company>${previousCompany}</company><br /><br />
     ${t.interests}</span>`;
 
   const info = {

@@ -2,7 +2,9 @@
     @apply text-lg sm:text-3xl;
 }
 
-/* TODO: Other colours for divs in IntroText */
+company {
+    color: var(--companyColor);
+}
 
 userandhost {
     color: var(--userandhostColor);
