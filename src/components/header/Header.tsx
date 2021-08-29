@@ -12,7 +12,7 @@ const logoText = "arcbjorn";
 
 enum Route {
   about = "/",
-  library = "/library",
+  extra = "/extra",
 }
 
 export const Header: React.FunctionComponent = () => {
@@ -32,10 +32,10 @@ export const Header: React.FunctionComponent = () => {
           </Link>
           <Link
             className={css.link}
-            to={Route.library}
+            to={Route.extra}
             activeClassName={css.activeRoute}
           >
-            <Trans>{ETranslationKey.LIBRARY}</Trans>
+            <Trans>{ETranslationKey.EXTRA}</Trans>
           </Link>
         </div>
         <LanguageSwitch />

@@ -6,18 +6,18 @@ import Layout from "layouts/Layout";
 import Books from "components/books/Books";
 import { EDocumentTitle } from "./types";
 
-const Library: React.FunctionComponent = () => {
+const Extra: React.FunctionComponent = () => {
   return (
     <Layout>
       <Helmet>
-        <title>{EDocumentTitle.LIBRARY}</title>
+        <title>{EDocumentTitle.EXTRA}</title>
       </Helmet>
       <Books />
     </Layout>
   );
 };
 
-export default Library;
+export default Extra;
 
 export const query = graphql`
   query ($language: String!) {
