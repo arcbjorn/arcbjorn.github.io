@@ -7,6 +7,7 @@ export enum ETranslationKey {
   POSITION = "position",
   PREVIOUSLY = "previously",
   INTERESTS = "interests",
+  CV = "cv",
 
   BOOKS_TITLE = "Books that I like",
 
