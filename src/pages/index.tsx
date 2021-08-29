@@ -11,9 +11,10 @@ import {
 import { faEnvelope, faFileAlt } from "@fortawesome/free-regular-svg-icons";
 
 import "../styles/tailwind.css";
+import { EDocumentTitle } from "./types";
+
 import Layout from "layouts/Layout";
 import Terminal from "components/terminal/Terminal";
-import { EDocumentTitle } from "./types";
 
 library.add(faLinkedin, faGithub, faTelegramPlane, faEnvelope, faFileAlt);
 
