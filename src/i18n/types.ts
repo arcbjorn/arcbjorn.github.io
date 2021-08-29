@@ -1,12 +1,12 @@
 export enum ETranslationKey {
   ABOUT = "about",
-  LIBRARY = "library",
+  EXTRA = "extra",
 
   FILE = "file",
   GREETING = "greeting",
   POSITION = "position",
   PREVIOUSLY = "previously",
-  EXTRA = "extra",
+  INTERESTS = "interests",
 
   BOOKS_TITLE = "Books that I like",
 

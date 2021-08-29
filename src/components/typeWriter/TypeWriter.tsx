@@ -26,7 +26,7 @@ const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
     greeting: t(ETranslationKey.GREETING),
     position: t(ETranslationKey.POSITION),
     previously: t(ETranslationKey.PREVIOUSLY),
-    extra: t(ETranslationKey.EXTRA),
+    interests: t(ETranslationKey.INTERESTS),
   });
 
   return (
