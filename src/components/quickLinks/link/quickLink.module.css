@@ -16,6 +16,12 @@
     background-color: var(--quickLinkButtonBackgroundHoverColor);
 }
 
+.quickLink:active {
+    color: var(--quickLinkButtonHoverColor);
+    border-color: var(--quickLinkButtonBorderHoverColor);
+    background-color: var(--quickLinkButtonBackgroundHoverColor);
+}
+
 .cvLink {
     @apply pr-5;
 
