@@ -1,9 +1,21 @@
 import * as React from "react";
 
+import Books from "components/books/Books";
+import PlatformLinks from "components/platformLinks/PlatformLinks";
+
 import * as css from "./extraInfo.module.css";
 
-const ExtraInfoPage: React.FunctionComponent = () => {
-  return <main className={css.extraInfoPage}>hello</main>;
+const ExtraInfo: React.FunctionComponent = () => {
+  return (
+    <div className={css.extraInfo}>
+      <div className="md:w-5/12">
+        <PlatformLinks />
+      </div>
+      <div className="md:w-7/12">
+        <Books />
+      </div>
+    </div>
+  );
 };
 
-export default ExtraInfoPage;
+export default ExtraInfo;

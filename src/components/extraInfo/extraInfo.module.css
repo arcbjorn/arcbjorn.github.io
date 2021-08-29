@@ -1,3 +1,13 @@
-.extraInfoPage {
-    @apply h-screen;
+.extraInfo {
+    @apply flex flex-row flex-wrap-reverse h-full;
 }
+
+.extraSectionTitle {
+    @apply -mt-3 ml-5 w-max px-2;
+
+    background-color: var(--bg);
+}
+
+/* .window {
+    @apply flex flex-col h-9/10 px-6;
+} */

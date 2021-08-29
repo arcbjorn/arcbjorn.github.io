@@ -2,22 +2,22 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 
-import Layout from "layouts/Layout";
-import Books from "components/books/Books";
 import { EDocumentTitle } from "./types";
+import Layout from "layouts/Layout";
+import ExtraInfo from "components/extraInfo/ExtraInfo";
 
-const Extra: React.FunctionComponent = () => {
+const ExtraPage: React.FunctionComponent = () => {
   return (
     <Layout>
       <Helmet>
         <title>{EDocumentTitle.EXTRA}</title>
       </Helmet>
-      <Books />
+      <ExtraInfo />
     </Layout>
   );
 };
 
-export default Extra;
+export default ExtraPage;
 
 export const query = graphql`
   query ($language: String!) {
