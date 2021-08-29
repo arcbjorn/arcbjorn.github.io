@@ -1,0 +1,9 @@
+.platformLinks {
+    @apply flex flex-col h-5/6 border ml-7;
+
+    border-color: var(--extraPageBorderColor);
+}
+
+/* .window {
+    @apply flex flex-col h-9/10 px-6;
+} */
