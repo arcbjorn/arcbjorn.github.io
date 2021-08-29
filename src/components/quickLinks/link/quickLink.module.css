@@ -16,7 +16,7 @@
     background-color: var(--quickLinkButtonBackgroundHoverColor);
 }
 
-.resumeLink {
+.cvLink {
     color: var(--quickLinkButtonHoverColor);
 
     background-color: #CA8010;

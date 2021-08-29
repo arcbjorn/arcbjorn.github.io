@@ -3,9 +3,15 @@ import { withPrefix } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
-import { TQuickLink, EQuickLinkTitle } from "components/quickLinks/types";
+import {
+  TQuickLink,
+  EQuickLinkTitle,
+  EIconLibrary,
+} from "components/quickLinks/types";
 
 import * as css from "./quickLink.module.css";
+import { useTranslation } from "react-i18next";
+import { ETranslationKey } from "i18n/types";
 
 type QuickLinkProps = TQuickLink & {
   children?: ReactNode;
@@ -18,24 +24,34 @@ export const QuickLink: React.FunctionComponent<QuickLinkProps> = ({
   iconPrefix,
   iconTitle,
 }) => {
-  const processedHref =
-    title === EQuickLinkTitle.RESUME ? withPrefix(href) : href;
+  const { t } = useTranslation();
 
-  const resumeLinkCss = title === EQuickLinkTitle.RESUME ? css.resumeLink : "";
+  const processedHref = title === EQuickLinkTitle.CV ? withPrefix(href) : href;
+
+  const cvLinkCss = title === EQuickLinkTitle.CV ? css.cvLink : "";
+
+  const isMaterialIcon = iconPrefix === EIconLibrary.MATERIAL;
+
+  const translatedTitle =
+    title === EQuickLinkTitle.CV ? t(ETranslationKey.CV) : title;
 
   return (
     <a
-      className={`${css.quickLink} ${resumeLinkCss}`}
+      className={`${css.quickLink} ${cvLinkCss}`}
       href={processedHref}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <FontAwesomeIcon
-        className={css.icon}
-        icon={[iconPrefix as IconPrefix, icon as IconName]}
-        title={iconTitle}
-      />
-      {title}
+      {isMaterialIcon ? (
+        <span className={`${css.icon} material-icons`}>{icon}</span>
+      ) : (
+        <FontAwesomeIcon
+          className={css.icon}
+          icon={[iconPrefix as IconPrefix, icon as IconName]}
+          title={iconTitle}
+        />
+      )}
+      {translatedTitle}
     </a>
   );
 };
