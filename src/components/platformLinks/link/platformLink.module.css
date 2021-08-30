@@ -1,5 +1,17 @@
 .platformLink {
-    @apply flex flex-col h-full border ml-7;
+    @apply p-5 flex flex-col gap-3;
+    color: var(--platformLinkColor);
+}
 
-    border-color: var(--extraPageBorderColor);
+.platformLink:hover {
+    color: var(--platformLinkHoverColor);
+    background-color: var(--platformLinkBackgroundHoverColor);
+}
+
+.platformLinkTitle {
+    @apply flex items-center text-base md:text-lg;
+}
+
+.platformLinkIcon {
+    @apply text-2xl mr-2;
 }

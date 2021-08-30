@@ -11,11 +11,11 @@ import { extraSectionTitle } from "components/extraInfo/extraInfo.module.css";
 
 const PlatformLinks: React.FunctionComponent = () => {
   return (
-    <div className={css.platformLinks}>
+    <div className={css.platformLinksSection}>
       <div className={extraSectionTitle}>
         <Trans>{ETranslationKey.PLATFORMS_TITLE}</Trans>
       </div>
-      <div>
+      <div className={css.platformLinks}>
         {links.map(
           ({ title, href, icon, iconPrefix, iconTitle, description }, i) => (
             <PlatformLink

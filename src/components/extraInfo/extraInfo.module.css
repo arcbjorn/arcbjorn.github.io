@@ -3,7 +3,7 @@
 }
 
 .extraSectionTitle {
-    @apply -mt-3 ml-5 w-max px-2;
+    @apply -mt-3 ml-5 w-max px-2 pb-2;
 
     background-color: var(--bg);
 }

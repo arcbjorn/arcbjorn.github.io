@@ -35,6 +35,11 @@ body {
     /* Extra Page */
     --extraPageBorderColor: #000000;
 
+    /* Platform Links */
+    --platformLinkColor: #008080;
+    --platformLinkHoverColor: #F9F5EF;
+    --platformLinkBackgroundHoverColor: #F15025;
+
     background-color: var(--bg);
     color: var(--textTitle);
     
@@ -68,4 +73,9 @@ body.dark {
 
     /* Extra Page */
     --extraPageBorderColor: #ffffff;
+
+    /* Platform Links */
+    --platformLinkColor: #01DAE0;
+    --platformLinkHoverColor: #1B1D1E;
+    --platformLinkBackgroundHoverColor: #DDDDDD;
 }
