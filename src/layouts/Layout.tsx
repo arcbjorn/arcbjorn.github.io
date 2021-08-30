@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import Header from "components/header/Header";
+import { isExtraInfoPage } from "./helpers";
 
 import * as css from "./layout.module.css";
 
@@ -27,24 +28,12 @@ library.add(
   faGalacticRepublic
 );
 
-type customNode = {
-  type?: {
-    name: string;
-  };
-};
-
 export const Layout: React.FunctionComponent = ({ children }) => {
-  let headerHeightClass = "h-1/6";
+  const headerHeightClass = isExtraInfoPage(children as ReactNodeArray)
+    ? "h-1/10"
+    : "h-1/6";
 
-  if ((children as ReactNodeArray).length) {
-    if (
-      (children as ReactNodeArray).some(
-        (node) => (node as customNode).type?.name === "ExtraInfo"
-      )
-    ) {
-      headerHeightClass = "h-1/10";
-    }
-  }
+  isExtraInfoPage;
 
   return (
     <div className={css.layout}>
