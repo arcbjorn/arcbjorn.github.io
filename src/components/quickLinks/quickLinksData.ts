@@ -1,4 +1,5 @@
-import { TQuickLink, EQuickLinkTitle, EIconLibrary } from "./types";
+import { EIconLibrary } from "pages/types";
+import { TQuickLink, EQuickLinkTitle } from "./types";
 
 const mailTo =
   "mailto:oleg.luganskiy@gmail.com?subject=Employment%20Offer&body=Hi%20Oleg";

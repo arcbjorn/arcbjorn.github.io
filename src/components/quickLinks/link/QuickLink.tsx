@@ -3,11 +3,8 @@ import { withPrefix } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
-import {
-  TQuickLink,
-  EQuickLinkTitle,
-  EIconLibrary,
-} from "components/quickLinks/types";
+import { EIconLibrary } from "pages/types";
+import { TQuickLink, EQuickLinkTitle } from "components/quickLinks/types";
 
 import * as css from "./quickLink.module.css";
 import { useTranslation } from "react-i18next";

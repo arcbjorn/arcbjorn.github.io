@@ -1,13 +1,10 @@
+import { EIconLibrary } from "pages/types";
+
 export enum EQuickLinkTitle {
   LINKEDIN = "LinkedIn",
   GITHUB = "Github",
   MAIL = "Mail",
   CV = "cv",
-}
-
-export enum EIconLibrary {
-  BRANDS = "fab",
-  MATERIAL = "material",
 }
 
 export type TQuickLink = {
