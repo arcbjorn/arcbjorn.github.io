@@ -5,13 +5,27 @@ import {
   faLinkedin,
   faGithub,
   faTelegramPlane,
+  faCodepen,
+  faHackerrank,
+  faDev,
+  faFreeCodeCamp,
+  faGalacticRepublic,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Header from "components/header/Header";
 
 import * as css from "./layout.module.css";
 
-library.add(faLinkedin, faGithub, faTelegramPlane);
+library.add(
+  faLinkedin,
+  faGithub,
+  faTelegramPlane,
+  faCodepen,
+  faHackerrank,
+  faDev,
+  faFreeCodeCamp,
+  faGalacticRepublic
+);
 
 type customNode = {
   type?: {
