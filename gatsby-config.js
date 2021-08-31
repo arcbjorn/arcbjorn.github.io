@@ -78,5 +78,13 @@ module.exports = {
         fonts: ["material icons", "IBM+Plex+Mono:400,500,600,700"],
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/,
+        },
+      },
+    },
   ],
 };
