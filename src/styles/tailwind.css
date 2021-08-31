@@ -22,7 +22,7 @@ body {
     
     /* Quick Links */
     --quickLinkButtonColor: var(--textColor);
-    --quickLinkButtonHoverColor: var(--textColor);
+    --quickLinkButtonHoverColor: var(--bg);
 
     --quickLinkButtonBackgroundColor: transparent;
     --quickLinkButtonBackgroundHoverColor: var(--textColor);
