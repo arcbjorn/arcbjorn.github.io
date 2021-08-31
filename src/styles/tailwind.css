@@ -10,30 +10,28 @@ body,
 }
 
 body {
-    --bg: #fff;
-    --lightBg: #f5f5f5;
-    --textNormal: #181818;
-    --textTitle: #181818;
-    --textLink: #fd5e53;
-    --hr: hsla(0, 20%, 1%, 0.2);
+    --bg: #F9F5EF;
+    --textColor: #1B1D1E;
+    --focusColor: #F15025;
+    --titleColor: #008080;
     
     /* Terminal */
-    --userandhostColor: #000000;
-    --infolocationColor: #000000;
-    --companyColor: #000000;
+    --userandhostColor: var(--titleColor);
+    --infolocationColor: var(--focusColor);
+    --companyColor: var(--focusColor);
     
     /* Quick Links */
-    --quickLinkButtonColor: #000000;
-    --quickLinkButtonHoverColor: #ffffff;
+    --quickLinkButtonColor: var(--textColor);
+    --quickLinkButtonHoverColor: var(--textColor);
 
     --quickLinkButtonBackgroundColor: transparent;
-    --quickLinkButtonBackgroundHoverColor: #000000;
+    --quickLinkButtonBackgroundHoverColor: var(--textColor);
 
-    --quickLinkButtonBorderColor: #000000;
+    --quickLinkButtonBorderColor: var(--textColor);
     --quickLinkButtonBorderHoverColor: transparent;
 
     /* Extra Page */
-    --extraPageBorderColor: #000000;
+    --extraPageBorderColor: var(--textColor);
 
     /* Platform Links */
     --platformLinkColor: #008080;
@@ -41,7 +39,7 @@ body {
     --platformLinkBackgroundHoverColor: #F15025;
 
     background-color: var(--bg);
-    color: var(--textTitle);
+    color: var(--textColor);
     
     @apply font-ibm;
 }
@@ -49,33 +47,31 @@ body {
 body.dark {
     -webkit-font-smoothing: antialiased;
 
-    --bg: #1e1e1e;
-    --lightBg: #0f0f0f;
-    --textNormal: #e0e0e0;
-    --textTitle: #fff;
-    --textLink: #ff6363;
-    --hr: hsla(0, 0%, 100%, 0.2);
+    --bg: #1B1D1E;
+    --textColor: #DDDDDD;
+    --focusColor: #F58A07;
+    --titleColor: #01DAE0;
 
     /* Terminal */
-    --userandhostColor: #20DF98;
-    --infolocationColor: #CA8010;
-    --companyColor: #CA8010;
+    --userandhostColor: var(--titleColor);
+    --infolocationColor: var(--focusColor);
+    --companyColor: var(--focusColor);
 
     /* Quick Links */
-    --quickLinkButtonColor: #ffffff;
-    --quickLinkButtonHoverColor: #000000;
+    --quickLinkButtonColor: var(--textColor);
+    --quickLinkButtonHoverColor: var(--bg);
 
     --quickLinkButtonBackgroundColor: transparent;
-    --quickLinkButtonBackgroundHoverColor: #ffffff;
+    --quickLinkButtonBackgroundHoverColor: var(--textColor);
 
-    --quickLinkButtonBorderColor: #ffffff;
+    --quickLinkButtonBorderColor: var(--textColor);
     --quickLinkButtonBorderHoverColor: transparent;
 
     /* Extra Page */
-    --extraPageBorderColor: #ffffff;
+    --extraPageBorderColor: var(--textColor);
 
     /* Platform Links */
-    --platformLinkColor: #01DAE0;
-    --platformLinkHoverColor: #1B1D1E;
-    --platformLinkBackgroundHoverColor: #DDDDDD;
+    --platformLinkColor: var(--titleColor);
+    --platformLinkHoverColor: var(--bg);
+    --platformLinkBackgroundHoverColor: var(--textColor);
 }

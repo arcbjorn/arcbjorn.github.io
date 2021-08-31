@@ -7,4 +7,5 @@ export enum EDocumentTitle {
 export enum EIconLibrary {
   BRANDS = "fab",
   MATERIAL = "material",
+  CUSTOM = "custom",
 }

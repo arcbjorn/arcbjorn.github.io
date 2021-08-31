@@ -8,10 +8,10 @@ import * as css from "./extraInfo.module.css";
 const ExtraInfo: React.FunctionComponent = () => {
   return (
     <div className={css.extraInfo}>
-      <div className="md:w-5/12">
+      <div className={`${css.extraSection} w-full sm:w-5/12`}>
         <PlatformLinks />
       </div>
-      <div className="md:w-7/12">
+      <div className={`${css.extraSection} w-full sm:w-7/12`}>
         <Books />
       </div>
     </div>

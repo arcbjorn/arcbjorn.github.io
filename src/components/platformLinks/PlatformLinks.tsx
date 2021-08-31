@@ -7,14 +7,18 @@ import PlatformLink from "./link/PlatformLink";
 import links from "./platformLinksData";
 
 import * as css from "./platformLinks.module.css";
-import { extraSectionTitle } from "components/extraInfo/extraInfo.module.css";
+import {
+  extraInnerSection,
+  extraSectionTitle,
+  noScrollbar,
+} from "components/extraInfo/extraInfo.module.css";
 
 const PlatformLinks: React.FunctionComponent = () => {
   return (
-    <div className={css.platformLinksSection}>
-      <div className={extraSectionTitle}>
+    <fieldset className={`${extraInnerSection} ${noScrollbar}`}>
+      <legend className={extraSectionTitle}>
         <Trans>{ETranslationKey.PLATFORMS_TITLE}</Trans>
-      </div>
+      </legend>
       <div className={css.platformLinks}>
         {links.map(
           ({ title, href, icon, iconPrefix, iconTitle, description }, i) => (
@@ -30,7 +34,7 @@ const PlatformLinks: React.FunctionComponent = () => {
           )
         )}
       </div>
-    </div>
+    </fieldset>
   );
 };
 

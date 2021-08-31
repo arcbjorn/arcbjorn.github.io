@@ -26,6 +26,6 @@
     @apply pr-5;
 
     color: var(--quickLinkButtonHoverColor);
-    background-color: #CA8010;
+    background-color: var(--focusColor);
     border-color: transparent;
 }
