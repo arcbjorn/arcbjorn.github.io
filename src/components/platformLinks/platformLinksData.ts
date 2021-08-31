@@ -1,5 +1,9 @@
 import { EIconLibrary } from "pages/types";
-import { TPlatformLink, EPlatformLinkTitle } from "./types";
+import {
+  TPlatformLink,
+  EPlatformLinkTitle,
+  EPlatformLinkDescriptionTranslationKey,
+} from "./types";
 
 const links: TPlatformLink[] = [
   {
@@ -7,48 +11,48 @@ const links: TPlatformLink[] = [
     href: "https://www.linkedin.com/in/oleg-luganskiy/",
     iconPrefix: EIconLibrary.BRANDS,
     icon: "codepen",
-    iconTitle: "test",
-    description: "test",
-  },
-  {
-    title: EPlatformLinkTitle.GLITCH,
-    href: "https://www.linkedin.com/in/oleg-luganskiy/",
-    iconPrefix: EIconLibrary.BRANDS,
-    icon: "glitch",
-    iconTitle: "test",
-    description: "test",
+    iconTitle: "Codepen",
+    description: EPlatformLinkDescriptionTranslationKey.CODEPEN,
   },
   {
     title: EPlatformLinkTitle.HACKER_RANK,
     href: "https://www.linkedin.com/in/oleg-luganskiy/",
     iconPrefix: EIconLibrary.BRANDS,
     icon: "hackerrank",
-    iconTitle: "test",
-    description: "test",
+    iconTitle: "Hacker Rank",
+    description: EPlatformLinkDescriptionTranslationKey.HACKER_RANK,
   },
   {
     title: EPlatformLinkTitle.DEV_TO,
     href: "https://www.linkedin.com/in/oleg-luganskiy/",
     iconPrefix: EIconLibrary.BRANDS,
     icon: "dev",
-    iconTitle: "test",
-    description: "test",
+    iconTitle: "Dev.to",
+    description: EPlatformLinkDescriptionTranslationKey.DEV_TO,
   },
   {
     title: EPlatformLinkTitle.FREE_CODE_CAMP,
     href: "https://www.linkedin.com/in/oleg-luganskiy/",
     iconPrefix: EIconLibrary.BRANDS,
     icon: "free-code-camp",
-    iconTitle: "test",
-    description: "test",
+    iconTitle: "freeCodeCamp",
+    description: EPlatformLinkDescriptionTranslationKey.FREE_CODE_CAMP,
+  },
+  {
+    title: EPlatformLinkTitle.GLITCH,
+    href: "https://www.linkedin.com/in/oleg-luganskiy/",
+    iconPrefix: EIconLibrary.CUSTOM,
+    icon: "glitch",
+    iconTitle: "Glitch",
+    description: EPlatformLinkDescriptionTranslationKey.GLITCH,
   },
   {
     title: EPlatformLinkTitle.MY_TRAVEL_MAP,
     href: "https://www.github.com/arcbjorn",
     iconPrefix: EIconLibrary.BRANDS,
     icon: "galactic-republic",
-    iconTitle: "test",
-    description: "test",
+    iconTitle: "My travel map",
+    description: EPlatformLinkDescriptionTranslationKey.MY_TRAVEL_MAP,
   },
 ];
 
