@@ -27,5 +27,5 @@
 }
 
 .platformLinkDescription {
-    @apply hidden sm:block;
+    @apply hidden lg:block;
 }
