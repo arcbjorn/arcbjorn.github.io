@@ -34,9 +34,13 @@ body {
     --extraPageBorderColor: var(--color);
 
     /* Platform Links */
-    --platformLinkColor: #008080;
-    --platformLinkHoverColor: #F9F5EF;
-    --platformLinkBackgroundHoverColor: #F15025;
+    --platformLinkColor: var(--titleColor);
+    --platformLinkHoverColor: var(--bg);
+    --platformLinkBackgroundHoverColor: var(--focusColor);
+
+    /* Books */
+    --bookEntryHoverColor: var(--bg);
+    --bookEntryBackgroundHoverColor: var(--focusColor);
 
     background-color: var(--bg);
     color: var(--color);
@@ -52,26 +56,8 @@ body.dark {
     --focusColor: #F58A07;
     --titleColor: #01DAE0;
 
-    /* Terminal */
-    --userandhostColor: var(--titleColor);
-    --infolocationColor: var(--focusColor);
-    --companyColor: var(--focusColor);
-
-    /* Quick Links */
-    --quickLinkButtonColor: var(--color);
-    --quickLinkButtonHoverColor: var(--bg);
-
-    --quickLinkButtonBackgroundColor: transparent;
-    --quickLinkButtonBackgroundHoverColor: var(--color);
-
-    --quickLinkButtonBorderColor: var(--color);
-    --quickLinkButtonBorderHoverColor: transparent;
-
-    /* Extra Page */
-    --extraPageBorderColor: var(--color);
-
-    /* Platform Links */
-    --platformLinkColor: var(--titleColor);
-    --platformLinkHoverColor: var(--bg);
     --platformLinkBackgroundHoverColor: var(--color);
+
+    --bookEntryBackgroundHoverColor: var(--color);
+
 }
