@@ -1,4 +1,4 @@
-import React, { ReactNodeArray } from "react";
+import React from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -13,7 +13,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import Header from "components/header/Header";
-import { isExtraInfoPage } from "./helpers";
 
 import * as css from "./layout.module.css";
 
@@ -29,15 +28,9 @@ library.add(
 );
 
 export const Layout: React.FunctionComponent = ({ children }) => {
-  const headerHeightClass = isExtraInfoPage(children as ReactNodeArray)
-    ? "h-1/10"
-    : "h-1/6";
-
-  isExtraInfoPage;
-
   return (
     <div className={css.layout}>
-      <div className={headerHeightClass}>
+      <div className="h-1/10">
         <Header />
       </div>
       <div className="h-5/6">{children}</div>
