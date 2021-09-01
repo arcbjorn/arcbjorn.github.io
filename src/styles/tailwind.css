@@ -11,7 +11,7 @@ body,
 
 body {
     --bg: #F9F5EF;
-    --textColor: #1B1D1E;
+    --color: #1B1D1E;
     --focusColor: #F15025;
     --titleColor: #008080;
     
@@ -21,17 +21,17 @@ body {
     --companyColor: var(--focusColor);
     
     /* Quick Links */
-    --quickLinkButtonColor: var(--textColor);
+    --quickLinkButtonColor: var(--color);
     --quickLinkButtonHoverColor: var(--bg);
 
     --quickLinkButtonBackgroundColor: transparent;
-    --quickLinkButtonBackgroundHoverColor: var(--textColor);
+    --quickLinkButtonBackgroundHoverColor: var(--color);
 
-    --quickLinkButtonBorderColor: var(--textColor);
+    --quickLinkButtonBorderColor: var(--color);
     --quickLinkButtonBorderHoverColor: transparent;
 
     /* Extra Page */
-    --extraPageBorderColor: var(--textColor);
+    --extraPageBorderColor: var(--color);
 
     /* Platform Links */
     --platformLinkColor: #008080;
@@ -39,7 +39,7 @@ body {
     --platformLinkBackgroundHoverColor: #F15025;
 
     background-color: var(--bg);
-    color: var(--textColor);
+    color: var(--color);
     
     @apply font-ibm;
 }
@@ -48,7 +48,7 @@ body.dark {
     -webkit-font-smoothing: antialiased;
 
     --bg: #1B1D1E;
-    --textColor: #DDDDDD;
+    --color: #DDDDDD;
     --focusColor: #F58A07;
     --titleColor: #01DAE0;
 
@@ -58,20 +58,20 @@ body.dark {
     --companyColor: var(--focusColor);
 
     /* Quick Links */
-    --quickLinkButtonColor: var(--textColor);
+    --quickLinkButtonColor: var(--color);
     --quickLinkButtonHoverColor: var(--bg);
 
     --quickLinkButtonBackgroundColor: transparent;
-    --quickLinkButtonBackgroundHoverColor: var(--textColor);
+    --quickLinkButtonBackgroundHoverColor: var(--color);
 
-    --quickLinkButtonBorderColor: var(--textColor);
+    --quickLinkButtonBorderColor: var(--color);
     --quickLinkButtonBorderHoverColor: transparent;
 
     /* Extra Page */
-    --extraPageBorderColor: var(--textColor);
+    --extraPageBorderColor: var(--color);
 
     /* Platform Links */
     --platformLinkColor: var(--titleColor);
     --platformLinkHoverColor: var(--bg);
-    --platformLinkBackgroundHoverColor: var(--textColor);
+    --platformLinkBackgroundHoverColor: var(--color);
 }

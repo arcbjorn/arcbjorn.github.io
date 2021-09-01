@@ -3,7 +3,7 @@
 }
 
 .link {
-    color: var(--textColor);
+    color: var(--color);
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -18,7 +18,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--textColor);
+    background-color: var(--color);
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -35,7 +35,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--textColor);
+    background-color: var(--color);
     transform: scaleX(1);
     transform-origin: bottom left;
 }
