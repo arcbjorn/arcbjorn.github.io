@@ -1,5 +1,5 @@
 .terminal {
-    @apply flex flex-col-reverse h-full items-center;
+    @apply flex flex-col-reverse h-full items-center pt-10 sm:pt-16;
 }
 
 .window {
