@@ -18,9 +18,18 @@ export enum EPlatformLinkDescriptionTranslationKey {
   MY_TRAVEL_MAP = "map of places I've travelled to or lived in",
 }
 
+export enum EPlatformLink {
+  CODEPEN = "https://codepen.io/arcbjorn",
+  HACKER_RANK = "https://www.hackerrank.com/arcbjorn",
+  FREE_CODE_CAMP = "https://www.freecodecamp.org/arcbjorn",
+  DEV_TO = "https://dev.to/arcbjorn",
+  GLITCH = "https://glitch.com/@arcbjorn",
+  MY_TRAVEL_MAP = "https://www.mytravelmap.xyz/u/gg104931485347737929283",
+}
+
 export type TPlatformLink = {
   title: EPlatformLinkTitle;
-  href: string;
+  href: EPlatformLink;
   icon: string;
   iconPrefix: EIconLibrary;
   iconTitle: string;

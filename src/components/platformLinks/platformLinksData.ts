@@ -1,5 +1,6 @@
 import { EIconLibrary } from "pages/types";
 import {
+  EPlatformLink,
   TPlatformLink,
   EPlatformLinkTitle,
   EPlatformLinkDescriptionTranslationKey,
@@ -8,7 +9,7 @@ import {
 const links: TPlatformLink[] = [
   {
     title: EPlatformLinkTitle.CODEPEN,
-    href: "https://www.linkedin.com/in/oleg-luganskiy/",
+    href: EPlatformLink.CODEPEN,
     iconPrefix: EIconLibrary.BRANDS,
     icon: "codepen",
     iconTitle: "Codepen",
@@ -16,7 +17,7 @@ const links: TPlatformLink[] = [
   },
   {
     title: EPlatformLinkTitle.HACKER_RANK,
-    href: "https://www.linkedin.com/in/oleg-luganskiy/",
+    href: EPlatformLink.HACKER_RANK,
     iconPrefix: EIconLibrary.BRANDS,
     icon: "hackerrank",
     iconTitle: "Hacker Rank",
@@ -24,7 +25,7 @@ const links: TPlatformLink[] = [
   },
   {
     title: EPlatformLinkTitle.DEV_TO,
-    href: "https://www.linkedin.com/in/oleg-luganskiy/",
+    href: EPlatformLink.DEV_TO,
     iconPrefix: EIconLibrary.BRANDS,
     icon: "dev",
     iconTitle: "Dev.to",
@@ -32,7 +33,7 @@ const links: TPlatformLink[] = [
   },
   {
     title: EPlatformLinkTitle.FREE_CODE_CAMP,
-    href: "https://www.linkedin.com/in/oleg-luganskiy/",
+    href: EPlatformLink.FREE_CODE_CAMP,
     iconPrefix: EIconLibrary.BRANDS,
     icon: "free-code-camp",
     iconTitle: "freeCodeCamp",
@@ -40,7 +41,7 @@ const links: TPlatformLink[] = [
   },
   {
     title: EPlatformLinkTitle.GLITCH,
-    href: "https://www.linkedin.com/in/oleg-luganskiy/",
+    href: EPlatformLink.GLITCH,
     iconPrefix: EIconLibrary.CUSTOM,
     icon: "glitch",
     iconTitle: "Glitch",
@@ -48,7 +49,7 @@ const links: TPlatformLink[] = [
   },
   {
     title: EPlatformLinkTitle.MY_TRAVEL_MAP,
-    href: "https://www.github.com/arcbjorn",
+    href: EPlatformLink.MY_TRAVEL_MAP,
     iconPrefix: EIconLibrary.BRANDS,
     icon: "galactic-republic",
     iconTitle: "My travel map",
