@@ -16,7 +16,7 @@ const Book: React.FunctionComponent<BookProps> = ({ title, author, href }) => {
       rel="noopener noreferrer"
       className={css.book}
     >
-      <span className={css.bookTitle}>{`"${title}"`}</span>
+      <span>{`"${title}"`}</span>
       <span>{author}</span>
     </a>
   );

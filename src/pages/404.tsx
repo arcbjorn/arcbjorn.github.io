@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 import Layout from "layouts/Layout";
 import NotFoundInfo from "components/notFoundInfo/NotFoundInfo";
-import { EDocumentTitle } from "./types";
+import { EDocumentTitle } from "types";
 
 const NotFoundPage: React.FunctionComponent = () => {
   return (

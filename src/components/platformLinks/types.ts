@@ -1,4 +1,4 @@
-import { EIconLibrary } from "pages/types";
+import { EIconLibrary } from "types";
 
 export enum EPlatformLinkTitle {
   CODEPEN = "Codepen",

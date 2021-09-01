@@ -3,7 +3,7 @@ import { withPrefix } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
-import { EIconLibrary } from "pages/types";
+import { EIconLibrary } from "types";
 import { TQuickLink, EQuickLinkTitle } from "components/quickLinks/types";
 
 import * as css from "./quickLink.module.css";
