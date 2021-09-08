@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://arcbjorn.com" rel="noopener noreferrer">
+  <a href="https://arcbjorn.com" target="_blank" rel="noopener noreferrer">
     <img alt="Arcbjorn" src="https://i.ibb.co/tKfXR6F/bear-icon.jpg" width="60" />
   </a>
 </p>
