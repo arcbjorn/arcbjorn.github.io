@@ -24,6 +24,14 @@ const links: TPlatformLink[] = [
     description: EPlatformLinkDescriptionTranslationKey.HACKER_RANK,
   },
   {
+    title: EPlatformLinkTitle.LEETCODE,
+    href: EPlatformLink.LEETCODE,
+    iconPrefix: EIconLibrary.BRANDS,
+    icon: "leetcode",
+    iconTitle: "LeetCode",
+    description: EPlatformLinkDescriptionTranslationKey.LEETCODE,
+  },
+  {
     title: EPlatformLinkTitle.DEV_TO,
     href: EPlatformLink.DEV_TO,
     iconPrefix: EIconLibrary.BRANDS,
