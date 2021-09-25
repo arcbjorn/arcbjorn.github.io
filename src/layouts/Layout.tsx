@@ -10,7 +10,6 @@ import {
   faDev,
   faFreeCodeCamp,
   faGalacticRepublic,
-  faLeetcode
 } from "@fortawesome/free-brands-svg-icons";
 
 import Header from "components/header/Header";
@@ -25,8 +24,7 @@ library.add(
   faHackerrank,
   faDev,
   faFreeCodeCamp,
-  faGalacticRepublic,
-  faLeetcode
+  faGalacticRepublic
 );
 
 export const Layout: React.FunctionComponent = ({ children }) => {
