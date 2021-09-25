@@ -25,7 +25,13 @@ const PlatformLink: React.FunctionComponent<PlatformLinkProps> = ({
     toggleHover(!isLinkHovered);
   };
 
-  const isGlitchIcon = title === EPlatformLinkTitle.GLITCH;
+  const noIconsList = [
+    EPlatformLinkTitle.GLITCH,
+    EPlatformLinkTitle.STEPNIK,
+    EPlatformLinkTitle.LEETCODE,
+  ];
+
+  const noIcon = noIconsList.some((t) => t === title);
 
   return (
     <a
@@ -41,7 +47,7 @@ const PlatformLink: React.FunctionComponent<PlatformLinkProps> = ({
           isLinkHovered ? css.platformLinkTitleHover : ""
         }`}
       >
-        {isGlitchIcon ? (
+        {noIcon ? (
           ""
         ) : (
           <FontAwesomeIcon
