@@ -32,6 +32,14 @@ const links: TPlatformLink[] = [
     description: EPlatformLinkDescriptionTranslationKey.LEETCODE,
   },
   {
+    title: EPlatformLinkTitle.STEPNIK,
+    href: EPlatformLink.STEPNIK,
+    iconPrefix: EIconLibrary.BRANDS,
+    icon: "stepnik",
+    iconTitle: "Stepnik",
+    description: EPlatformLinkDescriptionTranslationKey.STEPNIK,
+  },
+  {
     title: EPlatformLinkTitle.DEV_TO,
     href: EPlatformLink.DEV_TO,
     iconPrefix: EIconLibrary.BRANDS,

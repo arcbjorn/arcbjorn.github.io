@@ -4,6 +4,7 @@ export enum EPlatformLinkTitle {
   CODEPEN = "Codepen",
   HACKER_RANK = "Hacker Rank",
   LEETCODE = "LeetCode",
+  STEPNIK = "Stepnik",
   DEV_TO = "Dev.to",
   FREE_CODE_CAMP = "freeCodeCamp",
   GLITCH = "Glitch",
@@ -11,12 +12,13 @@ export enum EPlatformLinkTitle {
 }
 
 export enum EPlatformLinkDescriptionTranslationKey {
-  CODEPEN = "online community for testing and showcasing HTML, CSS and JavaScript code snippets",
-  HACKER_RANK = "platform with competitive programming challenges",
-  LEETCODE = "platform with competitive programming challenges",
-  FREE_CODE_CAMP = "non-profit organization: an learning web platform, an community forum",
-  DEV_TO = "constructive and inclusive social network for software developers",
-  GLITCH = "collaboration platform for creating, hosting and mixing web apps",
+  CODEPEN = "HTML, CSS & JavaScript code snippets",
+  HACKER_RANK = "competitive programming challenges & hackathons",
+  LEETCODE = "competitive & academic programming challenges",
+  STEPNIK = "Computer Science learning environment",
+  FREE_CODE_CAMP = "Computer Science learning environment",
+  DEV_TO = "social network for software developers",
+  GLITCH = "collaboration on full-stack web apps",
   MY_TRAVEL_MAP = "map of places I've travelled to or lived in",
 }
 
@@ -24,6 +26,7 @@ export enum EPlatformLink {
   CODEPEN = "https://codepen.io/arcbjorn",
   HACKER_RANK = "https://www.hackerrank.com/arcbjorn",
   LEETCODE = "https://leetcode.com/arcbjorn",
+  STEPNIK = "https://stepik.org/users/247781885",
   FREE_CODE_CAMP = "https://www.freecodecamp.org/arcbjorn",
   DEV_TO = "https://dev.to/arcbjorn",
   GLITCH = "https://glitch.com/@arcbjorn",
