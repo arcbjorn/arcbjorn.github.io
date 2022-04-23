@@ -33,7 +33,7 @@
       }
     },
     "books": {
-      "title": "libros que me gustan",
+      "title": "Libros que me gustan",
       "categories": {
         "software": "Software",
         "other": "Otro"
