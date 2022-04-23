@@ -1,6 +1,15 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 
+const gatsbyRequiredRules = path.join(
+  process.cwd(),
+  "node_modules",
+  "gatsby",
+  "dist",
+  "utils",
+  "eslint-rules"
+);
+
 const currentSiteUrl = process.env.DEVELOPMENT
   ? "http://localhost:8000/"
   : "https://arcbjorn.github.io";
@@ -26,13 +35,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-eslint",
       options: {
-        test: /\.js$|\.jsx$|\.ts$|\.tsx$/,
-        exclude: /(node_modules|.cache|public)/,
+        rulePaths: [gatsbyRequiredRules],
         stages: ["develop"],
-        options: {
-          emitWarning: true,
-          failOnError: false,
-        },
+        extensions: ["js", "jsx", "ts", "tsx"],
+        exclude: ["node_modules", "bower_components", ".cache", "public"],
+        emitWarning: true,
+        failOnError: false,
       },
     },
     {
@@ -49,14 +57,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/i18n/locales`,
-        name: `locale`,
+        path: `${__dirname}/src/i18n`,
+        name: `i18n`,
       },
     },
     {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
-        localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+        localeJsonSourceName: `i18n`, // name given to `gatsby-source-filesystem` plugin.
         languages: [`en`, `ru`, `de`, `se`],
         defaultLanguage: `en`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
