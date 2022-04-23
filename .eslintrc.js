@@ -21,6 +21,7 @@ module.exports = {
         ["layouts", "./src/layouts"],
         ["state", "./src/state"],
         ["i18n", "./src/i18n"],
+        ["styles", "./src/styles"],
       ],
     },
   },

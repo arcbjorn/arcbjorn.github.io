@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import TypeWriter from "components/typeWriter/TypeWriter";
 import QuickLinks from "components/quickLinks/QuickLinks";
 
-import * as css from "./terminal.module.css";
+import * as css from "components/terminal/terminal.module.css";
 
 export const Terminal: React.FunctionComponent = () => {
   const [quickLinksVisibility, setQuickLinksVisibility] = useState(false);

@@ -3,7 +3,7 @@ import * as React from "react";
 import Books from "components/books/Books";
 import PlatformLinks from "components/platformLinks/PlatformLinks";
 
-import * as css from "./extraInfo.module.css";
+import * as css from "components/extraInfo/extraInfo.module.css";
 
 const ExtraInfo: React.FunctionComponent = () => {
   return (

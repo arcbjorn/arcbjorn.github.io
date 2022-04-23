@@ -1,11 +1,14 @@
 import * as React from "react";
 import { Trans } from "react-i18next";
 
-import { EPlatformLinkTitle, TPlatformLink } from "../types";
+import {
+  EPlatformLinkTitle,
+  TPlatformLink,
+} from "components/platformLinks/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
-import * as css from "./platformLink.module.css";
+import * as css from "components/platformLinks/link/platformLink.module.css";
 
 type PlatformLinkProps = TPlatformLink & {
   children?: React.ReactNode;
@@ -27,7 +30,7 @@ const PlatformLink: React.FunctionComponent<PlatformLinkProps> = ({
 
   const noIconsList = [
     EPlatformLinkTitle.GLITCH,
-    EPlatformLinkTitle.STEPNIK,
+    EPlatformLinkTitle.STEPIK,
     EPlatformLinkTitle.LEETCODE,
   ];
 

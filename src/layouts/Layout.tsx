@@ -14,7 +14,7 @@ import {
 
 import Header from "components/header/Header";
 
-import * as css from "./layout.module.css";
+import * as css from "layouts/layout.module.css";
 
 library.add(
   faLinkedin,
@@ -27,7 +27,11 @@ library.add(
   faGalacticRepublic
 );
 
-export const Layout: React.FunctionComponent = ({ children }) => {
+interface IProps {
+  children: React.ReactNode;
+}
+
+export const Layout: React.FunctionComponent<IProps> = ({ children }) => {
   return (
     <div className={css.layout}>
       <div className="h-1/10">

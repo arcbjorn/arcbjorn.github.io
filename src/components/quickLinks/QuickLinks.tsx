@@ -1,9 +1,9 @@
 import React from "react";
 
-import QuickLink from "./link/QuickLink";
-import links from "./quickLinksData";
+import QuickLink from "components/quickLinks/link/QuickLink";
+import links from "components/quickLinks/quickLinksData";
 
-import * as css from "./quickLinks.module.css";
+import * as css from "components/quickLinks/quickLinks.module.css";
 
 export const QuickLinks: React.FunctionComponent = () => {
   return (

@@ -1,8 +1,8 @@
 import * as React from "react";
 
-import { TBook } from "../types";
+import { TBook } from "components/books/types";
 
-import * as css from "./book.module.css";
+import * as css from "components/books/book/book.module.css";
 
 type BookProps = Omit<TBook, "category"> & {
   children?: React.ReactNode;

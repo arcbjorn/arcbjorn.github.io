@@ -2,7 +2,7 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 
-import "../styles/tailwind.css";
+import "styles/tailwind.css";
 import { EDocumentTitle } from "types";
 
 import Layout from "layouts/Layout";
