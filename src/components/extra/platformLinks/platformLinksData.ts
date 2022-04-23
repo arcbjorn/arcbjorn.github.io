@@ -3,7 +3,7 @@ import {
   EPlatformLink,
   TPlatformLink,
   EPlatformLinkTitle,
-} from "components/platformLinks/types";
+} from "components/extra/platformLinks/types";
 import { Ei18nToken } from "i18n/types";
 
 const links: TPlatformLink[] = [

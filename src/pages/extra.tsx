@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 import { EDocumentTitle } from "types";
 import Layout from "layouts/Layout";
-import ExtraInfo from "components/extraInfo/ExtraInfo";
+import ExtraInfo from "components/extra/ExtraInfo";
 
 const ExtraPage: React.FunctionComponent = () => {
   return (

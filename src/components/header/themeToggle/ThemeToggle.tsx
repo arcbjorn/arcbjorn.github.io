@@ -1,8 +1,11 @@
 import React from "react";
 
-import { ThemeToggleProps, EColourMode } from "components/themeToggle/types";
+import {
+  ThemeToggleProps,
+  EColourMode,
+} from "components/header/themeToggle/types";
 
-import * as css from "components/themeToggle/themeToggle.module.css";
+import * as css from "components/header/themeToggle/themeToggle.module.css";
 
 const ThemeToggle: React.FunctionComponent<ThemeToggleProps> = ({
   theme,

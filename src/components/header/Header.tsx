@@ -3,8 +3,8 @@ import { Link, Trans } from "gatsby-plugin-react-i18next";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
 
 import { Ei18nToken } from "i18n/types";
-import ThemeToggle from "components/themeToggle/ThemeToggle";
-import LanguageSwitch from "components/languageSwitch/LanguageSwitch";
+import ThemeToggle from "components/header/themeToggle/ThemeToggle";
+import LanguageSwitch from "components/header/languageSwitch/LanguageSwitch";
 
 import * as css from "components/header/header.module.css";
 

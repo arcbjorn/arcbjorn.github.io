@@ -3,16 +3,16 @@ import { Trans } from "react-i18next";
 
 import { Ei18nToken } from "i18n/types";
 
-import PlatformLink from "components/platformLinks/link/PlatformLink";
-import links from "components/platformLinks/platformLinksData";
+import PlatformLink from "components/extra/platformLinks/link/PlatformLink";
+import links from "components/extra/platformLinks/platformLinksData";
 
-import * as css from "components/platformLinks/platformLinks.module.css";
+import * as css from "components/extra/platformLinks/platformLinks.module.css";
 
 import {
   extraInnerSection,
   extraSectionTitle,
   noScrollbar,
-} from "components/extraInfo/extraInfo.module.css";
+} from "components/extra/extraInfo.module.css";
 
 const PlatformLinks: React.FunctionComponent = () => {
   return (

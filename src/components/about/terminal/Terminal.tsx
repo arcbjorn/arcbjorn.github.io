@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import TypeWriter from "components/typeWriter/TypeWriter";
-import QuickLinks from "components/quickLinks/QuickLinks";
+import TypeWriter from "components/about/typeWriter/TypeWriter";
+import QuickLinks from "components/about/quickLinks/QuickLinks";
 
-import * as css from "components/terminal/terminal.module.css";
+import * as css from "components/about/terminal/terminal.module.css";
 
 export const Terminal: React.FunctionComponent = () => {
   const [quickLinksVisibility, setQuickLinksVisibility] = useState(false);

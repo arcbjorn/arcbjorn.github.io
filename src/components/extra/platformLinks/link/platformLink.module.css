@@ -1,0 +1,31 @@
+.platformLink {
+  @apply px-5 py-4 flex flex-col;
+}
+
+.platformLink:hover {
+  color: var(--platformLinkHoverColor);
+  background-color: var(--platformLinkBackgroundHoverColor);
+}
+
+.platformLinkTitle {
+  color: var(--platformLinkColor);
+  @apply flex items-center sm:pb-2 text-base md:text-lg;
+}
+
+.platformLinkTitleHover {
+  color: var(--platformLinkHoverColor);
+}
+
+.platformLinkIcon {
+  @apply text-2xl mr-2;
+}
+
+.platformLinkCustomIcon {
+  @apply platformLinkIcon;
+
+  color: var(--platformLinkColor);
+}
+
+.platformLinkDescription {
+  @apply hidden lg:block;
+}

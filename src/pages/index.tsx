@@ -6,7 +6,7 @@ import "styles/tailwind.css";
 import { EDocumentTitle } from "types";
 
 import Layout from "layouts/Layout";
-import Terminal from "components/terminal/Terminal";
+import Terminal from "components/about/terminal/Terminal";
 
 const IndexPage: React.FunctionComponent = () => {
   return (

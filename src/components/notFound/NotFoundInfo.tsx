@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link, Trans } from "gatsby-plugin-react-i18next";
 
 import { Ei18nToken } from "i18n/types";
-import * as css from "components/notFoundInfo/notFoundInfo.module.css";
+import * as css from "components/notFound/notFoundInfo.module.css";
 
 const NotFoundInfo: React.FunctionComponent = () => {
   return (

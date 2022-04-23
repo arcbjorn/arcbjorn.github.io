@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 
 import Layout from "layouts/Layout";
-import NotFoundInfo from "components/notFoundInfo/NotFoundInfo";
+import NotFoundInfo from "components/notFound/NotFoundInfo";
 import { EDocumentTitle } from "types";
 
 const NotFoundPage: React.FunctionComponent = () => {

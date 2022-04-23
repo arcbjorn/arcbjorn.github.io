@@ -5,8 +5,8 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import { Ei18nToken } from "i18n/types";
 import { Action } from "state/types";
-import getTerminalText from "components/typeWriter/introText";
-import * as css from "components/typeWriter/typeWriter.module.css";
+import getTerminalText from "components/about/typeWriter/introText";
+import * as css from "components/about/typeWriter/typeWriter.module.css";
 
 type TypeWriterProps = {
   toggleQuickLinksVisibility: () => void;

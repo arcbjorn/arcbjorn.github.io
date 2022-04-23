@@ -1,6 +1,6 @@
 import { Ei18nToken } from "i18n/types";
 import { EIconLibrary } from "types";
-import { TQuickLink, EQuickLinkTitle } from "components/quickLinks/types";
+import { TQuickLink, EQuickLinkTitle } from "components/about/quickLinks/types";
 
 const mailTo =
   "mailto:oleg.luganskiy@gmail.com?subject=Employment%20Offer&body=Hi%20Oleg";

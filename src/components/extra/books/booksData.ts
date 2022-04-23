@@ -1,4 +1,4 @@
-import { EBookCategory, TBook } from "components/books/types";
+import { EBookCategory, TBook } from "components/extra/books/types";
 
 const books: TBook[] = [
   {

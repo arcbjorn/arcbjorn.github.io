@@ -1,9 +1,9 @@
 import * as React from "react";
 
-import Books from "components/books/Books";
-import PlatformLinks from "components/platformLinks/PlatformLinks";
+import Books from "components/extra/books/Books";
+import PlatformLinks from "components/extra/platformLinks/PlatformLinks";
 
-import * as css from "components/extraInfo/extraInfo.module.css";
+import * as css from "components/extra/extraInfo.module.css";
 
 const ExtraInfo: React.FunctionComponent = () => {
   return (

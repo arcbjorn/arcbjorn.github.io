@@ -1,17 +1,17 @@
 import * as React from "react";
 import { Trans } from "gatsby-plugin-react-i18next";
 
-import { EBookCategory } from "components/books/types";
+import { EBookCategory } from "components/extra/books/types";
 import { Ei18nToken } from "i18n/types";
 import {
   extraSectionTitle,
   extraInnerSection,
-} from "components/extraInfo/extraInfo.module.css";
+} from "components/extra/extraInfo.module.css";
 
-import books from "components/books/booksData";
-import Book from "components/books/book/Book";
+import books from "components/extra/books/booksData";
+import Book from "components/extra/books/book/Book";
 
-import * as css from "components/books/books.module.css";
+import * as css from "components/extra/books/books.module.css";
 
 const categoryToI18nTokenMap: Record<EBookCategory, Ei18nToken> = {
   [EBookCategory.SOFTWARE]: Ei18nToken.SOFTWARE,
