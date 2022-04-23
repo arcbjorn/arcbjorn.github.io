@@ -1,31 +1,31 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 .noScrollbar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .noScrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .extraInfo {
-    @apply flex flex-row flex-wrap sm:h-full noScrollbar overflow-y-auto;
+  @apply flex flex-row flex-wrap sm:h-full overflow-y-hidden;
 }
 
 .extraSectionTitle {
-    @apply ml-5 w-max px-2;
+  @apply ml-5 w-max px-2;
 
-    color: var(--focusColor);
-    background-color: var(--bg);
+  color: var(--focusColor);
+  background-color: var(--bg);
 }
 
 .extraSection {
-    @apply overflow-y-visible h-full sm:h-auto;
+  @apply h-full sm:h-auto;
 }
 
 .extraInnerSection {
-    @apply flex flex-col border mx-7 h-full;
+  @apply flex flex-col border mx-7 max-h-[85%] overflow-y-auto noScrollbar;
 
-    border-color: var(--extraPageBorderColor);
+  border-color: var(--extraPageBorderColor);
 }
