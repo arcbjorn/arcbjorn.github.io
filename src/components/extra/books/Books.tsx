@@ -36,55 +36,59 @@ const Books: React.FunctionComponent = () => {
         <span className={css.categoryTitle}>
           <Trans>{categoryToI18nTokenMap[EBookCategory.SOFTWARE]}</Trans>
         </span>
-        {softwareBooks.map(({ title, author, href }, i) => (
-          <div key={i} className={css.bookEntry}>
-            <svg width="70" height="50" className={css.treeNode}>
-              <line
-                x1="30"
-                y1="25"
-                x2="60"
-                y2="25"
-                stroke="current"
-                strokeWidth="3"
-              />
-              <line
-                x1="30"
-                y1="0"
-                x2="30"
-                y2="50"
-                stroke="current"
-                strokeWidth="3"
-              />
-            </svg>
-            <Book title={title} author={author} href={href} />
-          </div>
-        ))}
+        <div className={css.bookList}>
+          {softwareBooks.map(({ title, author, href }, i) => (
+            <div key={i} className={css.bookEntry}>
+              <svg width="70" height="50" className={css.treeNode}>
+                <line
+                  x1="30"
+                  y1="25"
+                  x2="60"
+                  y2="25"
+                  stroke="current"
+                  strokeWidth="3"
+                />
+                <line
+                  x1="30"
+                  y1="0"
+                  x2="30"
+                  y2="50"
+                  stroke="current"
+                  strokeWidth="3"
+                />
+              </svg>
+              <Book title={title} author={author} href={href} />
+            </div>
+          ))}
+        </div>
         <span className={css.categoryTitle}>
           <Trans>{categoryToI18nTokenMap[EBookCategory.OTHER]}</Trans>
         </span>
-        {otherBooks.map(({ title, author, href }, i) => (
-          <div key={i} className={css.bookEntry}>
-            <svg width="70" height="50" className={css.treeNode}>
-              <line
-                x1="30"
-                y1="25"
-                x2="60"
-                y2="25"
-                stroke="current"
-                strokeWidth="3"
-              />
-              <line
-                x1="30"
-                y1="0"
-                x2="30"
-                y2="50"
-                stroke="current"
-                strokeWidth="3"
-              />
-            </svg>
-            <Book title={title} author={author} href={href} />
-          </div>
-        ))}
+        <div className={css.bookList}>
+          {otherBooks.map(({ title, author, href }, i) => (
+            <div key={i} className={css.bookEntry}>
+              <svg width="70" height="50" className={css.treeNode}>
+                <line
+                  x1="30"
+                  y1="25"
+                  x2="60"
+                  y2="25"
+                  stroke="current"
+                  strokeWidth="3"
+                />
+                <line
+                  x1="30"
+                  y1="0"
+                  x2="30"
+                  y2="50"
+                  stroke="current"
+                  strokeWidth="3"
+                />
+              </svg>
+              <Book title={title} author={author} href={href} />
+            </div>
+          ))}
+        </div>
       </div>
     </fieldset>
   );

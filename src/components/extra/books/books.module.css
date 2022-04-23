@@ -1,33 +1,37 @@
 .books {
-    @apply flex flex-col;
+  @apply flex flex-col pt-5;
+}
+
+.bookList {
+  @apply py-5;
 }
 
 .categoryTitle {
-    @apply px-5 pt-5 pb-2;
+  @apply px-5;
 
-    color: var(--titleColor);
+  color: var(--titleColor);
 }
 
 .bookEntry {
-    @apply flex;
+  @apply flex;
 }
 
 .bookEntry:hover {
-    color: var(--bookEntryHoverColor);
-    background-color: var(--bookEntryBackgroundHoverColor);
+  color: var(--bookEntryHoverColor);
+  background-color: var(--bookEntryBackgroundHoverColor);
 }
 
 .bookEntry:active {
-    color: var(--bookEntryHoverColor);
-    background-color: var(--bookEntryBackgroundHoverColor);
+  color: var(--bookEntryHoverColor);
+  background-color: var(--bookEntryBackgroundHoverColor);
 }
 
 .bookEntry .treeNode {
-    @apply hidden md:block;
+  @apply hidden md:block;
 
-    stroke: var(--color);
+  stroke: var(--color);
 }
 
 .bookEntry:hover .treeNode {
-    stroke: var(--bookEntryHoverColor);
+  stroke: var(--bookEntryHoverColor);
 }
