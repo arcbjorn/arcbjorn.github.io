@@ -1,17 +1,30 @@
-export enum ETranslationKey {
-  ABOUT = "about",
-  EXTRA = "extra",
+export enum Ei18nToken {
+  PAGE_NOT_FOUND = "notFound.title",
+  GO_BACK = "notFound.backButtonTitle",
 
-  FILE = "file",
-  GREETING = "greeting",
-  POSITION = "position",
-  PREVIOUSLY = "previously",
-  INTERESTS = "interests",
-  CV = "cv",
+  ABOUT = "header.about",
+  EXTRA = "header.extra",
 
-  PLATFORMS_TITLE = "Me on other platforms",
-  BOOKS_TITLE = "Books that I like",
+  FILE = "home.file",
+  GREETING = "home.greeting",
+  POSITION = "home.position",
+  FORMERLY = "home.formerly",
+  INTERESTS = "home.interests",
+  CV = "home.cv",
 
-  PAGE_NOT_FOUND = "Page not found",
-  GO_BACK = "Go back",
+  PLATFORMS_TITLE = "extra.platforms.title",
+
+  CODEPEN = "extra.platforms.descriptions.codepen",
+  HACKER_RANK = "extra.platforms.descriptions.hackerRank",
+  LEETCODE = "extra.platforms.descriptions.leetCode",
+  STEPIK = "extra.platforms.descriptions.stepik",
+  FREE_CODE_CAMP = "extra.platforms.descriptions.freeCodeCamp",
+  DEV_TO = "extra.platforms.descriptions.devto",
+  GLITCH = "extra.platforms.descriptions.glitch",
+  MY_TRAVEL_MAP = "extra.platforms.descriptions.myTravelMap",
+
+  BOOKS_TITLE = "extra.books.title",
+
+  SOFTWARE = "extra.books.categories.software",
+  OTHER = "extra.books.categories.other",
 }

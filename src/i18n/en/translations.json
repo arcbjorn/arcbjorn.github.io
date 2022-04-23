@@ -1,0 +1,43 @@
+{
+  "notFound": {
+    "title": "Page not found",
+    "backButtonTitle": "Go back"
+  },
+
+  "header": {
+    "about": "about",
+    "extra": "extra"
+  },
+
+  "home": {
+    "file": "about_me",
+    "greeting": "Hi, I'm Oleg Luganskiy",
+    "position": "Full Stack engineer",
+    "formerly": "formerly",
+    "interests": "fascinated by Web & AI development",
+    "cv": "CV"
+  },
+
+  "extra": {
+    "platforms": {
+      "title": "Me on other platforms",
+      "descriptions": {
+        "codepen": "HTML, CSS & JavaScript code snippets",
+        "hackerRank": "competitive programming challenges & hackathons",
+        "leetCode": "competitive & academic programming challenges",
+        "stepik": "computer science learning environment",
+        "devto": "social network for software developers",
+        "freeCodeCamp": "computer science learning environment",
+        "glitch": "collaboration on full-stack web apps",
+        "myTravelMap": "places I've travelled to or lived in"
+      }
+    },
+    "books": {
+      "title": "Books that I like",
+      "categories": {
+        "software": "Software",
+        "other": "Other"
+      }
+    }
+  }
+}

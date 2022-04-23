@@ -1,0 +1,43 @@
+{
+  "notFound": {
+    "title": "Sidan hittas int",
+    "backButtonTitle": "gå tillbaka"
+  },
+
+  "header": {
+    "about": "om mig",
+    "extra": "extra"
+  },
+
+  "home": {
+    "file": "om_mig",
+    "greeting": "Hej, jag heter Oleg Luganskiy",
+    "position": "Full Stack ingenjör",
+    "formerly": "förr",
+    "interests": "fascinerad av webb- och AI-utveckling",
+    "cv": "CV"
+  },
+
+  "extra": {
+    "platforms": {
+      "title": "Mig på andra plattformar",
+      "descriptions": {
+        "codepen": "HTML-, CSS- och JavaScript-kodavsnitt",
+        "hackerRank": "konkurrenskraftiga programmeringsutmaningar",
+        "leetCode": "konkurrenskraftiga programmeringsutmaningar",
+        "stepik": "datavetenskaplig lärmiljö",
+        "devto": "sociala nätverk för mjukvaruutvecklare",
+        "freeCodeCamp": "datavetenskaplig lärmiljö",
+        "glitch": "samarbete om full-stack webbappar",
+        "myTravelMap": "platser jag har rest till eller bott på"
+      }
+    },
+    "books": {
+      "title": "Böcker som jag gillar",
+      "categories": {
+        "software": "Programvara",
+        "other": "Övrig"
+      }
+    }
+  }
+}

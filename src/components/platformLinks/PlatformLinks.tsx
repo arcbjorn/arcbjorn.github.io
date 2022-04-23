@@ -1,12 +1,13 @@
 import * as React from "react";
 import { Trans } from "react-i18next";
 
-import { ETranslationKey } from "i18n/types";
+import { Ei18nToken } from "i18n/types";
 
-import PlatformLink from "./link/PlatformLink";
-import links from "./platformLinksData";
+import PlatformLink from "components/platformLinks/link/PlatformLink";
+import links from "components/platformLinks/platformLinksData";
 
-import * as css from "./platformLinks.module.css";
+import * as css from "components/platformLinks/platformLinks.module.css";
+
 import {
   extraInnerSection,
   extraSectionTitle,
@@ -17,7 +18,7 @@ const PlatformLinks: React.FunctionComponent = () => {
   return (
     <fieldset className={`${extraInnerSection} ${noScrollbar}`}>
       <legend className={extraSectionTitle}>
-        <Trans>{ETranslationKey.PLATFORMS_TITLE}</Trans>
+        <Trans>{Ei18nToken.PLATFORMS_TITLE}</Trans>
       </legend>
       <div className={css.platformLinks}>
         {links.map(

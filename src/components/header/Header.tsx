@@ -2,11 +2,11 @@ import React from "react";
 import { Link, Trans } from "gatsby-plugin-react-i18next";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
 
-import { ETranslationKey } from "i18n/types";
+import { Ei18nToken } from "i18n/types";
 import ThemeToggle from "components/themeToggle/ThemeToggle";
 import LanguageSwitch from "components/languageSwitch/LanguageSwitch";
 
-import * as css from "./header.module.css";
+import * as css from "components/header/header.module.css";
 
 const logoText = "arcbjorn";
 
@@ -28,14 +28,14 @@ export const Header: React.FunctionComponent = () => {
             activeClassName={css.activeRoute}
             to={Route.about}
           >
-            <Trans>{ETranslationKey.ABOUT}</Trans>
+            <Trans>{Ei18nToken.ABOUT}</Trans>
           </Link>
           <Link
             className={css.link}
             to={Route.extra}
             activeClassName={css.activeRoute}
           >
-            <Trans>{ETranslationKey.EXTRA}</Trans>
+            <Trans>{Ei18nToken.EXTRA}</Trans>
           </Link>
         </div>
         <LanguageSwitch />

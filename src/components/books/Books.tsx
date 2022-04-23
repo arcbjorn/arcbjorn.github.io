@@ -1,17 +1,22 @@
 import * as React from "react";
 import { Trans } from "gatsby-plugin-react-i18next";
 
-import { EBookCategory } from "./types";
-import { ETranslationKey } from "i18n/types";
+import { EBookCategory } from "components/books/types";
+import { Ei18nToken } from "i18n/types";
 import {
   extraSectionTitle,
   extraInnerSection,
 } from "components/extraInfo/extraInfo.module.css";
 
-import books from "./booksData";
-import Book from "./book/Book";
+import books from "components/books/booksData";
+import Book from "components/books/book/Book";
 
-import * as css from "./books.module.css";
+import * as css from "components/books/books.module.css";
+
+const categoryToI18nTokenMap: Record<EBookCategory, Ei18nToken> = {
+  [EBookCategory.SOFTWARE]: Ei18nToken.SOFTWARE,
+  [EBookCategory.OTHER]: Ei18nToken.OTHER,
+};
 
 const Books: React.FunctionComponent = () => {
   const softwareBooks = books.filter(
@@ -25,11 +30,11 @@ const Books: React.FunctionComponent = () => {
   return (
     <fieldset className={extraInnerSection}>
       <legend className={extraSectionTitle}>
-        <Trans>{ETranslationKey.BOOKS_TITLE}</Trans>
+        <Trans>{Ei18nToken.BOOKS_TITLE}</Trans>
       </legend>
       <div className={css.books}>
         <span className={css.categoryTitle}>
-          <Trans>{EBookCategory.SOFTWARE}</Trans>
+          <Trans>{categoryToI18nTokenMap[EBookCategory.SOFTWARE]}</Trans>
         </span>
         {softwareBooks.map(({ title, author, href }, i) => (
           <div key={i} className={css.bookEntry}>
@@ -55,7 +60,7 @@ const Books: React.FunctionComponent = () => {
           </div>
         ))}
         <span className={css.categoryTitle}>
-          <Trans>{EBookCategory.OTHER}</Trans>
+          <Trans>{categoryToI18nTokenMap[EBookCategory.OTHER]}</Trans>
         </span>
         {otherBooks.map(({ title, author, href }, i) => (
           <div key={i} className={css.bookEntry}>

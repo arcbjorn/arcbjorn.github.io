@@ -1,0 +1,43 @@
+{
+  "notFound": {
+    "title": "Страница не найдена",
+    "backButtonTitle": "Назад"
+  },
+
+  "header": {
+    "about": "обо мне",
+    "extra": "дополнительно"
+  },
+
+  "home": {
+    "file": "обо_мне",
+    "greeting": "Привет, меня зовут Олег",
+    "position": "Full Stack разработчик",
+    "formerly": "ранее",
+    "interests": "интересуюсь Веб, МО, ИИ разработкой",
+    "cv": "Resume"
+  },
+
+  "extra": {
+    "platforms": {
+      "title": "Я на других платформах",
+      "descriptions": {
+        "codepen": "HTML, CSS и JavaScript сниппеты",
+        "hackerRank": "спортивное программирование & хакатоны",
+        "leetCode": "спортивное программирование & хакатоны",
+        "stepik": "среда обучения Computer Science",
+        "devto": "социальная сеть для разработчиков",
+        "freeCodeCamp": "среда обучения Computer Science",
+        "glitch": "коллаборации над full-stack веб-приложениями",
+        "myTravelMap": "места, в которых я побывал или жил"
+      }
+    },
+    "books": {
+      "title": "Книги, которым отдаю предпочтение",
+      "categories": {
+        "software": "Разработка ПО",
+        "other": "Другое"
+      }
+    }
+  }
+}

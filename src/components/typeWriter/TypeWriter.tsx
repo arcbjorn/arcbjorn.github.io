@@ -3,10 +3,10 @@ import Typewriter from "typewriter-effect";
 import { connect } from "react-redux";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
-import { ETranslationKey } from "i18n/types";
+import { Ei18nToken } from "i18n/types";
 import { Action } from "state/types";
-import getTerminalText from "./introText";
-import * as css from "./typeWriter.module.css";
+import getTerminalText from "components/typeWriter/introText";
+import * as css from "components/typeWriter/typeWriter.module.css";
 
 type TypeWriterProps = {
   toggleQuickLinksVisibility: () => void;
@@ -22,11 +22,11 @@ const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
 }: TypeWriterProps) => {
   const { t } = useTranslation();
   const introText = getTerminalText({
-    file: t(ETranslationKey.FILE),
-    greeting: t(ETranslationKey.GREETING),
-    position: t(ETranslationKey.POSITION),
-    previously: t(ETranslationKey.PREVIOUSLY),
-    interests: t(ETranslationKey.INTERESTS),
+    file: t(Ei18nToken.FILE),
+    greeting: t(Ei18nToken.GREETING),
+    position: t(Ei18nToken.POSITION),
+    formerly: t(Ei18nToken.FORMERLY),
+    interests: t(Ei18nToken.INTERESTS),
   });
 
   return (

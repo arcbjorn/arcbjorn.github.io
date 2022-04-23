@@ -1,14 +1,14 @@
+import { Ei18nToken } from "i18n/types";
 import { EIconLibrary } from "types";
 
 export enum EQuickLinkTitle {
   LINKEDIN = "LinkedIn",
   GITHUB = "Github",
-  MAIL = "Mail",
-  CV = "cv",
+  EMAIL = "EMail",
 }
 
 export type TQuickLink = {
-  title: EQuickLinkTitle;
+  title: EQuickLinkTitle | Ei18nToken;
   href: string;
   icon: string;
   iconPrefix: EIconLibrary;

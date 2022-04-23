@@ -1,5 +1,6 @@
+import { Ei18nToken } from "i18n/types";
 import { EIconLibrary } from "types";
-import { TQuickLink, EQuickLinkTitle } from "./types";
+import { TQuickLink, EQuickLinkTitle } from "components/quickLinks/types";
 
 const mailTo =
   "mailto:oleg.luganskiy@gmail.com?subject=Employment%20Offer&body=Hi%20Oleg";
@@ -20,14 +21,14 @@ const links: TQuickLink[] = [
     iconTitle: "Github account",
   },
   {
-    title: EQuickLinkTitle.MAIL,
+    title: EQuickLinkTitle.EMAIL,
     href: mailTo,
     iconPrefix: EIconLibrary.MATERIAL,
     icon: "mail",
     iconTitle: "Email address",
   },
   {
-    title: EQuickLinkTitle.CV,
+    title: Ei18nToken.CV,
     href: "OL.CV.pdf",
     iconPrefix: EIconLibrary.MATERIAL,
     icon: "description",

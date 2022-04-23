@@ -1,3 +1,4 @@
+import { Ei18nToken } from "i18n/types";
 import { EIconLibrary } from "types";
 
 export enum EPlatformLinkTitle {
@@ -9,17 +10,6 @@ export enum EPlatformLinkTitle {
   FREE_CODE_CAMP = "freeCodeCamp",
   GLITCH = "Glitch",
   MY_TRAVEL_MAP = "My travel map",
-}
-
-export enum EPlatformLinkDescriptionTranslationKey {
-  CODEPEN = "HTML, CSS & JavaScript code snippets",
-  HACKER_RANK = "competitive programming challenges & hackathons",
-  LEETCODE = "competitive & academic programming challenges",
-  STEPIK = "Computer Science learning environment",
-  FREE_CODE_CAMP = "Computer Science learning environment",
-  DEV_TO = "social network for software developers",
-  GLITCH = "collaboration on full-stack web apps",
-  MY_TRAVEL_MAP = "map of places I've travelled to or lived in",
 }
 
 export enum EPlatformLink {
@@ -39,5 +29,5 @@ export type TPlatformLink = {
   icon: string;
   iconPrefix: EIconLibrary;
   iconTitle: string;
-  description: EPlatformLinkDescriptionTranslationKey;
+  description: Ei18nToken;
 };

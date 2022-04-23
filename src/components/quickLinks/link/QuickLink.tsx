@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 import { EIconLibrary } from "types";
-import { TQuickLink, EQuickLinkTitle } from "components/quickLinks/types";
+import { TQuickLink } from "components/quickLinks/types";
 
-import * as css from "./quickLink.module.css";
+import * as css from "components/quickLinks/link/quickLink.module.css";
 import { useTranslation } from "react-i18next";
-import { ETranslationKey } from "i18n/types";
+import { Ei18nToken } from "i18n/types";
 
 type QuickLinkProps = TQuickLink & {
   children?: ReactNode;
@@ -23,14 +23,17 @@ export const QuickLink: React.FunctionComponent<QuickLinkProps> = ({
 }) => {
   const { t } = useTranslation();
 
-  const processedHref = title === EQuickLinkTitle.CV ? withPrefix(href) : href;
+  let processedHref = href;
+  let cvLinkCss = "";
+  let translatedTitle = title;
 
-  const cvLinkCss = title === EQuickLinkTitle.CV ? css.cvLink : "";
+  if (title === Ei18nToken.CV) {
+    processedHref = withPrefix(href);
+    cvLinkCss = css.cvLink;
+    translatedTitle = t(Ei18nToken.CV);
+  }
 
   const isMaterialIcon = iconPrefix === EIconLibrary.MATERIAL;
-
-  const translatedTitle =
-    title === EQuickLinkTitle.CV ? t(ETranslationKey.CV) : title;
 
   return (
     <a

@@ -3,8 +3,8 @@ import {
   EPlatformLink,
   TPlatformLink,
   EPlatformLinkTitle,
-  EPlatformLinkDescriptionTranslationKey,
-} from "./types";
+} from "components/platformLinks/types";
+import { Ei18nToken } from "i18n/types";
 
 const links: TPlatformLink[] = [
   {
@@ -13,7 +13,7 @@ const links: TPlatformLink[] = [
     iconPrefix: EIconLibrary.BRANDS,
     icon: "codepen",
     iconTitle: "Codepen",
-    description: EPlatformLinkDescriptionTranslationKey.CODEPEN,
+    description: Ei18nToken.CODEPEN,
   },
   {
     title: EPlatformLinkTitle.HACKER_RANK,
@@ -21,7 +21,7 @@ const links: TPlatformLink[] = [
     iconPrefix: EIconLibrary.BRANDS,
     icon: "hackerrank",
     iconTitle: "Hacker Rank",
-    description: EPlatformLinkDescriptionTranslationKey.HACKER_RANK,
+    description: Ei18nToken.HACKER_RANK,
   },
   {
     title: EPlatformLinkTitle.LEETCODE,
@@ -29,7 +29,7 @@ const links: TPlatformLink[] = [
     iconPrefix: EIconLibrary.BRANDS,
     icon: "leetcode",
     iconTitle: "LeetCode",
-    description: EPlatformLinkDescriptionTranslationKey.LEETCODE,
+    description: Ei18nToken.LEETCODE,
   },
   {
     title: EPlatformLinkTitle.STEPIK,
@@ -37,7 +37,7 @@ const links: TPlatformLink[] = [
     iconPrefix: EIconLibrary.BRANDS,
     icon: "stepik",
     iconTitle: "Stepik",
-    description: EPlatformLinkDescriptionTranslationKey.STEPIK,
+    description: Ei18nToken.STEPIK,
   },
   {
     title: EPlatformLinkTitle.DEV_TO,
@@ -45,7 +45,7 @@ const links: TPlatformLink[] = [
     iconPrefix: EIconLibrary.BRANDS,
     icon: "dev",
     iconTitle: "Dev.to",
-    description: EPlatformLinkDescriptionTranslationKey.DEV_TO,
+    description: Ei18nToken.DEV_TO,
   },
   {
     title: EPlatformLinkTitle.FREE_CODE_CAMP,
@@ -53,7 +53,7 @@ const links: TPlatformLink[] = [
     iconPrefix: EIconLibrary.BRANDS,
     icon: "free-code-camp",
     iconTitle: "freeCodeCamp",
-    description: EPlatformLinkDescriptionTranslationKey.FREE_CODE_CAMP,
+    description: Ei18nToken.FREE_CODE_CAMP,
   },
   {
     title: EPlatformLinkTitle.GLITCH,
@@ -61,7 +61,7 @@ const links: TPlatformLink[] = [
     iconPrefix: EIconLibrary.CUSTOM,
     icon: "glitch",
     iconTitle: "Glitch",
-    description: EPlatformLinkDescriptionTranslationKey.GLITCH,
+    description: Ei18nToken.GLITCH,
   },
   {
     title: EPlatformLinkTitle.MY_TRAVEL_MAP,
@@ -69,7 +69,7 @@ const links: TPlatformLink[] = [
     iconPrefix: EIconLibrary.BRANDS,
     icon: "galactic-republic",
     iconTitle: "My travel map",
-    description: EPlatformLinkDescriptionTranslationKey.MY_TRAVEL_MAP,
+    description: Ei18nToken.MY_TRAVEL_MAP,
   },
 ];
 
