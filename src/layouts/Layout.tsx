@@ -10,6 +10,7 @@ import {
   faDev,
   faFreeCodeCamp,
   faGalacticRepublic,
+  faHashnode,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Header from "components/header/Header";
@@ -24,7 +25,8 @@ library.add(
   faHackerrank,
   faDev,
   faFreeCodeCamp,
-  faGalacticRepublic
+  faGalacticRepublic,
+  faHashnode
 );
 
 interface IProps {
