@@ -22,6 +22,7 @@
     "platforms": {
       "title": "Me on other platforms",
       "descriptions": {
+        "blog": "just thoughts",
         "codepen": "HTML, CSS & JavaScript code snippets",
         "hackerRank": "competitive programming challenges & hackathons",
         "leetCode": "competitive & academic programming challenges",

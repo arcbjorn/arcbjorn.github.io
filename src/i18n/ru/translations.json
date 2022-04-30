@@ -22,6 +22,7 @@
     "platforms": {
       "title": "Я на других платформах",
       "descriptions": {
+        "blog": "просто мысли",
         "codepen": "HTML, CSS и JavaScript сниппеты",
         "hackerRank": "спортивное программирование & хакатоны",
         "leetCode": "спортивное программирование & хакатоны",

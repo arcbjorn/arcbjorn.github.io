@@ -22,6 +22,7 @@
     "platforms": {
       "title": "Mig på andra plattformar",
       "descriptions": {
+        "blog": "bara tankar",
         "codepen": "HTML-, CSS- och JavaScript-kodavsnitt",
         "hackerRank": "konkurrenskraftiga programmeringsutmaningar",
         "leetCode": "konkurrenskraftiga programmeringsutmaningar",
