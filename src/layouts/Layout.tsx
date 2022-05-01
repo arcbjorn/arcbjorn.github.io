@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import Header from "components/header/Header";
+import Loader from "components/loader/Loader";
 
 import * as css from "layouts/layout.module.css";
 
@@ -36,12 +37,20 @@ interface IProps {
 }
 
 export const Layout: React.FunctionComponent<IProps> = ({ children }) => {
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 600);
+  }, []);
+
   return (
     <div className={css.layout}>
       <div className="h-1/10">
         <Header />
       </div>
-      <div className="h-5/6">{children}</div>
+      <div className="h-5/6">{isLoading ? <Loader /> : children}</div>
     </div>
   );
 };
