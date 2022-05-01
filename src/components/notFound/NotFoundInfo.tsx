@@ -12,7 +12,9 @@ const NotFoundInfo: React.FunctionComponent = () => {
           <Trans>{Ei18nToken.PAGE_NOT_FOUND}</Trans>
         </h1>
         <Link to="/">
-          <Trans>{Ei18nToken.GO_BACK}</Trans>
+          <span className={css.link}>
+            <Trans>{Ei18nToken.GO_BACK}</Trans>
+          </span>
         </Link>
       </div>
     </div>
