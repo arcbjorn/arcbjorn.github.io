@@ -21,6 +21,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.15",
+    "@uiball/loaders": "^1.2.6",
     "autoprefixer": "^10.3.1",
     "gatsby": "^4.12.1",
     "gatsby-plugin-dark-mode": "^1.1.2",
