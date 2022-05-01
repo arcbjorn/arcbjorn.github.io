@@ -56,6 +56,14 @@ const links: TPlatformLink[] = [
     description: Ei18nToken.DEV_TO,
   },
   {
+    title: EPlatformLinkTitle.MEDIUM,
+    href: EPlatformLink.MEDIUM,
+    iconPrefix: EIconLibrary.BRANDS,
+    icon: "medium",
+    iconTitle: "Medium",
+    description: Ei18nToken.MEDIUM,
+  },
+  {
     title: EPlatformLinkTitle.LEETCODE,
     href: EPlatformLink.LEETCODE,
     iconPrefix: EIconLibrary.BRANDS,
