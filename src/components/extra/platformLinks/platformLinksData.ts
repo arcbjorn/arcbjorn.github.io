@@ -8,12 +8,12 @@ import { Ei18nToken } from "i18n/types";
 
 const links: TPlatformLink[] = [
   {
-    title: EPlatformLinkTitle.BLOG,
-    href: EPlatformLink.BLOG,
+    title: EPlatformLinkTitle.HASHNODE,
+    href: EPlatformLink.HASHNODE,
     iconPrefix: EIconLibrary.BRANDS,
     icon: "hashnode",
     iconTitle: "Hashnode",
-    description: Ei18nToken.BLOG,
+    description: Ei18nToken.HASHNODE,
   },
   {
     title: EPlatformLinkTitle.MY_TRAVEL_MAP,

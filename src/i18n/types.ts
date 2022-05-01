@@ -14,7 +14,7 @@ export enum Ei18nToken {
 
   PLATFORMS_TITLE = "extra.platforms.title",
 
-  BLOG = "extra.platforms.descriptions.blog",
+  HASHNODE = "extra.platforms.descriptions.hashnode",
   CODEPEN = "extra.platforms.descriptions.codepen",
   HACKER_RANK = "extra.platforms.descriptions.hackerRank",
   LEETCODE = "extra.platforms.descriptions.leetCode",

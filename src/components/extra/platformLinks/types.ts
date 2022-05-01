@@ -2,7 +2,7 @@ import { Ei18nToken } from "i18n/types";
 import { EIconLibrary } from "types";
 
 export enum EPlatformLinkTitle {
-  BLOG = "Blog",
+  HASHNODE = "Hashnode",
   CODEPEN = "Codepen",
   HACKER_RANK = "Hacker Rank",
   LEETCODE = "LeetCode",
@@ -14,7 +14,7 @@ export enum EPlatformLinkTitle {
 }
 
 export enum EPlatformLink {
-  BLOG = "https://blog.arcbjorn.com/",
+  HASHNODE = "https://blog.arcbjorn.com/",
   CODEPEN = "https://codepen.io/arcbjorn",
   HACKER_RANK = "https://www.hackerrank.com/arcbjorn",
   LEETCODE = "https://leetcode.com/arcbjorn",
