@@ -12,6 +12,11 @@ import {
   faGalacticRepublic,
   faHashnode,
   faMedium,
+  faTwitter,
+  faReddit,
+  faInstagram,
+  faSpotify,
+  faGoodreads,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Header from "components/header/Header";
@@ -28,7 +33,12 @@ library.add(
   faFreeCodeCamp,
   faGalacticRepublic,
   faHashnode,
-  faMedium
+  faMedium,
+  faTwitter,
+  faReddit,
+  faInstagram,
+  faSpotify,
+  faGoodreads
 );
 
 interface IProps {
