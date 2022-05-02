@@ -4,11 +4,11 @@ import { Trans } from "react-i18next";
 import {
   EPlatformLinkTitle,
   TPlatformLink,
-} from "components/extra/platformLinks/types";
+} from "components/extra/extraLinks/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
-import * as css from "components/extra/platformLinks/link/platformLink.module.css";
+import * as css from "components/extra/extraLinks/platform/platformLink.module.css";
 
 type PlatformLinkProps = TPlatformLink & {
   children?: React.ReactNode;
