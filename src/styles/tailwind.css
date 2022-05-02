@@ -10,54 +10,53 @@ body,
 }
 
 body {
-    --bg: #F9F5EF;
-    --color: #1B1D1E;
-    --focusColor: #F15025;
-    --titleColor: #008080;
-    
-    /* Terminal */
-    --userandhostColor: var(--titleColor);
-    --infolocationColor: var(--focusColor);
-    --companyColor: var(--focusColor);
-    
-    /* Quick Links */
-    --quickLinkButtonColor: var(--color);
-    --quickLinkButtonHoverColor: var(--bg);
+  --bg: #f9f5ef;
+  --color: #1b1d1e;
+  --focusColor: #f15025;
+  --titleColor: #008080;
 
-    --quickLinkButtonBackgroundColor: transparent;
-    --quickLinkButtonBackgroundHoverColor: var(--color);
+  /* Terminal */
+  --userandhostColor: var(--titleColor);
+  --infolocationColor: var(--focusColor);
+  --companyColor: var(--focusColor);
 
-    --quickLinkButtonBorderColor: var(--color);
-    --quickLinkButtonBorderHoverColor: transparent;
+  /* Quick Links */
+  --quickLinkButtonColor: var(--color);
+  --quickLinkButtonHoverColor: var(--bg);
 
-    /* Extra Page */
-    --extraPageBorderColor: var(--color);
+  --quickLinkButtonBackgroundColor: transparent;
+  --quickLinkButtonBackgroundHoverColor: var(--color);
 
-    /* Platform Links */
-    --platformLinkColor: var(--titleColor);
-    --platformLinkHoverColor: var(--bg);
-    --platformLinkBackgroundHoverColor: var(--focusColor);
+  --quickLinkButtonBorderColor: var(--color);
+  --quickLinkButtonBorderHoverColor: transparent;
 
-    /* Books */
-    --bookEntryHoverColor: var(--bg);
-    --bookEntryBackgroundHoverColor: var(--focusColor);
+  /* Extra Page */
+  --extraPageBorderColor: var(--color);
 
-    background-color: var(--bg);
-    color: var(--color);
-    
-    @apply font-ibm;
+  /* Platform Links */
+  --extraLinkColor: var(--titleColor);
+  --extraLinkHoverColor: var(--bg);
+  --extraLinkBackgroundHoverColor: var(--focusColor);
+
+  /* Books */
+  --bookEntryHoverColor: var(--bg);
+  --bookEntryBackgroundHoverColor: var(--focusColor);
+
+  background-color: var(--bg);
+  color: var(--color);
+
+  @apply font-ibm;
 }
-  
+
 body.dark {
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 
-    --bg: #1B1D1E;
-    --color: #DDDDDD;
-    --focusColor: #F58A07;
-    --titleColor: #01DAE0;
+  --bg: #1b1d1e;
+  --color: #dddddd;
+  --focusColor: #f58a07;
+  --titleColor: #01dae0;
 
-    --platformLinkBackgroundHoverColor: var(--color);
+  --extraLinkBackgroundHoverColor: var(--color);
 
-    --bookEntryBackgroundHoverColor: var(--color);
-
+  --bookEntryBackgroundHoverColor: var(--color);
 }
