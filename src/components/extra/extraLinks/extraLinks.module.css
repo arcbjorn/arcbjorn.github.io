@@ -1,0 +1,7 @@
+.platformLinks {
+  @apply flex flex-col pt-2;
+}
+
+.socialLinks {
+  @apply py-4 flex flex-wrap justify-center;
+}
