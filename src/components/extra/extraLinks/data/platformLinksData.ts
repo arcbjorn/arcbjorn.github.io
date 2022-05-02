@@ -59,8 +59,8 @@ const links: TPlatformLink[] = [
     title: EPlatformLinkTitle.STACK_OVERFLOW,
     href: EPlatformLink.STACK_OVERFLOW,
     iconPrefix: EIconLibrary.BRANDS,
-    icon: "dev",
-    iconTitle: "Dev.to",
+    icon: "stack-overflow",
+    iconTitle: "StackOverflow",
     description: Ei18nToken.STACK_OVERFLOW,
   },
   {

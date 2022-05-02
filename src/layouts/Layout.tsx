@@ -17,6 +17,7 @@ import {
   faInstagram,
   faSpotify,
   faGoodreads,
+  faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Header from "components/header/Header";
@@ -38,7 +39,8 @@ library.add(
   faReddit,
   faInstagram,
   faSpotify,
-  faGoodreads
+  faGoodreads,
+  faStackOverflow
 );
 
 interface IProps {
