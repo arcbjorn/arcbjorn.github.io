@@ -3,5 +3,5 @@
 }
 
 .socialLinks {
-  @apply py-4 flex flex-wrap justify-center;
+  @apply py-4 flex flex-wrap justify-around;
 }

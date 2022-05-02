@@ -1,10 +1,31 @@
 .socialLinkIcon {
-  @apply text-3xl px-4 py-4 rounded-full;
+  @apply text-3xl p-4;
 
   color: var(--extraLinkColor);
 }
 
 .socialLinkIcon:hover {
-  color: var(--extraLinkHoverColor);
-  background-color: var(--extraLinkBackgroundHoverColor);
+  position: relative;
+
+  color: var(--extraLinkBackgroundHoverColor);
+
+  background: linear-gradient(
+        to bottom,
+        var(--extraLinkBackgroundHoverColor) 1.2px,
+        transparent 1.2px,
+        transparent calc(100% - 1.2px),
+        var(--extraLinkBackgroundHoverColor) calc(100% - 1.2px)
+      )
+      no-repeat,
+    linear-gradient(
+        to left,
+        var(--extraLinkBackgroundHoverColor) 1.2px,
+        transparent 1.2px,
+        transparent calc(100% - 1.2px),
+        var(--extraLinkBackgroundHoverColor) calc(100% - 1.2px)
+      )
+      no-repeat;
+
+  background-position: center;
+  background-size: calc(100% - 0.75em) 100%, 100% calc(100% - 0.75em);
 }

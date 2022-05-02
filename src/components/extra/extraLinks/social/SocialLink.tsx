@@ -13,11 +13,15 @@ const SocialLink: React.FunctionComponent<TSocialLink> = ({
   iconTitle,
 }) => {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={css.socialLinkIcon}
+    >
       <FontAwesomeIcon
         icon={[iconPrefix as IconPrefix, icon as IconName]}
         title={iconTitle}
-        className={css.socialLinkIcon}
       />
     </a>
   );
