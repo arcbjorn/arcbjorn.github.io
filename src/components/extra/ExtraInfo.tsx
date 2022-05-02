@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import Books from "components/extra/books/Books";
 import Loader from "components/loader/Loader";
-import PlatformLinks from "components/extra/platformLinks/PlatformLinks";
+import ExtraLinks from "components/extra/extraLinks/ExtraLinks";
 
 import * as css from "components/extra/extraInfo.module.css";
 
@@ -22,7 +22,7 @@ const ExtraInfo: React.FunctionComponent = () => {
       ) : (
         <div className={css.extraInfo}>
           <div className={`${css.extraSection} w-full sm:w-5/12`}>
-            <PlatformLinks />
+            <ExtraLinks />
           </div>
           <div className={`${css.extraSection} w-full sm:w-7/12`}>
             <Books />
