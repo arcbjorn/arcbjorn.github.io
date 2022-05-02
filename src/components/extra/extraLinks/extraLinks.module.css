@@ -4,4 +4,6 @@
 
 .socialLinks {
   @apply py-4 flex flex-wrap justify-around;
+
+  border-top: 1px solid var(--extraPageBorderColor);
 }
