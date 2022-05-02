@@ -23,15 +23,16 @@
       "title": "Mig på andra plattformar",
       "descriptions": {
         "hashnode": "blogggemenskap för mjukvaruutvecklare",
-        "codepen": "HTML-, CSS- och JavaScript-kodavsnitt",
+        "myTravelMap": "platser jag har rest till eller bott på",
         "hackerRank": "konkurrenskraftiga programmeringsutmaningar",
         "leetCode": "konkurrenskraftiga programmeringsutmaningar",
         "devto": "sociala nätverk för mjukvaruutvecklare",
+        "stackOverflow": "utvecklargemenskap",
+        "codepen": "HTML-, CSS- och JavaScript-kodavsnitt",
         "medium": "plattform för publicering online",
         "stepik": "datavetenskaplig lärmiljö",
         "freeCodeCamp": "datavetenskaplig lärmiljö",
-        "glitch": "samarbete om full-stack webbappar",
-        "myTravelMap": "platser jag har rest till eller bott på"
+        "glitch": "samarbete om full-stack webbappar"
       }
     },
     "books": {

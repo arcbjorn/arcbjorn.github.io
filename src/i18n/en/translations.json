@@ -23,15 +23,16 @@
       "title": "Me on other platforms",
       "descriptions": {
         "hashnode": "blogging community for software developers",
-        "codepen": "HTML, CSS & JavaScript code snippets",
+        "myTravelMap": "places I've travelled to or lived in",
         "hackerRank": "competitive programming challenges & hackathons",
         "leetCode": "competitive & academic programming challenges",
-        "medium": "online publishing platform",
         "devto": "social network for software developers",
+        "stackOverflow": "developer community",
+        "codepen": "HTML, CSS & JavaScript code snippets",
+        "medium": "online publishing platform",
         "stepik": "computer science learning environment",
         "freeCodeCamp": "computer science learning environment",
-        "glitch": "collaboration on full-stack web apps",
-        "myTravelMap": "places I've travelled to or lived in"
+        "glitch": "collaboration on full-stack web apps"
       }
     },
     "books": {

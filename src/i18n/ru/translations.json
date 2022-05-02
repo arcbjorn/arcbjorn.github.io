@@ -23,15 +23,16 @@
       "title": "Я на других платформах",
       "descriptions": {
         "hashnode": "блог-сообщество для разработчиков",
-        "codepen": "HTML, CSS и JavaScript сниппеты",
+        "myTravelMap": "места, в которых я побывал или жил",
         "hackerRank": "спортивное программирование & хакатоны",
         "leetCode": "спортивное программирование & хакатоны",
         "devto": "социальная сеть для разработчиков",
+        "stackOverflow": "сообщество разработчиков",
+        "codepen": "HTML, CSS и JavaScript сниппеты",
         "medium": "онлайн-платформа для публикаций",
         "stepik": "среда обучения Computer Science",
         "freeCodeCamp": "среда обучения Computer Science",
-        "glitch": "коллаборации над full-stack веб-приложениями",
-        "myTravelMap": "места, в которых я побывал или жил"
+        "glitch": "коллаборации над full-stack веб-приложениями"
       }
     },
     "books": {

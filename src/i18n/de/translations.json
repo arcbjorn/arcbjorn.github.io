@@ -23,15 +23,16 @@
       "title": "Ich auf anderen Plattformen",
       "descriptions": {
         "hashnode": "Blogging-Community für Softwareentwickler",
-        "codepen": "HTML-, CSS- & JavaScript Code Snippets",
+        "myTravelMap": "die Orte, die ich bereist oder in denen ich gelebt habe",
         "hackerRank": "wettbewerbsfähige Programmierherausforderungen",
         "leetCode": "akademische Programmierherausforderungen",
         "devto": "soziales Netzwerk für Softwareentwickler",
+        "stackOverflow": "Entwicklergemeinschaft",
+        "codepen": "HTML-, CSS- & JavaScript Code Snippets",
         "medium": "Plattform für Online-Veröffentlichungen",
         "stepik": "Lernumgebung für Informatik",
         "freeCodeCamp": "Lernumgebung für Informatik",
-        "glitch": "Zusammenarbeit bei Full-Stack Web Apps",
-        "myTravelMap": "die Orte, die ich bereist oder in denen ich gelebt habe"
+        "glitch": "Zusammenarbeit bei Full-Stack Web Apps"
       }
     },
     "books": {

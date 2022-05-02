@@ -20,6 +20,7 @@ export enum Ei18nToken {
   LEETCODE = "extra.platforms.descriptions.leetCode",
   FREE_CODE_CAMP = "extra.platforms.descriptions.freeCodeCamp",
   DEV_TO = "extra.platforms.descriptions.devto",
+  STACK_OVERFLOW = "extra.platforms.descriptions.stackOverflow",
   MEDIUM = "extra.platforms.descriptions.medium",
   STEPIK = "extra.platforms.descriptions.stepik",
   GLITCH = "extra.platforms.descriptions.glitch",
