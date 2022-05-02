@@ -74,7 +74,7 @@ const links: TPlatformLink[] = [
   {
     title: EPlatformLinkTitle.LEETCODE,
     href: EPlatformLink.LEETCODE,
-    iconPrefix: EIconLibrary.BRANDS,
+    iconPrefix: EIconLibrary.CUSTOM,
     icon: "leetcode",
     iconTitle: "LeetCode",
     description: Ei18nToken.LEETCODE,
@@ -82,7 +82,7 @@ const links: TPlatformLink[] = [
   {
     title: EPlatformLinkTitle.STEPIK,
     href: EPlatformLink.STEPIK,
-    iconPrefix: EIconLibrary.BRANDS,
+    iconPrefix: EIconLibrary.CUSTOM,
     icon: "stepik",
     iconTitle: "Stepik",
     description: Ei18nToken.STEPIK,
