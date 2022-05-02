@@ -2,18 +2,19 @@
   @apply px-5 py-4 flex flex-col;
 }
 
-.platformLink:hover {
-  color: var(--extraLinkHoverColor);
-  background-color: var(--extraLinkBackgroundHoverColor);
-}
-
 .platformLinkTitle {
   color: var(--extraLinkColor);
   @apply flex items-center sm:pb-2 text-base md:text-lg;
 }
 
-.platformLinkTitleHover {
+.platformLink:hover {
   color: var(--extraLinkHoverColor);
+  background-color: var(--extraLinkBackgroundHoverColor);
+}
+
+.platformLink:hover > .platformLinkTitle {
+  color: var(--extraLinkHoverColor);
+  background-color: var(--extraLinkBackgroundHoverColor);
 }
 
 .platformLinkIcon {

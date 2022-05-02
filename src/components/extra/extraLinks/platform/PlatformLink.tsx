@@ -1,20 +1,14 @@
 import * as React from "react";
 import { Trans } from "react-i18next";
 
-import {
-  EPlatformLinkTitle,
-  TPlatformLink,
-} from "components/extra/extraLinks/types";
+import { TPlatformLink } from "components/extra/extraLinks/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
 import * as css from "components/extra/extraLinks/platform/platformLink.module.css";
+import { EIconLibrary } from "types";
 
-type PlatformLinkProps = TPlatformLink & {
-  children?: React.ReactNode;
-};
-
-const PlatformLink: React.FunctionComponent<PlatformLinkProps> = ({
+const PlatformLink: React.FunctionComponent<TPlatformLink> = ({
   title,
   href,
   icon,
@@ -22,37 +16,15 @@ const PlatformLink: React.FunctionComponent<PlatformLinkProps> = ({
   iconTitle,
   description,
 }) => {
-  const [isLinkHovered, toggleHover] = React.useState(false);
-
-  const toggleTitleColor = () => {
-    toggleHover(!isLinkHovered);
-  };
-
-  const noIconsList = [
-    EPlatformLinkTitle.GLITCH,
-    EPlatformLinkTitle.STEPIK,
-    EPlatformLinkTitle.LEETCODE,
-  ];
-
-  const noIcon = noIconsList.some((t) => t === title);
-
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
       className={css.platformLink}
-      onMouseEnter={toggleTitleColor}
-      onMouseLeave={toggleTitleColor}
     >
-      <div
-        className={`${css.platformLinkTitle} ${
-          isLinkHovered ? css.platformLinkTitleHover : ""
-        }`}
-      >
-        {noIcon ? (
-          ""
-        ) : (
+      <div className={css.platformLinkTitle}>
+        {iconPrefix !== EIconLibrary.CUSTOM && (
           <FontAwesomeIcon
             icon={[iconPrefix as IconPrefix, icon as IconName]}
             title={iconTitle}
