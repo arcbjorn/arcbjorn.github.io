@@ -1,3 +1,4 @@
+import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { Ei18nToken } from "i18n/types";
 import { EIconLibrary } from "types";
 
@@ -32,7 +33,7 @@ export enum EPlatformLink {
 export type TPlatformLink = {
   title: EPlatformLinkTitle;
   href: EPlatformLink;
-  icon: string;
+  icon: IconName | string;
   iconPrefix: EIconLibrary;
   iconTitle: string;
   description: Ei18nToken;
@@ -56,7 +57,7 @@ export enum ESocialLink {
 
 export type TSocialLink = {
   href: ESocialLink;
-  icon: string;
+  icon: IconName;
   iconPrefix: EIconLibrary;
   iconTitle: string;
 };
