@@ -38,7 +38,7 @@ const Books: React.FunctionComponent = () => {
         </span>
         <div className={css.bookList}>
           {softwareBooks.map(({ title, author, href }, i) => (
-            <div key={i} className={css.bookEntry}>
+            <div key={title + i} className={css.bookEntry}>
               <svg width="70" height="50" className={css.treeNode}>
                 <line
                   x1="30"
@@ -66,7 +66,7 @@ const Books: React.FunctionComponent = () => {
         </span>
         <div className={css.bookList}>
           {otherBooks.map(({ title, author, href }, i) => (
-            <div key={i} className={css.bookEntry}>
+            <div key={title + i} className={css.bookEntry}>
               <svg width="70" height="50" className={css.treeNode}>
                 <line
                   x1="30"
