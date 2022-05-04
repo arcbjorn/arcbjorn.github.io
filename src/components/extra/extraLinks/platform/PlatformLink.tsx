@@ -8,16 +8,13 @@ import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 import * as css from "components/extra/extraLinks/platform/platformLink.module.css";
 import { EIconLibrary } from "types";
 
-type TPlatformLinkProps = Omit<TLink<IPlatformLinkPartial>, "category">;
+type TPlatformLinkProps = {
+  link: Omit<TLink<IPlatformLinkPartial>, "category">;
+};
 
-const PlatformLink: React.FunctionComponent<TPlatformLinkProps> = ({
-  title,
-  href,
-  icon,
-  iconPrefix,
-  iconTitle,
-  description,
-}) => {
+const PlatformLink: React.FunctionComponent<TPlatformLinkProps> = (props) => {
+  const { title, href, icon, iconPrefix, iconTitle, description } = props.link;
+
   return (
     <a
       href={href}

@@ -6,12 +6,13 @@ import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
 import * as css from "components/extra/extraLinks/social/socialLink.module.css";
 
-const SocialLink: React.FunctionComponent<Omit<TLink, "category">> = ({
-  href,
-  icon,
-  iconPrefix,
-  iconTitle,
-}) => {
+type TSocialLinkProps = {
+  link: Omit<TLink, "category">;
+};
+
+const SocialLink: React.FunctionComponent<TSocialLinkProps> = ({ link }) => {
+  const { href, icon, iconPrefix, iconTitle } = link;
+
   return (
     <a
       href={href}

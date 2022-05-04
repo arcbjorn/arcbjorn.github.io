@@ -10,17 +10,14 @@ import { useTranslation } from "react-i18next";
 import { Ei18nToken } from "i18n/types";
 import { TLink } from "data/types";
 
-type TQuickLinkProps = Omit<TLink, "category"> & {
-  children?: ReactNode;
+type TQuickLinkProps = {
+  link: Omit<TLink, "category"> & {
+    children?: ReactNode;
+  };
 };
 
-export const QuickLink: React.FunctionComponent<TQuickLinkProps> = ({
-  title,
-  href,
-  icon,
-  iconPrefix,
-  iconTitle,
-}) => {
+export const QuickLink: React.FunctionComponent<TQuickLinkProps> = (props) => {
+  const { title, href, icon, iconPrefix, iconTitle } = props.link;
   const { t } = useTranslation();
 
   let processedHref: string = href;
