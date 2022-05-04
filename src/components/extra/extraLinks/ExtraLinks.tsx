@@ -28,7 +28,7 @@ const ExtraLinks: React.FunctionComponent = () => {
         {platformLinks.map(
           ({ title, href, icon, iconPrefix, iconTitle, description }, i) => (
             <PlatformLink
-              key={i}
+              key={title + i}
               title={title}
               href={href}
               icon={icon}
@@ -43,7 +43,7 @@ const ExtraLinks: React.FunctionComponent = () => {
       <div className={css.socialLinks}>
         {socialLinks.map(({ href, icon, iconPrefix, iconTitle }, i) => (
           <SocialLink
-            key={i}
+            key={icon + i}
             href={href}
             icon={icon}
             iconPrefix={iconPrefix}
