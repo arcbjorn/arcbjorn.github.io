@@ -1,38 +1,39 @@
 import { Ei18nToken } from "i18n/types";
 import { EIconLibrary } from "types";
-import { TQuickLink, EQuickLinkTitle } from "components/about/quickLinks/types";
+import { TLink, ELinkTitle, ELinkUrl, ELinkCategory } from "data/types";
 
-const mailTo =
-  "mailto:oleg.luganskiy@gmail.com?subject=Employment%20Offer&body=Hi%20Oleg";
-
-const links: TQuickLink[] = [
+const links: TLink[] = [
   {
-    title: EQuickLinkTitle.LINKEDIN,
-    href: "https://www.linkedin.com/in/oleg-luganskiy/",
+    title: ELinkTitle.LINKEDIN,
+    href: ELinkUrl.LINKEDIN,
     iconPrefix: EIconLibrary.BRANDS,
     icon: "linkedin",
     iconTitle: "LinkedIn account",
+    category: ELinkCategory.SOCIAL,
   },
   {
-    title: EQuickLinkTitle.GITHUB,
-    href: "https://www.github.com/arcbjorn",
+    title: ELinkTitle.GITHUB,
+    href: ELinkUrl.GITHUB,
     iconPrefix: EIconLibrary.BRANDS,
     icon: "github",
     iconTitle: "Github account",
+    category: ELinkCategory.CUSTOM,
   },
   {
-    title: EQuickLinkTitle.EMAIL,
-    href: mailTo,
+    title: ELinkTitle.EMAIL,
+    href: ELinkUrl.MAIL,
     iconPrefix: EIconLibrary.MATERIAL,
     icon: "mail",
     iconTitle: "Email address",
+    category: ELinkCategory.CUSTOM,
   },
   {
     title: Ei18nToken.CV,
-    href: "OL.CV.pdf",
+    href: ELinkUrl.CV,
     iconPrefix: EIconLibrary.MATERIAL,
     icon: "description",
     iconTitle: "Curriculum Vitae",
+    category: ELinkCategory.CUSTOM,
   },
 ];
 
