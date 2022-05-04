@@ -1,14 +1,16 @@
 import * as React from "react";
 import { Trans } from "react-i18next";
 
-import { TPlatformLink } from "components/extra/extraLinks/types";
+import { IPlatformLinkPartial, TLink } from "data/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
 import * as css from "components/extra/extraLinks/platform/platformLink.module.css";
 import { EIconLibrary } from "types";
 
-const PlatformLink: React.FunctionComponent<TPlatformLink> = ({
+type TPlatformLinkProps = Omit<TLink<IPlatformLinkPartial>, "category">;
+
+const PlatformLink: React.FunctionComponent<TPlatformLinkProps> = ({
   title,
   href,
   icon,

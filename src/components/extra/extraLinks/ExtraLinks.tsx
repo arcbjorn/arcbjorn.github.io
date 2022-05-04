@@ -4,10 +4,10 @@ import { Trans } from "react-i18next";
 import { Ei18nToken } from "i18n/types";
 
 import PlatformLink from "components/extra/extraLinks/platform/PlatformLink";
-import platformLinks from "components/extra/extraLinks/data/platformLinksData";
+import platformLinks from "data/platformLinks";
 
 import SocialLink from "components/extra/extraLinks/social/SocialLink";
-import socialLinks from "components/extra/extraLinks/data/socialLinksData";
+import socialLinks from "data/socialLinks";
 
 import * as css from "components/extra/extraLinks/extraLinks.module.css";
 
@@ -26,9 +26,9 @@ const ExtraLinks: React.FunctionComponent = () => {
 
       <div className={css.platformLinks}>
         {platformLinks.map(
-          ({ title, href, icon, iconPrefix, iconTitle, description }, i) => (
+          ({ title, href, icon, iconPrefix, iconTitle, description }) => (
             <PlatformLink
-              key={title + i}
+              key={title}
               title={title}
               href={href}
               icon={icon}
@@ -41,9 +41,9 @@ const ExtraLinks: React.FunctionComponent = () => {
       </div>
 
       <div className={css.socialLinks}>
-        {socialLinks.map(({ href, icon, iconPrefix, iconTitle }, i) => (
+        {socialLinks.map(({ href, icon, iconPrefix, iconTitle }) => (
           <SocialLink
-            key={icon + i}
+            key={icon}
             href={href}
             icon={icon}
             iconPrefix={iconPrefix}

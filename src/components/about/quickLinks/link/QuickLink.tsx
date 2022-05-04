@@ -4,17 +4,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 import { EIconLibrary } from "types";
-import { TQuickLink } from "components/about/quickLinks/types";
 
 import * as css from "components/about/quickLinks/link/quickLink.module.css";
 import { useTranslation } from "react-i18next";
 import { Ei18nToken } from "i18n/types";
+import { TLink } from "data/types";
 
-type QuickLinkProps = TQuickLink & {
+type TQuickLinkProps = Omit<TLink, "category"> & {
   children?: ReactNode;
 };
 
-export const QuickLink: React.FunctionComponent<QuickLinkProps> = ({
+export const QuickLink: React.FunctionComponent<TQuickLinkProps> = ({
   title,
   href,
   icon,
@@ -23,7 +23,7 @@ export const QuickLink: React.FunctionComponent<QuickLinkProps> = ({
 }) => {
   const { t } = useTranslation();
 
-  let processedHref = href;
+  let processedHref: string = href;
   let cvLinkCss = "";
   let translatedTitle = title;
 

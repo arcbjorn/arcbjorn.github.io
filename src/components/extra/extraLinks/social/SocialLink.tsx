@@ -1,12 +1,12 @@
 import * as React from "react";
 
-import { TSocialLink } from "components/extra/extraLinks/types";
+import { TLink } from "data/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
 import * as css from "components/extra/extraLinks/social/socialLink.module.css";
 
-const SocialLink: React.FunctionComponent<TSocialLink> = ({
+const SocialLink: React.FunctionComponent<Omit<TLink, "category">> = ({
   href,
   icon,
   iconPrefix,
