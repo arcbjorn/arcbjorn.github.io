@@ -4,7 +4,12 @@ import { Trans } from "react-i18next";
 import { Ei18nToken } from "i18n/types";
 
 import PlatformLink from "components/extra/extraLinks/platform/PlatformLink";
-import platformLinks from "data/platformLinks";
+import {
+  customLinks,
+  learningLinks,
+  blogLinks,
+  showcaseLinks,
+} from "data/platformLinks";
 
 import SocialLink from "components/extra/extraLinks/social/SocialLink";
 import socialLinks from "data/socialLinks";
@@ -25,7 +30,31 @@ const ExtraLinks: React.FunctionComponent = () => {
       </legend>
 
       <div className={css.platformLinks}>
-        {platformLinks.map((link) => (
+        {customLinks.map((link) => (
+          <PlatformLink key={link.title} link={link} />
+        ))}
+
+        <div className={css.divider}>
+          <span className="material-icons">terminal</span>
+        </div>
+
+        {learningLinks.map((link) => (
+          <PlatformLink key={link.title} link={link} />
+        ))}
+
+        <div className={css.divider}>
+          <span className="material-icons">notes</span>
+        </div>
+
+        {blogLinks.map((link) => (
+          <PlatformLink key={link.title} link={link} />
+        ))}
+
+        <div className={css.divider}>
+          <span className="material-icons">slideshow</span>
+        </div>
+
+        {showcaseLinks.map((link) => (
           <PlatformLink key={link.title} link={link} />
         ))}
       </div>
