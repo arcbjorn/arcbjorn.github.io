@@ -29,5 +29,5 @@ export enum Ei18nToken {
   BOOKS_TITLE = "extra.books.title",
 
   SOFTWARE = "extra.books.categories.software",
-  OTHER = "extra.books.categories.other",
+  PSYCHOLOGY = "extra.books.categories.psychology",
 }
