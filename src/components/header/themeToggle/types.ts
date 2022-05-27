@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export type ThemeToggleProps = {
+export type TThemeToggleProps = {
   toggleTheme: (theme: string) => void;
   theme: string;
   children?: ReactNode;

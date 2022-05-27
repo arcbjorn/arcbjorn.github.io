@@ -8,18 +8,18 @@ import { Action } from "state/types";
 import getTerminalText from "components/about/typeWriter/introText";
 import * as css from "components/about/typeWriter/typeWriter.module.css";
 
-type TypeWriterProps = {
+type TTypeWriterProps = {
   toggleQuickLinksVisibility: () => void;
   toggleTypeWriter: () => void;
   startTypeWriter: boolean;
   children?: ReactNode;
 };
 
-const TypeWriter: React.FunctionComponent<TypeWriterProps> = ({
+const TypeWriter: React.FunctionComponent<TTypeWriterProps> = ({
   startTypeWriter,
   toggleTypeWriter,
   toggleQuickLinksVisibility,
-}: TypeWriterProps) => {
+}) => {
   const { t } = useTranslation();
   const introText = getTerminalText({
     file: t(Ei18nToken.FILE),

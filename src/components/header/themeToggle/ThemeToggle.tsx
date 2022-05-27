@@ -1,16 +1,16 @@
 import React from "react";
 
 import {
-  ThemeToggleProps,
+  TThemeToggleProps,
   EColourMode,
 } from "components/header/themeToggle/types";
 
 import * as css from "components/header/themeToggle/themeToggle.module.css";
 
-const ThemeToggle: React.FunctionComponent<ThemeToggleProps> = ({
+const ThemeToggle: React.FunctionComponent<TThemeToggleProps> = ({
   theme,
   toggleTheme,
-}: ThemeToggleProps) => {
+}) => {
   const isDarkMode = theme === EColourMode.DARK;
 
   if (theme == null) {

@@ -44,11 +44,11 @@ library.add(
   faStackOverflow
 );
 
-interface IProps {
+interface ILayoutProps {
   children: React.ReactNode;
 }
 
-export const Layout: React.FunctionComponent<IProps> = ({ children }) => {
+export const Layout: React.FunctionComponent<ILayoutProps> = ({ children }) => {
   useEffect(() => {
     if (
       /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(

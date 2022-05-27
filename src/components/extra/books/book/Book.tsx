@@ -4,11 +4,11 @@ import { TBook } from "components/extra/books/types";
 
 import * as css from "components/extra/books/book/book.module.css";
 
-type BookProps = Omit<TBook, "category"> & {
+type TBookProps = Omit<TBook, "category"> & {
   children?: React.ReactNode;
 };
 
-const Book: React.FunctionComponent<BookProps> = ({ title, author, href }) => {
+const Book: React.FunctionComponent<TBookProps> = ({ title, author, href }) => {
   return (
     <a
       href={href}
