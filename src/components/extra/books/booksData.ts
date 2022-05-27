@@ -16,25 +16,25 @@ const books: TBook[] = [
   {
     title: "Psycho-Cybernetics",
     author: "M.Maltz",
-    category: EBookCategory.OTHER,
+    category: EBookCategory.PSYCHOLOGY,
     href: "https://www.amazon.com/Psycho-Cybernetics-Updated-Expanded-Maxwell-Maltz/dp/0399176136",
   },
   {
     title: "War of Art",
     author: "S.Pressfield",
-    category: EBookCategory.OTHER,
+    category: EBookCategory.PSYCHOLOGY,
     href: "https://www.amazon.com/War-Art-Winning-Creative-Battle/dp/1501260626",
   },
   {
     title: "SGTCIY",
     author: "C.Newport",
-    category: EBookCategory.OTHER,
+    category: EBookCategory.PSYCHOLOGY,
     href: "https://www.amazon.com/Good-They-Cant-Ignore-You/dp/1455509124",
   },
   {
     title: "Mastery",
     author: "G.Leonard",
-    category: EBookCategory.OTHER,
+    category: EBookCategory.PSYCHOLOGY,
     href: "https://www.amazon.com/Mastery-Keys-Success-Long-Term-Fulfillment/dp/0452267560",
   },
 ];

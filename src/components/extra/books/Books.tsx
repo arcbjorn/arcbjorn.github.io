@@ -15,7 +15,7 @@ import * as css from "components/extra/books/books.module.css";
 
 const categoryToI18nTokenMap: Record<EBookCategory, Ei18nToken> = {
   [EBookCategory.SOFTWARE]: Ei18nToken.SOFTWARE,
-  [EBookCategory.OTHER]: Ei18nToken.OTHER,
+  [EBookCategory.PSYCHOLOGY]: Ei18nToken.PSYCHOLOGY,
 };
 
 const Books: React.FunctionComponent = () => {
@@ -24,7 +24,7 @@ const Books: React.FunctionComponent = () => {
   );
 
   const otherBooks = books.filter(
-    ({ category }) => category === EBookCategory.OTHER
+    ({ category }) => category === EBookCategory.PSYCHOLOGY
   );
 
   return (
@@ -62,7 +62,7 @@ const Books: React.FunctionComponent = () => {
           ))}
         </div>
         <span className={css.categoryTitle}>
-          <Trans>{categoryToI18nTokenMap[EBookCategory.OTHER]}</Trans>
+          <Trans>{categoryToI18nTokenMap[EBookCategory.PSYCHOLOGY]}</Trans>
         </span>
         <div className={css.bookList}>
           {otherBooks.map(({ title, author, href }, i) => (
