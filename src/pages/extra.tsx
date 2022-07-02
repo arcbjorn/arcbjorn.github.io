@@ -5,8 +5,17 @@ import { Helmet } from "react-helmet";
 import { EDocumentTitle } from "types";
 import Layout from "layouts/Layout";
 import ExtraInfo from "components/extra/ExtraInfo";
+import { navigate } from "gatsby";
 
 const ExtraPage: React.FunctionComponent = () => {
+  if (
+    /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    navigate("/");
+  }
+
   return (
     <Layout>
       <Helmet>

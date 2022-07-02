@@ -23,7 +23,6 @@ import {
 import Header from "components/header/Header";
 
 import * as css from "layouts/layout.module.css";
-import { navigate } from "gatsby";
 
 library.add(
   faLinkedin,
@@ -49,16 +48,6 @@ interface ILayoutProps {
 }
 
 export const Layout: React.FunctionComponent<ILayoutProps> = ({ children }) => {
-  useEffect(() => {
-    if (
-      /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      navigate("/");
-    }
-  }, []);
-
   return (
     <div className={css.layout}>
       <div className="h-1/10">
