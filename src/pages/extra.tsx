@@ -9,6 +9,7 @@ import { navigate } from "gatsby";
 
 const ExtraPage: React.FunctionComponent = () => {
   if (
+    typeof navigator !== `undefined` &&
     /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     )
