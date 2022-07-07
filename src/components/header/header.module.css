@@ -1,53 +1,53 @@
 .header {
-    @apply flex items-center justify-between flex-wrap py-7;
+  @apply flex items-center justify-between flex-wrap py-7;
 }
 
 .link {
-    color: var(--color);
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    @apply mx-4;
+  color: var(--color);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  @apply mx-4;
 }
 
 .link::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color);
-    transform-origin: bottom right;
-    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color);
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .link:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .activeRoute::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color);
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color);
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .logo {
-    @apply cursor-pointer font-bold text-xl px-7;
+  @apply cursor-pointer font-bold text-xl px-7;
 }
 
 .nav {
-    @apply flex items-center justify-around flex-wrap text-base sm:text-lg pl-2;
+  @apply flex items-center justify-around flex-wrap text-base sm:text-lg pl-2;
 }
 
 .links {
-    @apply hidden sm:flex;
+  @apply hidden sm:flex;
 }

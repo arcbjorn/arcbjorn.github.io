@@ -5,6 +5,7 @@ import { ThemeToggler } from "gatsby-plugin-dark-mode";
 import { Ei18nToken } from "i18n/types";
 import ThemeToggle from "components/header/themeToggle/ThemeToggle";
 import LanguageSwitch from "components/header/languageSwitch/LanguageSwitch";
+import TimeZone from "components/header/timeZone/TimeZone";
 
 import * as css from "components/header/header.module.css";
 
@@ -21,6 +22,7 @@ export const Header: React.FunctionComponent = () => {
       <Link className={css.logo} to={Route.about}>
         {logoText}
       </Link>
+      <TimeZone />
       <div className={css.nav}>
         <div className={css.links}>
           <Link
