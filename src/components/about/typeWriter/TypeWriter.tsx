@@ -73,6 +73,8 @@ const NonReactiveTypeWriter = React.memo(TypeWriter, (props, nextProps) => {
   return !nextProps.startTypeWriter;
 });
 
+NonReactiveTypeWriter.displayName = "TypeWriter";
+
 const ConnectedTypeWriter = connect(
   mapStateToProps,
   mapDispatchToProps
