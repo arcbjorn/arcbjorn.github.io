@@ -14,12 +14,31 @@ const defaultTranslation = {
   interests: "fascinated by Web & AI development",
 };
 
+interface ICompany {
+  name: string;
+  link: string;
+}
+
 const getTerminalText = (
   t: translationForTerminalText = defaultTranslation
 ): string => {
-  const previousCompanyLink = "https://muffins.io/";
-  const previousCompanyName = "Muffins";
-  const previousCompany = `<a href=${previousCompanyLink} target="_blank" class="link">${previousCompanyName}</a>`;
+  const previousCompanies: ICompany[] = [
+    { name: "Muffins", link: "https://muffins.io/" },
+  ];
+
+  function formatCompanies(companies: ICompany[]): string {
+    let companiesString = "";
+    companies.forEach(({ name, link }, index) => {
+      companiesString += `@<company><a href=${link} target="_blank" class="link">${name}</a></company>`;
+
+      if (companies.length > 1 && index % 2 == 0) {
+        companiesString += ", ";
+      }
+    });
+    return companiesString;
+  }
+
+  const formattedPreviousCompanies = formatCompanies(previousCompanies);
 
   const companyLink = "https://www.fundraiseup.com/";
   const companyName = "FundraiseUp";
@@ -27,7 +46,7 @@ const getTerminalText = (
 
   const introtext = `<span>${t.greeting}<br /><br />
     ${t.position} @<company>${company}</company><br />
-    ${t.formerly} @<company>${previousCompany}</company><br /><br />
+    ${t.formerly} ${formattedPreviousCompanies}<br /><br />
     ${t.interests}</span>`;
 
   const info = {
