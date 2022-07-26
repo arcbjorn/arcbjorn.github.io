@@ -15,7 +15,6 @@ const NotFoundPage: React.FunctionComponent = () => {
       <SEO
         title={EDocumentTitle.NOT_FOUND_PAGE}
         description="Not Found 404"
-        image=""
         slug={`${language}/*`}
       />
       <NotFoundInfo />

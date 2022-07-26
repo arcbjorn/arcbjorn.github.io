@@ -17,7 +17,6 @@ const IndexPage: React.FunctionComponent = () => {
       <SEO
         title={EDocumentTitle.INDEX_PAGE}
         description=""
-        image=""
         slug={`${language}`}
       />
       <Terminal />

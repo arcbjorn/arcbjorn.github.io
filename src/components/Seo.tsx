@@ -7,14 +7,12 @@ import { useI18next } from "gatsby-plugin-react-i18next";
 interface SEOProps {
   title: string;
   description: string;
-  image?: string;
   slug: string;
 }
 
 const SEO: React.FunctionComponent<SEOProps> = ({
   title,
   description,
-  image,
   slug,
 }) => {
   const { language } = useI18next();
@@ -27,9 +25,6 @@ const SEO: React.FunctionComponent<SEOProps> = ({
           description
           siteUrl
         }
-      }
-      icon: file(name: { eq: "icon" }) {
-        publicURL
       }
     }
   `);
@@ -45,17 +40,12 @@ const SEO: React.FunctionComponent<SEOProps> = ({
         content={description || data.site.siteMetadata.description}
       />
       <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}${slug}`} />
-      <link rel="shortcut icon" href={data.icon.publicURL} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@arcbjorn" />
       <meta name="og:title" content={title} />
       <meta
         name="og:description"
         content={description || data.site.siteMetadata.description}
-      />
-      <meta
-        name="og:image"
-        content={`${data.site.siteMetadata.siteUrl}${image}`}
       />
       <meta name="og:type" content="website" />
       <meta

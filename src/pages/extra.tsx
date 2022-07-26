@@ -25,7 +25,6 @@ const ExtraPage: React.FunctionComponent = () => {
       <SEO
         title={EDocumentTitle.EXTRA}
         description="Extra info"
-        image=""
         slug={`${language}/extra`}
       />
       <ExtraInfo />
