@@ -16,8 +16,12 @@ const currentSiteUrl = process.env.DEVELOPMENT
 
 module.exports = {
   siteMetadata: {
-    siteUrl: currentSiteUrl,
     title: "Arcbjorn personal website",
+    description: "Technology grokker, fascinated by Web & AI development",
+    author: `@arcbjorn`,
+    keywords: "",
+    image: `src/images/icon.png`,
+    siteUrl: currentSiteUrl,
   },
   plugins: [
     "gatsby-plugin-postcss",
