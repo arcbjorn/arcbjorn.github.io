@@ -1,17 +1,23 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
 
 import Layout from "layouts/Layout";
 import NotFoundInfo from "components/notFound/NotFoundInfo";
 import { EDocumentTitle } from "types";
+import SEO from "components/Seo";
+import { useI18next } from "gatsby-plugin-react-i18next";
 
 const NotFoundPage: React.FunctionComponent = () => {
+  const { language } = useI18next();
+
   return (
     <Layout>
-      <Helmet>
-        <title>{EDocumentTitle.NOT_FOUND_PAGE}</title>
-      </Helmet>
+      <SEO
+        title={EDocumentTitle.NOT_FOUND_PAGE}
+        description="Not Found 404"
+        image=""
+        slug={`${language}/*`}
+      />
       <NotFoundInfo />
     </Layout>
   );
