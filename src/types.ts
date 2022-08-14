@@ -1,7 +1,7 @@
-export enum EDocumentTitle {
-  INDEX_PAGE = "Oleg Luganskiy",
-  EXTRA = "Oleg Luganskiy - extra",
-  NOT_FOUND_PAGE = "Oleg Luganskiy - Not Found",
+export enum EDocumentDescription {
+  INDEX_PAGE = "",
+  EXTRA = "extra",
+  NOT_FOUND_PAGE = "Not Found",
 }
 
 export enum EIconLibrary {

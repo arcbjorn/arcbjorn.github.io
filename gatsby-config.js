@@ -12,11 +12,11 @@ const gatsbyRequiredRules = path.join(
 
 const currentSiteUrl = process.env.DEVELOPMENT
   ? "http://localhost:8000/"
-  : "https://arcbjorn.github.io";
+  : "https://arcbjorn.com/";
 
 module.exports = {
   siteMetadata: {
-    title: "Arcbjorn personal website",
+    title: "Oleg Luganskiy",
     description: "Technology grokker, fascinated by Web & AI development",
     author: `@arcbjorn`,
     keywords: "",

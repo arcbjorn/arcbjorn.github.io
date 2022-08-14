@@ -1,55 +1,39 @@
 // components/seo.js
 import React from "react";
 import Helmet from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
 import { useI18next } from "gatsby-plugin-react-i18next";
 
 interface SEOProps {
-  title: string;
   description: string;
-  slug: string;
+  slug?: string;
 }
 
-const SEO: React.FunctionComponent<SEOProps> = ({
-  title,
-  description,
-  slug,
-}) => {
+const SITE_TITLE = "Oleg Luganskiy";
+
+const SEO: React.FunctionComponent<SEOProps> = ({ description, slug }) => {
   const { language } = useI18next();
 
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          description
-          siteUrl
-        }
-      }
-    }
-  `);
+  const currentSiteUrl = process.env.DEVELOPMENT
+    ? "http://localhost:8000/"
+    : "https://arcbjorn.com/";
+
+  const siteUrl = slug ? `${currentSiteUrl}${slug}` : currentSiteUrl;
 
   return (
-    <Helmet htmlAttributes={{ lang: language }} titleTemplate={"%s"}>
-      <title>{title}</title>
-      <meta
-        name="description"
-        content={description || data.site.siteMetadata.description}
-      />
-      <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}${slug}`} />
+    <Helmet
+      htmlAttributes={{ lang: language }}
+      titleTemplate={description ? `%s | ${description}` : "%s"}
+    >
+      <title>{SITE_TITLE}</title>
+      <meta name="description" content={description} />
+      <link rel="canonical" href={siteUrl} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content="@arcbjorn" />
-      <meta name="og:title" content={title} />
-      <meta
-        name="og:description"
-        content={description || data.site.siteMetadata.description}
-      />
+      <meta name="og:title" content={SITE_TITLE} />
+      <meta name="og:description" content={description} />
       <meta name="og:type" content="website" />
-      <meta
-        name="og:url"
-        content={`${data.site.siteMetadata.siteUrl}/${slug}`}
-      />
-      <meta name="og:site_name" content={data.site.siteMetadata.title} />
+      <meta name="og:url" content={siteUrl} />
+      <meta name="og:site_name" content={SITE_TITLE} />
     </Helmet>
   );
 };

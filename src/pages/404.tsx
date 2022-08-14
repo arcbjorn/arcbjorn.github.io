@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 
 import Layout from "layouts/Layout";
 import NotFoundInfo from "components/notFound/NotFoundInfo";
-import { EDocumentTitle } from "types";
+import { EDocumentDescription } from "types";
 import SEO from "components/Seo";
 import { useI18next } from "gatsby-plugin-react-i18next";
 
@@ -13,9 +13,8 @@ const NotFoundPage: React.FunctionComponent = () => {
   return (
     <Layout>
       <SEO
-        title={EDocumentTitle.NOT_FOUND_PAGE}
-        description="Not Found 404"
-        slug={`${language}/*`}
+        description={EDocumentDescription.NOT_FOUND_PAGE}
+        slug={`/${language}/*`}
       />
       <NotFoundInfo />
     </Layout>

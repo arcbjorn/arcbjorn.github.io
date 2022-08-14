@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import { EDocumentTitle } from "types";
+import { EDocumentDescription } from "types";
 import Layout from "layouts/Layout";
 import ExtraInfo from "components/extra/ExtraInfo";
 import { navigate } from "gatsby";
@@ -23,9 +23,8 @@ const ExtraPage: React.FunctionComponent = () => {
   return (
     <Layout>
       <SEO
-        title={EDocumentTitle.EXTRA}
-        description="Extra info"
-        slug={`${language}/extra`}
+        description={EDocumentDescription.EXTRA}
+        slug={`/${language}/extra`}
       />
       <ExtraInfo />
     </Layout>
