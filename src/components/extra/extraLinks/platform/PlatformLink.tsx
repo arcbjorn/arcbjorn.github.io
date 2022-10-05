@@ -32,9 +32,9 @@ const PlatformLink: React.FunctionComponent<TPlatformLinkProps> = (props) => {
         )}
         {title}
       </div>
-      <span className={css.platformLinkDescription}>
+      {/* <span className={css.platformLinkDescription}>
         <Trans>{description}</Trans>
-      </span>
+      </span> */}
     </a>
   );
 };

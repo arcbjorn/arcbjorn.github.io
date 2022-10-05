@@ -34,25 +34,25 @@ const ExtraLinks: React.FunctionComponent = () => {
           <PlatformLink key={link.title} link={link} />
         ))}
 
-        <div className={css.divider}>
+        {/* <div className={css.divider}>
           <span className="material-icons">terminal</span>
-        </div>
+        </div> */}
 
         {learningLinks.map((link) => (
           <PlatformLink key={link.title} link={link} />
         ))}
 
-        <div className={css.divider}>
+        {/* <div className={css.divider}>
           <span className="material-icons">notes</span>
-        </div>
+        </div> */}
 
         {blogLinks.map((link) => (
           <PlatformLink key={link.title} link={link} />
         ))}
 
-        <div className={css.divider}>
+        {/* <div className={css.divider}>
           <span className="material-icons">slideshow</span>
-        </div>
+        </div> */}
 
         {showcaseLinks.map((link) => (
           <PlatformLink key={link.title} link={link} />
