@@ -32,6 +32,7 @@ export enum ELinkTitle {
   GITHUB = "Github",
   EMAIL = "EMail",
 
+  BLOG = "Blog",
   HASHNODE = "Hashnode",
   CODEPEN = "Codepen",
   HACKER_RANK = "Hacker Rank",
@@ -57,7 +58,8 @@ export enum ELinkUrl {
   MAIL = "mailto:oleg.luganskiy@gmail.com?subject=Employment%20Offer&body=Hi%20Oleg",
   CV = "OL.CV.pdf",
 
-  HASHNODE = "https://blog.arcbjorn.com/",
+  BLOG = "https://blog.arcbjorn.com/",
+  HASHNODE = "https://arcbjorn.hashnode.dev/",
   CODEPEN = "https://codepen.io/arcbjorn",
   HACKER_RANK = "https://www.hackerrank.com/arcbjorn",
   LEETCODE = "https://leetcode.com/arcbjorn",
