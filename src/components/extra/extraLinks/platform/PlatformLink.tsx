@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Trans } from "react-i18next";
 
 import { IPlatformLinkPartial, TLink } from "data/types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +12,7 @@ type TPlatformLinkProps = {
 };
 
 const PlatformLink: React.FunctionComponent<TPlatformLinkProps> = (props) => {
-  const { title, href, icon, iconPrefix, iconTitle, description } = props.link;
+  const { title, href, icon, iconPrefix, iconTitle } = props.link;
 
   return (
     <a
