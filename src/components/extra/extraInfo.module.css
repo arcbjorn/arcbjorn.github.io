@@ -27,7 +27,7 @@
 }
 
 .extraSection {
-  @apply h-full sm:h-auto;
+  @apply flex flex-col h-full sm:h-auto;
 }
 
 .extraInnerSection {

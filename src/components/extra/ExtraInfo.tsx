@@ -23,6 +23,14 @@ const ExtraInfo: React.FunctionComponent = () => {
         <div className={css.extraInfo}>
           <div className={`${css.extraSection} w-full sm:w-5/12`}>
             <ExtraLinks />
+            <a
+              href="https://arcbjorn.bio.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline p-4 self-center text-center"
+            >
+              All socials
+            </a>
           </div>
           <div className={`${css.extraSection} w-full sm:w-7/12`}>
             <Books />
