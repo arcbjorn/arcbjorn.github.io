@@ -23,6 +23,7 @@ const getTerminalText = (
   t: translationForTerminalText = defaultTranslation
 ): string => {
   const previousCompanies: ICompany[] = [
+    { name: "FundraiseUp", link: "https://www.fundraiseup.com/" },
     { name: "Muffins", link: "https://muffins.io/" },
   ];
 
@@ -40,12 +41,14 @@ const getTerminalText = (
 
   const formattedPreviousCompanies = formatCompanies(previousCompanies);
 
-  const companyLink = "https://www.fundraiseup.com/";
-  const companyName = "FundraiseUp";
-  const company = `<a href=${companyLink} target="_blank" class="link">${companyName}</a>`;
+  // const companyLink = "https://www.fundraiseup.com/";
+  // const companyName = "FundraiseUp";
+  // const company = `<a href=${companyLink} target="_blank" class="link">${companyName}</a>`;
+
+  // ${t.position} @<company>${company}</company><br />
 
   const introtext = `<span>${t.greeting}<br /><br />
-    ${t.position} @<company>${company}</company><br />
+    ${t.position}<br />
     ${t.formerly} ${formattedPreviousCompanies}<br /><br />
     ${t.interests}</span>`;
 
