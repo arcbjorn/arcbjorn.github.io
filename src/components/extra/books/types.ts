@@ -1,6 +1,7 @@
 export enum EBookCategory {
   SOFTWARE = "Software",
   PSYCHOLOGY = "Psychology",
+  FANTASY = "Fantasy",
 }
 
 export type TBook = {
