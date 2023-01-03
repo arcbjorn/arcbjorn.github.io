@@ -37,6 +37,12 @@ const books: TBook[] = [
     category: EBookCategory.PSYCHOLOGY,
     href: "https://www.amazon.com/Mastery-Keys-Success-Long-Term-Fulfillment/dp/0452267560",
   },
+  {
+    title: "The Legend of Drizzt",
+    author: "R. A. Salvatore",
+    category: EBookCategory.FANTASY,
+    href: "https://en.wikipedia.org/wiki/The_Legend_of_Drizzt",
+  },
 ];
 
 export default books;
