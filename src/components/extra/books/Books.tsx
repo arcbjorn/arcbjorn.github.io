@@ -16,6 +16,7 @@ import * as css from "components/extra/books/books.module.css";
 const categoryToI18nTokenMap: Record<EBookCategory, Ei18nToken> = {
   [EBookCategory.SOFTWARE]: Ei18nToken.SOFTWARE,
   [EBookCategory.PSYCHOLOGY]: Ei18nToken.PSYCHOLOGY,
+  [EBookCategory.FANTASY]: Ei18nToken.FANTASY,
 };
 
 const Books: React.FunctionComponent = () => {
@@ -23,8 +24,12 @@ const Books: React.FunctionComponent = () => {
     ({ category }) => category === EBookCategory.SOFTWARE
   );
 
-  const otherBooks = books.filter(
+  const psychologyBooks = books.filter(
     ({ category }) => category === EBookCategory.PSYCHOLOGY
+  );
+
+  const fantasyBooks = books.filter(
+    ({ category }) => category === EBookCategory.FANTASY
   );
 
   return (
@@ -65,7 +70,35 @@ const Books: React.FunctionComponent = () => {
           <Trans>{categoryToI18nTokenMap[EBookCategory.PSYCHOLOGY]}</Trans>
         </span>
         <div className={css.bookList}>
-          {otherBooks.map(({ title, author, href }, i) => (
+          {psychologyBooks.map(({ title, author, href }, i) => (
+            <div key={title + i} className={css.bookEntry}>
+              <svg width="70" height="50" className={css.treeNode}>
+                <line
+                  x1="30"
+                  y1="25"
+                  x2="60"
+                  y2="25"
+                  stroke="current"
+                  strokeWidth="3"
+                />
+                <line
+                  x1="30"
+                  y1="0"
+                  x2="30"
+                  y2="50"
+                  stroke="current"
+                  strokeWidth="3"
+                />
+              </svg>
+              <Book title={title} author={author} href={href} />
+            </div>
+          ))}
+        </div>
+        <span className={css.categoryTitle}>
+          <Trans>{categoryToI18nTokenMap[EBookCategory.FANTASY]}</Trans>
+        </span>
+        <div className={css.bookList}>
+          {fantasyBooks.map(({ title, author, href }, i) => (
             <div key={title + i} className={css.bookEntry}>
               <svg width="70" height="50" className={css.treeNode}>
                 <line
