@@ -39,7 +39,8 @@
       "title": "Libros que me gustan",
       "categories": {
         "software": "Software",
-        "psychology": "Psicología"
+        "psychology": "Psicología",
+        "fantasy": "Fantasía"
       }
     }
   }

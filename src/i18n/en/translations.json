@@ -39,7 +39,8 @@
       "title": "Books that I like",
       "categories": {
         "software": "Software",
-        "psychology": "Psychology"
+        "psychology": "Psychology",
+        "fantasy": "Fantasy"
       }
     }
   }
