@@ -9,7 +9,6 @@ import {
   faHackerrank,
   faDev,
   faFreeCodeCamp,
-  faGalacticRepublic,
   faHashnode,
   faMedium,
   faTwitter,
@@ -19,6 +18,12 @@ import {
   faGoodreads,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
+
+import {
+  faTerminal,
+  faEarthAmericas,
+  faBook,
+} from "@fortawesome/free-solid-svg-icons";
 
 import Header from "components/header/Header";
 
@@ -32,7 +37,6 @@ library.add(
   faHackerrank,
   faDev,
   faFreeCodeCamp,
-  faGalacticRepublic,
   faHashnode,
   faMedium,
   faTwitter,
@@ -40,7 +44,10 @@ library.add(
   faInstagram,
   faSpotify,
   faGoodreads,
-  faStackOverflow
+  faStackOverflow,
+  faTerminal,
+  faEarthAmericas,
+  faBook
 );
 
 interface ILayoutProps {

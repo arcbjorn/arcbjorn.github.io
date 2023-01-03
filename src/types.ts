@@ -6,6 +6,7 @@ export enum EDocumentDescription {
 
 export enum EIconLibrary {
   BRANDS = "fab",
+  SOLID = "fas",
   MATERIAL = "material",
   CUSTOM = "custom",
 }
