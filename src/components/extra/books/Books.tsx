@@ -8,7 +8,7 @@ import {
   extraInnerSection,
 } from "components/extra/extraInfo.module.css";
 
-import books from "components/extra/books/booksData";
+import books from "data/booksData";
 import Book from "components/extra/books/book/Book";
 
 import * as css from "components/extra/books/books.module.css";
