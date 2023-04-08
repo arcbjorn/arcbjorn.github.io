@@ -9,7 +9,7 @@ type translationForTerminalText = {
 const defaultTranslation = {
   file: "about_me",
   greeting: "Hi, I'm Oleg Luganskiy",
-  position: "Full Stack engineer",
+  position: "Software engineer",
   formerly: "formerly",
   interests: "fascinated by Web & AI development",
 };
@@ -41,14 +41,12 @@ const getTerminalText = (
 
   const formattedPreviousCompanies = formatCompanies(previousCompanies);
 
-  // const companyLink = "https://www.fundraiseup.com/";
-  // const companyName = "FundraiseUp";
-  // const company = `<a href=${companyLink} target="_blank" class="link">${companyName}</a>`;
-
-  // ${t.position} @<company>${company}</company><br />
+  const companyLink = "https://www.sardine.ai/";
+  const companyName = "Sardine";
+  const company = `<a href=${companyLink} target="_blank" class="link">${companyName}</a>`;
 
   const introtext = `<span>${t.greeting}<br /><br />
-    ${t.position}<br />
+    ${t.position} @<company>${company}</company><br />
     ${t.formerly} ${formattedPreviousCompanies}<br /><br />
     ${t.interests}</span>`;
 

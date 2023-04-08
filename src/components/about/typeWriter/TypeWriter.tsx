@@ -5,7 +5,7 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import { Ei18nToken } from "i18n/types";
 import { Action } from "state/types";
-import getTerminalText from "components/about/typeWriter/introText";
+import getTerminalText from "data/introText";
 import * as css from "components/about/typeWriter/typeWriter.module.css";
 
 type TTypeWriterProps = {
