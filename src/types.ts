@@ -1,6 +1,7 @@
 export enum EDocumentDescription {
   INDEX_PAGE = "",
   EXTRA = "extra",
+  COPY_LINKS = "copy_links",
   NOT_FOUND_PAGE = "Not Found",
 }
 

@@ -58,6 +58,9 @@ export enum ELinkUrl {
   MAIL = "mailto:oleg.luganskiy@gmail.com?subject=Employment%20Offer&body=Hi%20Oleg",
   CV = "OL.CV.pdf",
 
+  PORTFOLIO = "https://arcbjorn.com",
+  COPY_MAIL = "oleg.luganskiy@gmail.com",
+
   BLOG = "https://blog.arcbjorn.com/",
   HASHNODE = "https://arcbjorn.hashnode.dev/",
   CODEPEN = "https://codepen.io/arcbjorn",
