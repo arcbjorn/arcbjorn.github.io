@@ -11,15 +11,6 @@ import { useI18next } from "gatsby-plugin-react-i18next";
 const ExtraPage: React.FunctionComponent = () => {
   const { language } = useI18next();
 
-  if (
-    typeof navigator !== `undefined` &&
-    /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    )
-  ) {
-    navigate("/");
-  }
-
   return (
     <Layout>
       <Script
