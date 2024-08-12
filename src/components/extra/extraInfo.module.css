@@ -31,7 +31,7 @@
 }
 
 .extraInnerSection {
-  @apply flex flex-col border mx-7 max-h-[80vh] overflow-y-auto noScrollbar;
+  @apply flex flex-col border mx-7 max-h-[80vh] overflow-y-auto noScrollbar mb-3;
 
   border-color: var(--extraPageBorderColor);
 }

@@ -73,7 +73,7 @@ export enum ELinkUrl {
 
   TWITTER = "https://twitter.com/arcbjorn",
   REDDIT = "https://www.reddit.com/u/Arcbjorn",
-  INSTAGRAM = "https://instagram.com/oleg_arc",
+  INSTAGRAM = "https://www.instagram.com/arcbjorn",
   SPOTIFY = "https://open.spotify.com/user/hrpn170u8d82ch90nw6y1floe",
   GOOD_READS = "https://www.goodreads.com/arcbjorn",
 }
