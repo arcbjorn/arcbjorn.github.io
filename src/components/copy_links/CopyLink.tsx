@@ -31,7 +31,7 @@ export const QuickLink: React.FunctionComponent<TCopyLinkProps> = (props) => {
     translatedTitle = t(Ei18nToken.CV);
 
     if (copyToClipboard) {
-      processedHref = `${window.location.origin}${processedHref}`;
+      processedHref = `https://arcbjorn.com/OL.CV.pdf`;
     }
   }
 
