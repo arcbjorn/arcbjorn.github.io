@@ -42,6 +42,16 @@
         "psychology": "Psykologi",
         "fantasy": "Fantasi"
       }
+    },
+    "languages": {
+      "title": "Språk",
+      "english": "Engelska",
+      "russian": "Ryska",
+      "spanish": "Spanska",
+      "german": "Tyska",
+      "portuguese": "Portugisiska",
+      "japanese": "Japanska",
+      "swedish": "Svenska"
     }
   }
 }

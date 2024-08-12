@@ -1,0 +1,27 @@
+.languages {
+  @apply flex flex-col pt-2;
+}
+
+.languageEntry {
+  @apply flex;
+}
+
+.languageEntry:hover {
+  color: var(--languageEntryHoverColor);
+  background-color: var(--languageEntryBackgroundHoverColor);
+}
+
+.languageEntry:active {
+  color: var(--languageEntryHoverColor);
+  background-color: var(--languageEntryBackgroundHoverColor);
+}
+
+.languageEntry .treeNode {
+  @apply hidden md:block;
+
+  stroke: var(--color);
+}
+
+.languageEntry:hover .treeNode {
+  stroke: var(--languageEntryHoverColor);
+}

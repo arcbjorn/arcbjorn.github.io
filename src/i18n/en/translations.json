@@ -42,6 +42,16 @@
         "psychology": "Psychology",
         "fantasy": "Fantasy"
       }
+    },
+    "languages": {
+      "title": "Languages",
+      "english": "English",
+      "russian": "Russian",
+      "spanish": "Spanish",
+      "german": "German",
+      "portuguese": "Portuguese",
+      "japanese": "Japanese",
+      "swedish": "Swedish"
     }
   }
 }

@@ -42,6 +42,10 @@ body {
   --bookEntryHoverColor: var(--bg);
   --bookEntryBackgroundHoverColor: var(--focusColor);
 
+  /* Languages */
+  --languageEntryHoverColor: var(--bg);
+  --languageEntryBackgroundHoverColor: var(--focusColor);
+
   background-color: var(--bg);
   color: var(--color);
 
@@ -59,4 +63,6 @@ body.dark {
   --extraLinkBackgroundHoverColor: var(--color);
 
   --bookEntryBackgroundHoverColor: var(--color);
+
+  --languageEntryBackgroundHoverColor: var(--color);
 }

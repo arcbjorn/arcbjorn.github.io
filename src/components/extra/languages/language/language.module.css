@@ -1,0 +1,3 @@
+.language {
+    @apply flex flex-1 justify-between pl-5 md:pl-0 pr-5 py-3;
+}

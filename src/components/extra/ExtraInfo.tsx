@@ -5,6 +5,7 @@ import Loader from "components/loader/Loader";
 import ExtraLinks from "components/extra/extraLinks/ExtraLinks";
 
 import * as css from "components/extra/extraInfo.module.css";
+import Languages from "./languages/Languages";
 
 const ExtraInfo: React.FunctionComponent = () => {
   const [isLoading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ const ExtraInfo: React.FunctionComponent = () => {
             >
               All socials
             </a>
+            <Languages />
           </div>
           <div className={`${css.extraSection} w-full sm:w-7/12`}>
             <Books />
