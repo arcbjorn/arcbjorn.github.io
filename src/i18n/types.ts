@@ -42,4 +42,6 @@ export enum Ei18nToken {
   LANG_PORTUGUESE_NAME = "extra.languages.portuguese",
   LANG_JAPANESE_NAME = "extra.languages.japanese",
   LANG_SWEDISH_NAME = "extra.languages.swedish",
+
+  ALL_SOCIALS = "extra.platforms.allSocials",
 }

@@ -4,7 +4,6 @@ import { graphql, Script } from "gatsby";
 import { EDocumentDescription } from "types";
 import Layout from "layouts/Layout";
 import CopyLinks from "components/copy_links/CopyLinks";
-import { navigate } from "gatsby";
 import SEO from "components/Seo";
 import { useI18next } from "gatsby-plugin-react-i18next";
 

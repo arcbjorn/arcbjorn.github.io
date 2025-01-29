@@ -6,6 +6,8 @@ import ExtraLinks from "components/extra/extraLinks/ExtraLinks";
 
 import * as css from "components/extra/extraInfo.module.css";
 import Languages from "./languages/Languages";
+import { Trans } from "react-i18next";
+import { Ei18nToken } from "i18n/types";
 
 const ExtraInfo: React.FunctionComponent = () => {
   const [isLoading, setLoading] = useState(true);
@@ -30,7 +32,7 @@ const ExtraInfo: React.FunctionComponent = () => {
               rel="noopener noreferrer"
               className="underline p-4 self-center text-center"
             >
-              All socials
+              <Trans>{Ei18nToken.ALL_SOCIALS}</Trans>
             </a>
             <Languages />
           </div>

@@ -1,5 +1,15 @@
 .languages {
   @apply flex flex-col pt-2;
+  height: 350px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.languages::-webkit-scrollbar {
+  display: none;
 }
 
 .languageEntry {
@@ -18,7 +28,6 @@
 
 .languageEntry .treeNode {
   @apply hidden md:block;
-
   stroke: var(--color);
 }
 
