@@ -10,11 +10,11 @@
   },
 
   "home": {
-    "file": "sobre_mí",
-    "greeting": "Hola, soy Oleg Luganskiy",
+    "file": "sobre_mi",
+    "greeting": "Hola, soy Oleg",
     "position": "Ingeniero de software",
-    "formerly": "antes",
-    "interests": "fascinado por el desarrollo Web y de AI",
+    "formerly": "anteriormente",
+    "interests": "fascinado por el desarrollo Web y la IA",
     "cv": "CV"
   },
 

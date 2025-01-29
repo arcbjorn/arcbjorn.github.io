@@ -11,9 +11,9 @@
 
   "home": {
     "file": "om_mig",
-    "greeting": "Hej, jag heter Oleg Luganskiy",
+    "greeting": "Hej, jag heter Oleg",
     "position": "Mjukvaruingenjör",
-    "formerly": "förr",
+    "formerly": "tidigare",
     "interests": "fascinerad av webb- och AI-utveckling",
     "cv": "CV"
   },

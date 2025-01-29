@@ -11,9 +11,9 @@
 
   "home": {
     "file": "über_mich",
-    "greeting": "Hallo, ich bin Oleg Luganskiy",
+    "greeting": "Hallo, ich heiße Oleg",
     "position": "Softwareentwickler",
-    "formerly": "früher",
+    "formerly": "zuvor",
     "interests": "fasziniert von Web- & KI-Entwicklung",
     "cv": "CV"
   },
