@@ -22,6 +22,7 @@ const TypeWriter: React.FunctionComponent<TTypeWriterProps> = ({
 }) => {
   const { t } = useTranslation();
   const introText = getTerminalText({
+    name: t(Ei18nToken.NAME),
     file: t(Ei18nToken.FILE),
     greeting: t(Ei18nToken.GREETING),
     position: t(Ei18nToken.POSITION),

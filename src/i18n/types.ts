@@ -1,4 +1,7 @@
 export enum Ei18nToken {
+  NAME = "name",
+  LOCATION = "header.location",
+
   PAGE_NOT_FOUND = "notFound.title",
   GO_BACK = "notFound.backButtonTitle",
 

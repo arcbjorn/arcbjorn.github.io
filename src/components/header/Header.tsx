@@ -9,8 +9,6 @@ import TimeZone from "components/header/timeZone/TimeZone";
 
 import * as css from "components/header/header.module.css";
 
-const logoText = "arcbjorn";
-
 enum Route {
   about = "/",
   extra = "/extra",
@@ -20,7 +18,7 @@ export const Header: React.FunctionComponent = () => {
   return (
     <div className={css.header}>
       <Link className={css.logo} to={Route.about}>
-        {logoText}
+        <Trans>{Ei18nToken.NAME}</Trans>
       </Link>
       <TimeZone />
       <div className={css.nav}>

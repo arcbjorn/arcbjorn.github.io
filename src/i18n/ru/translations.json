@@ -1,4 +1,6 @@
 {
+  "name": "arcbjorn",
+
   "notFound": {
     "title": "Страница не найдена",
     "backButtonTitle": "Назад"
@@ -6,7 +8,8 @@
 
   "header": {
     "about": "обо мне",
-    "extra": "дополнительно"
+    "extra": "дополнительно",
+    "location": "Буэнос-Айрес"
   },
 
   "home": {

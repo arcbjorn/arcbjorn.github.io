@@ -1,4 +1,6 @@
 {
+  "name": "arcbjorn",
+
   "notFound": {
     "title": "Page not found",
     "backButtonTitle": "Go back"
@@ -6,7 +8,8 @@
 
   "header": {
     "about": "about",
-    "extra": "extra"
+    "extra": "extra",
+    "location": "Buenos Aires"
   },
 
   "home": {
