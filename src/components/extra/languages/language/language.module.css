@@ -1,3 +1,33 @@
 .language {
-    @apply flex flex-1 justify-between pl-5 md:pl-0 pr-5 py-3;
+  @apply flex flex-1 justify-between pl-5 md:pl-0 pr-5 py-3 font-ibm;
+}
+
+.nameLevel {
+  @apply flex flex-1 items-center font-ibm;
+}
+
+.levelBar {
+  @apply flex-1 relative h-8 ml-4;
+}
+
+.levelBackground {
+  @apply absolute w-full h-full;
+}
+
+.levelFill {
+  @apply h-full;
+  transition: width 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.matrixEffect {
+  @apply flex justify-between px-2 h-full items-center overflow-hidden;
+}
+
+.matrixChar {
+  @apply font-ibm;
+  transition: all 0.15s ease-out;
+}
+
+.levelText {
+  @apply absolute right-0 top-1/2 -translate-y-1/2 font-ibm text-sm pr-2;
 }

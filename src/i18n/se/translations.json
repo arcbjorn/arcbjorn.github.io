@@ -55,7 +55,12 @@
       "german": "Tyska",
       "portuguese": "Portugisiska",
       "japanese": "Japanska",
-      "swedish": "Svenska"
+      "swedish": "Svenska",
+      "levels": {
+        "native": "Modersmål",
+        "fluent": "Flytande",
+        "basic": "Grundläggande"
+      }
     }
   }
 }

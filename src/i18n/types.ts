@@ -47,4 +47,8 @@ export enum Ei18nToken {
   LANG_SWEDISH_NAME = "extra.languages.swedish",
 
   ALL_SOCIALS = "extra.platforms.allSocials",
+
+  LANG_LEVEL_NATIVE = "extra.languages.levels.native",
+  LANG_LEVEL_FLUENT = "extra.languages.levels.fluent",
+  LANG_LEVEL_BASIC = "extra.languages.levels.basic",
 }

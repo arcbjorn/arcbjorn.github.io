@@ -55,7 +55,12 @@
       "german": "ドイツ語",
       "portuguese": "ポルトガル語",
       "japanese": "日本語",
-      "swedish": "スウェーデン語"
+      "swedish": "スウェーデン語",
+      "levels": {
+        "native": "母語",
+        "fluent": "流暢",
+        "basic": "基礎"
+      }
     }
   }
 } 

@@ -55,7 +55,12 @@
       "german": "Alemán",
       "portuguese": "Portugués",
       "japanese": "Japonés",
-      "swedish": "Sueco"
+      "swedish": "Sueco",
+      "levels": {
+        "native": "Nativo",
+        "fluent": "Fluido",
+        "basic": "Básico"
+      }
     }
   }
 }
