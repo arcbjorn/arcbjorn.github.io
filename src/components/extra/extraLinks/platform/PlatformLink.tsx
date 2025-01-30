@@ -6,6 +6,7 @@ import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 
 import * as css from "components/extra/extraLinks/platform/platformLink.module.css";
 import { EIconLibrary } from "types";
+import { Trans } from "react-i18next";
 
 type TPlatformLinkProps = {
   link: Omit<TLink<IPlatformLinkPartial>, "category">;
@@ -29,7 +30,7 @@ const PlatformLink: React.FunctionComponent<TPlatformLinkProps> = (props) => {
             className={css.platformLinkIcon}
           />
         )}
-        {title}
+        <Trans>{title}</Trans>
       </div>
       {/* <span className={css.platformLinkDescription}>
         <Trans>{description}</Trans>

@@ -37,6 +37,10 @@
         "freeCodeCamp": "среда обучения Computer Science",
         "glitch": "коллаборации над full-stack веб-приложениями"
       },
+      "names": {
+        "myTravelMap": "Карта моих путешествий",
+        "blog": "Блог"
+      },
       "allSocials": "Все социальные сети"
     },
     "books": {

@@ -10,7 +10,7 @@ import { Ei18nToken } from "i18n/types";
 
 export const customLinks: TLink<IPlatformLinkPartial>[] = [
   {
-    title: ELinkTitle.MY_TRAVEL_MAP,
+    title: Ei18nToken.MY_TRAVEL_MAP_TITLE,
     category: ELinkCategory.CUSTOM,
     href: ELinkUrl.MY_TRAVEL_MAP,
     iconPrefix: EIconLibrary.SOLID,
@@ -70,7 +70,7 @@ export const learningLinks: TLink<IPlatformLinkPartial>[] = [
 
 export const blogLinks: TLink<IPlatformLinkPartial>[] = [
   {
-    title: ELinkTitle.BLOG,
+    title: Ei18nToken.BLOG_TITLE,
     category: ELinkCategory.BLOG,
     href: ELinkUrl.BLOG,
     iconPrefix: EIconLibrary.SOLID,

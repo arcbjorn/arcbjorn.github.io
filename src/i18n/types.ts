@@ -18,6 +18,7 @@ export enum Ei18nToken {
   PLATFORMS_TITLE = "extra.platforms.title",
 
   BLOG = "extra.platforms.descriptions.blog",
+  BLOG_TITLE = "extra.platforms.names.blog",
   HASHNODE = "extra.platforms.descriptions.hashnode",
   CODEPEN = "extra.platforms.descriptions.codepen",
   HACKER_RANK = "extra.platforms.descriptions.hackerRank",
@@ -29,6 +30,7 @@ export enum Ei18nToken {
   STEPIK = "extra.platforms.descriptions.stepik",
   GLITCH = "extra.platforms.descriptions.glitch",
   MY_TRAVEL_MAP = "extra.platforms.descriptions.myTravelMap",
+  MY_TRAVEL_MAP_TITLE = "extra.platforms.names.myTravelMap",
 
   BOOKS_TITLE = "extra.books.title",
 

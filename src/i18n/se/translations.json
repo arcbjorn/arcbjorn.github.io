@@ -37,6 +37,10 @@
         "freeCodeCamp": "datavetenskaplig lärmiljö",
         "glitch": "samarbete om full-stack webbappar"
       },
+      "names": {
+        "myTravelMap": "Min resvägskarta",
+        "blog": "Blogg"
+      },
       "allSocials": "Alla sociala medier"
     },
     "books": {

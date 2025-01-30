@@ -37,7 +37,11 @@
         "freeCodeCamp": "Lernumgebung für Informatik",
         "glitch": "Zusammenarbeit bei Full-Stack Web Apps"
       },
-      "allSocials": "Alle sozialen Medien"
+      "allSocials": "Alle sozialen Medien",
+      "names": {
+        "myTravelMap": "Meine Reisekarte",
+        "blog": "Blog"
+      }
     },
     "books": {
       "title": "Bücher die ich mag",
