@@ -1,6 +1,6 @@
 .languages {
   @apply flex flex-col pt-2;
-  height: 350px;
+  height: 300px;
   overflow-y: auto;
   padding-bottom: 20px;
   -ms-overflow-style: none;  /* IE and Edge */

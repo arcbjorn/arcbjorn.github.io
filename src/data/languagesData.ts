@@ -3,10 +3,6 @@ import { Ei18nToken } from "i18n/types";
 
 const languages: TLanguage[] = [
   {
-    name: Ei18nToken.LANG_RUSSIAN_NAME,
-    level: 100,
-  },
-  {
     name: Ei18nToken.LANG_ENGLISH_NAME,
     level: 90,
   },
@@ -19,16 +15,20 @@ const languages: TLanguage[] = [
     level: 90,
   },
   {
-    name: Ei18nToken.LANG_PORTUGUESE_NAME,
+    name: Ei18nToken.LANG_JAPANESE_NAME,
     level: 70,
   },
   {
-    name: Ei18nToken.LANG_JAPANESE_NAME,
+    name: Ei18nToken.LANG_PORTUGUESE_NAME,
     level: 70,
   },
   {
     name: Ei18nToken.LANG_SWEDISH_NAME,
     level: 70,
+  },
+  {
+    name: Ei18nToken.LANG_RUSSIAN_NAME,
+    level: 100,
   },
 ];
 
