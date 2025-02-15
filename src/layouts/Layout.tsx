@@ -4,19 +4,11 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faLinkedin,
   faGithub,
-  faTelegramPlane,
-  faCodepen,
-  faHackerrank,
-  faDev,
-  faFreeCodeCamp,
-  faHashnode,
-  faMedium,
   faTwitter,
   faReddit,
   faInstagram,
   faSpotify,
   faGoodreads,
-  faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
@@ -32,19 +24,11 @@ import * as css from "layouts/layout.module.css";
 library.add(
   faLinkedin,
   faGithub,
-  faTelegramPlane,
-  faCodepen,
-  faHackerrank,
-  faDev,
-  faFreeCodeCamp,
-  faHashnode,
-  faMedium,
   faTwitter,
   faReddit,
   faInstagram,
   faSpotify,
   faGoodreads,
-  faStackOverflow,
   faTerminal,
   faEarthAmericas,
   faBook
