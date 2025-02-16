@@ -24,19 +24,6 @@
   "extra": {
     "platforms": {
       "title": "他のプラットフォームでの私",
-      "descriptions": {
-        "hashnode": "ソフトウェア開発者向けのブログコミュニティ",
-        "myTravelMap": "訪れた場所や住んでいた場所",
-        "hackerRank": "競技プログラミングの課題",
-        "leetCode": "アカデミックなプログラミングの課題",
-        "devto": "ソフトウェア開発者向けのソーシャルネットワーク",
-        "stackOverflow": "開発者コミュニティ",
-        "codepen": "HTML、CSS、JavaScriptのコードスニペット",
-        "medium": "オンライン出版プラットフォーム",
-        "stepik": "コンピュータサイエンス学習環境",
-        "freeCodeCamp": "コンピュータサイエンス学習環境",
-        "glitch": "フルスタックWebアプリの共同開発"
-      },
       "names": {
         "myTravelMap": "私の旅行マップ",
         "blog": "ブログ"

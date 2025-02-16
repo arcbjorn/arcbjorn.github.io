@@ -24,7 +24,6 @@ export type IHomePageLinkPartial = {
 
 export interface IPlatformLinkPartial {
   title: ELinkTitle | Ei18nToken;
-  description: Ei18nToken;
 }
 
 export enum ELinkTitle {

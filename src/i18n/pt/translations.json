@@ -24,19 +24,6 @@
   "extra": {
     "platforms": {
       "title": "Eu em outras plataformas",
-      "descriptions": {
-        "hashnode": "comunidade de blog para desenvolvedores de software",
-        "myTravelMap": "lugares que visitei ou morei",
-        "hackerRank": "desafios de programação competitiva",
-        "leetCode": "desafios de programação acadêmica",
-        "devto": "rede social para desenvolvedores de software",
-        "stackOverflow": "comunidade de desenvolvedores",
-        "codepen": "trechos de código HTML, CSS e JavaScript",
-        "medium": "plataforma de publicação online",
-        "stepik": "ambiente de aprendizado de ciência da computação",
-        "freeCodeCamp": "ambiente de aprendizado de ciência da computação",
-        "glitch": "colaboração em aplicativos web full-stack"
-      },
       "allSocials": "Todas as redes sociais",
       "names": {
         "myTravelMap": "Meu mapa de viagens",

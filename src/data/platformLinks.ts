@@ -16,7 +16,6 @@ export const customLinks: TLink<IPlatformLinkPartial>[] = [
     iconPrefix: EIconLibrary.SOLID,
     icon: "earth-americas",
     iconTitle: "My travel map",
-    description: Ei18nToken.MY_TRAVEL_MAP,
   },
   // {
   //   title: ELinkTitle.STACK_OVERFLOW,
@@ -46,7 +45,6 @@ export const learningLinks: TLink<IPlatformLinkPartial>[] = [
     iconPrefix: EIconLibrary.SOLID,
     icon: "terminal",
     iconTitle: "LeetCode",
-    description: Ei18nToken.LEETCODE,
   },
   // {
   //   title: ELinkTitle.STEPIK,
@@ -76,7 +74,6 @@ export const blogLinks: TLink<IPlatformLinkPartial>[] = [
     iconPrefix: EIconLibrary.SOLID,
     icon: "book",
     iconTitle: "Blog",
-    description: Ei18nToken.BLOG,
   },
   // {
   //   title: ELinkTitle.HASHNODE,
