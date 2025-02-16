@@ -7,31 +7,3 @@
 
   border-top: 1px solid var(--extraPageBorderColor);
 }
-
-.divider {
-  color: var(--color);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @apply py-4;
-}
-
-.divider::before,
-.divider::after {
-  content: "";
-  display: block;
-  height: 1px;
-  min-width: 12vw;
-}
-
-.divider::before {
-  background-color: var(--color);
-  @apply mr-6;
-}
-
-.divider::after {
-  background-color: var(--color);
-  @apply ml-6;
-}

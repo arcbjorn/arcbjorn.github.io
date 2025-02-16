@@ -9,7 +9,7 @@ import { EIconLibrary } from "types";
 import { Trans } from "react-i18next";
 
 type TPlatformLinkProps = {
-  link: Omit<TLink<IPlatformLinkPartial>, "category">;
+  link: TLink<IPlatformLinkPartial>;
 };
 
 const PlatformLink: React.FunctionComponent<TPlatformLinkProps> = (props) => {
@@ -32,9 +32,6 @@ const PlatformLink: React.FunctionComponent<TPlatformLinkProps> = (props) => {
         )}
         <Trans>{title}</Trans>
       </div>
-      {/* <span className={css.platformLinkDescription}>
-        <Trans>{description}</Trans>
-      </span> */}
     </a>
   );
 };

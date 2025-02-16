@@ -1,6 +1,6 @@
 import { Ei18nToken } from "i18n/types";
 import { EIconLibrary } from "types";
-import { TLink, ELinkTitle, ELinkUrl, ELinkCategory } from "data/types";
+import { TLink, ELinkTitle, ELinkUrl } from "data/types";
 
 const links: TLink[] = [
   {
@@ -9,7 +9,6 @@ const links: TLink[] = [
     iconPrefix: EIconLibrary.BRANDS,
     icon: "linkedin",
     iconTitle: "LinkedIn account",
-    category: ELinkCategory.SOCIAL,
   },
   {
     title: ELinkTitle.GITHUB,
@@ -17,7 +16,6 @@ const links: TLink[] = [
     iconPrefix: EIconLibrary.BRANDS,
     icon: "github",
     iconTitle: "Github account",
-    category: ELinkCategory.CUSTOM,
   },
   {
     title: ELinkTitle.TWITTER,
@@ -25,7 +23,6 @@ const links: TLink[] = [
     iconPrefix: EIconLibrary.BRANDS,
     icon: "twitter",
     iconTitle: "Twitter account",
-    category: ELinkCategory.SOCIAL,
   },
   {
     title: ELinkTitle.EMAIL,
@@ -33,7 +30,6 @@ const links: TLink[] = [
     iconPrefix: EIconLibrary.MATERIAL,
     icon: "mail",
     iconTitle: "Email address",
-    category: ELinkCategory.CUSTOM,
   },
   {
     title: "Portfolio",
@@ -41,7 +37,6 @@ const links: TLink[] = [
     iconPrefix: EIconLibrary.MATERIAL,
     icon: "description",
     iconTitle: "Portfolio",
-    category: ELinkCategory.CUSTOM,
   },
   {
     title: Ei18nToken.CV,
@@ -49,7 +44,6 @@ const links: TLink[] = [
     iconPrefix: EIconLibrary.MATERIAL,
     icon: "description",
     iconTitle: "Curriculum Vitae",
-    category: ELinkCategory.CUSTOM,
   },
 ];
 

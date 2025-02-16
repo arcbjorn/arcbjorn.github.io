@@ -2,20 +2,11 @@ import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { Ei18nToken } from "i18n/types";
 import { EIconLibrary } from "types";
 
-export enum ELinkCategory {
-  BLOG = "Blog",
-  SHOWCASE = "Showcase",
-  LEARNING = "Learning",
-  CUSTOM = "Custom",
-  SOCIAL = "Social",
-}
-
 export type TLink<TLinkPartial = Record<string, string>> = TLinkPartial & {
   href: ELinkUrl;
   icon: IconName | string;
   iconPrefix: EIconLibrary;
   iconTitle: string;
-  category: ELinkCategory;
 };
 
 export type IHomePageLinkPartial = {
@@ -32,16 +23,7 @@ export enum ELinkTitle {
   EMAIL = "EMail",
 
   BLOG = "Blog",
-  HASHNODE = "Hashnode",
-  CODEPEN = "Codepen",
-  HACKER_RANK = "Hacker Rank",
   LEETCODE = "LeetCode",
-  DEV_TO = "Dev.to",
-  STACK_OVERFLOW = "Stack Overflow",
-  MEDIUM = "Medium",
-  STEPIK = "Stepik",
-  FREE_CODE_CAMP = "freeCodeCamp",
-  GLITCH = "Glitch",
   MY_TRAVEL_MAP = "My travel map",
 
   TWITTER = "Twitter",
@@ -61,16 +43,7 @@ export enum ELinkUrl {
   COPY_MAIL = "oleg.luganskiy@gmail.com",
 
   BLOG = "https://blog.arcbjorn.com/",
-  HASHNODE = "https://arcbjorn.hashnode.dev/",
-  CODEPEN = "https://codepen.io/arcbjorn",
-  HACKER_RANK = "https://www.hackerrank.com/arcbjorn",
   LEETCODE = "https://leetcode.com/arcbjorn",
-  FREE_CODE_CAMP = "https://www.freecodecamp.org/arcbjorn",
-  DEV_TO = "https://dev.to/arcbjorn",
-  STACK_OVERFLOW = "https://stackoverflow.com/users/13143157/arcbjorn",
-  MEDIUM = "https://arcbjorn.medium.com/",
-  STEPIK = "https://stepik.org/users/247781885",
-  GLITCH = "https://glitch.com/@arcbjorn",
   MY_TRAVEL_MAP = "https://www.mytravelmap.xyz/u/gg104931485347737929283",
 
   TWITTER = "https://twitter.com/arcbjorn",

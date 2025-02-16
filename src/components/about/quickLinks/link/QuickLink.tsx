@@ -11,7 +11,7 @@ import { Ei18nToken } from "i18n/types";
 import { TLink } from "data/types";
 
 type TQuickLinkProps = {
-  link: Omit<TLink, "category"> & {
+  link: TLink & {
     children?: ReactNode;
   };
 };
